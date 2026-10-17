@@ -63,14 +63,14 @@ def fig_embedding_selection(R, out, cfg):
     if g is None:
         return print("  figure selection_embeddings: SKIPPED")
     embs = [b for b in BASE_ORDER if b in set(g.embedding)] + [b for b in g.embedding.unique() if b not in BASE_ORDER]
-    fig, (ax, bx) = plt.subplots(1, 2, figsize=(TWO, 2.4), gridspec_kw={"width_ratios": [1.6, 1]})
+    fig, (ax, bx) = plt.subplots(1, 2, figsize=(TWO, 2.4), gridspec_kw={"width_ratios": [1.6, 1], "wspace": 0.6})
     for k, e in enumerate(embs):
         x = g[g.embedding == e]
         ax.plot(x.threshold, x.ga, color=SLOTS[k], label=e, marker="o", markersize=3)
     ax.set_xlabel("Distance threshold (cosine)")
     ax.set_ylabel("Group accuracy (catalogue)")
     ax.set_ylim(0, 1)
-    ax.legend(loc="upper right")
+    ax.legend(loc="upper right", fontsize=6.5)
     ax.set_title(f"Pre-trained encoders, {ALGORITHM_LABEL[cfg['clustering']['algorithm']]}", fontsize=8, loc="left", color=INK)
     s = s.set_index("embedding").loc[embs]
     y = np.arange(len(embs))[::-1]
@@ -106,7 +106,7 @@ def fig_cv_threshold(R, out, cfg):
     ax.set_xlabel("Distance threshold (cosine)")
     ax.set_ylabel("Group accuracy (CV mean ± sd)")
     ax.set_ylim(0, 1)
-    ax.legend(loc="upper right")
+    ax.legend(loc="center right")
     ax.set_title(f"Threshold selection on the catalogue ({b})", fontsize=8, color=INK, loc="left")
     save(fig, out, "cv_threshold")
 
@@ -248,53 +248,61 @@ def fig_repeatability(R, out, cfg):
 
 
 def fig_tsne(R, out, cfg, n_highlight=8):
-    meta = R["lasec_meta"].get(slug(cfg["embedding"]["base_model"]))
-    cat = R["cat_labels"]
-    if meta is None or cat is None:
-        return print("  figure tsne: SKIPPED")
+    """t-SNE of the held-out FPV sentences (never used for training), pre-trained vs fine-tuned primary encoder.
+
+    The FPV gold groups with the most member sentences are coloured; all other sentences are grey.
+    Needs the trained model in models/lasec-<base model>/ (run train_final.py first)."""
+    base = slug(cfg["embedding"]["base_model"])
+    model_dir = path(cfg, "models") / f"lasec-{base}"
+    if not model_dir.exists():
+        return print(f"  figure tsne: SKIPPED ({model_dir} not found; run train_final.py first)")
     from sklearn.manifold import TSNE
 
     from lasec.cluster import embed, load_encoder
-    ev = cat[cat.sentence_type.isin(EVENT_TYPES)].reset_index(drop=True)
-    top = list(ev.event.value_counts().index[:n_highlight])
+    from lasec.experiment import load_fpv
+    fpv, _ = load_fpv(cfg)
+    fpv = fpv.sort_values("sentence").reset_index(drop=True)
+    size = fpv.event.value_counts()
+    top = list(size[size > 1].index[:n_highlight])
     fig, axes = plt.subplots(1, 2, figsize=(TWO, 3.1))
-    model_dir = path(cfg, "models") / f"lasec-{slug(meta['base_model'])}"
-    for ax, (model, title) in zip(axes, ((meta["base_model"], "Pre-trained"), (str(model_dir), "Fine-tuned (LASeC)"))):
-        X = embed(load_encoder(model), ev.sentence.tolist(), cfg["embedding"]["batch_size"], True)
-        Z = TSNE(n_components=2, metric="cosine", perplexity=30, init="pca", random_state=cfg["seed"]).fit_transform(X)
-        rest = ~ev.event.isin(top)
-        ax.scatter(Z[rest, 0], Z[rest, 1], s=6, color=OTHER, linewidths=0, label="other events")
+    for ax, (model, title) in zip(axes, ((cfg["embedding"]["base_model"], f"Pre-trained {base}"),
+                                         (str(model_dir), f"Fine-tuned (LASeC, {base})"))):
+        X = embed(load_encoder(model), fpv.sentence.tolist(), cfg["embedding"]["batch_size"], True)
+        Z = TSNE(n_components=2, metric="cosine", perplexity=15, init="pca", random_state=cfg["seed"]).fit_transform(X)
+        rest = ~fpv.event.isin(top).to_numpy()
+        ax.scatter(Z[rest, 0], Z[rest, 1], s=8, color=OTHER, linewidths=0, label="other events")
         for k, e in enumerate(top):
-            sel = (ev.event == e).to_numpy()
-            ax.scatter(Z[sel, 0], Z[sel, 1], s=14, color=SLOTS[k], edgecolors="white", linewidths=0.4, label=e)
+            sel = (fpv.event == e).to_numpy()
+            ax.scatter(Z[sel, 0], Z[sel, 1], s=18, color=SLOTS[k], edgecolors="white", linewidths=0.4,
+                       label=f"{e} ({int(sel.sum())})")
         ax.set_title(title, fontsize=8, loc="left", color=INK)
         ax.set_xticks([])
         ax.set_yticks([])
         ax.grid(False)
     h, lab = axes[0].get_legend_handles_labels()
-    fig.legend(h, lab, loc="lower center", ncol=3, bbox_to_anchor=(0.5, -0.12))
+    fig.legend(h, lab, loc="lower center", ncol=3, bbox_to_anchor=(0.5, -0.14))
     save(fig, out, "tsne")
+
+
+FIGURES = {"selection_algorithms": fig_algorithm_selection, "selection_embeddings": fig_embedding_selection,
+           "cv_threshold": fig_cv_threshold, "fpv_main": fig_fpv_main, "case_study": fig_case_study,
+           "base_models": fig_base_models, "fpv_sensitivity": fig_sensitivity, "repeatability": fig_repeatability,
+           "tsne": fig_tsne}
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default=None)
     ap.add_argument("--skip-tsne", action="store_true")
+    ap.add_argument("--only", nargs="+", choices=sorted(FIGURES), help="only these figures, e.g. --only tsne")
     a = ap.parse_args()
     cfg = load_config(a.config) if a.config else load_config()
     R = load_all(cfg)
     out = path(cfg, "results") / "paper" / "figures"
     out.mkdir(parents=True, exist_ok=True)
-    fig_algorithm_selection(R, out, cfg)
-    fig_embedding_selection(R, out, cfg)
-    fig_cv_threshold(R, out, cfg)
-    fig_fpv_main(R, out, cfg)
-    fig_case_study(R, out, cfg)
-    fig_base_models(R, out, cfg)
-    fig_sensitivity(R, out, cfg)
-    fig_repeatability(R, out, cfg)
-    if not a.skip_tsne:
-        fig_tsne(R, out, cfg)
+    names = a.only or [n for n in FIGURES if not (n == "tsne" and a.skip_tsne)]
+    for n in names:
+        FIGURES[n](R, out, cfg)
 
 
 if __name__ == "__main__":

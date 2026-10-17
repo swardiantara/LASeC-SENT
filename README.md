@@ -17,12 +17,12 @@ This repository (LASeC-SENT) contains the code, data, labels and annotation mate
 | Unit of analysis | sentence (`;` split, then PySBD) | one sentence = one event; avoids the first-sentence bias of message-level abstraction ([DroPTC](https://doi.org/10.1016/j.fsidi.2026.302051)) |
 | Training data | DroPTC sentence-level catalogue: 585 vendor messages manually split into 1,035 sentences (783 unique), labelled per `annotation/GUIDELINE.md` | manual boundaries, because catalogue messages are inconsistently punctuated; the only labelled data seen by any model |
 | Test data | 7 DJI FPV flights → 2,158 sentence occurrences, 78 unique sentences, expert labels | held out; never used for training, tuning or threshold selection |
-| Model selection | Stage A: clustering algorithms (Agglomerative, BIRCH, DBSCAN, HDBSCAN, OPTICS) with pre-trained SBERT; Stage B: pre-trained encoders with the chosen algorithm, plus throughput. Final: Agglomerative (average linkage, cosine) + all-MiniLM-L6-v2 | catalogue only, pre-trained encoders; agglomerative is order-invariant and exact at flight-log scale |
+| Model selection | Stage A: clustering algorithms (Agglomerative, BIRCH, DBSCAN, HDBSCAN, OPTICS) with pre-trained SBERT; Stage B: pre-trained encoders with the chosen algorithm, plus throughput. Final: Agglomerative (average linkage, cosine) + all-distilroberta-v1; all-MiniLM-L6-v2 is reported as a lightweight variant for CPU-only workstations | catalogue only, pre-trained encoders; agglomerative is order-invariant and exact at flight-log scale |
 | Threshold | cosine-distance threshold selected by 5-fold cross-validation on the catalogue (BIRCH ablation: its own CV threshold) | no test-set tuning |
-| Baselines | exact dedup, regex-masked dedup, Drain3, pre-trained embedding + agglomerative, LLM zero/few-shot via OpenRouter (OpenAI, Anthropic, Google; flagship + small tier) | alternative ways an investigator could obtain event groups; all hyperparameters tuned on the catalogue |
+| Baselines | exact dedup, regex-masked dedup, Drain3, pre-trained embedding + agglomerative, LLM zero/few-shot via OpenRouter (one model each from OpenAI, Anthropic and Google) | alternative ways an investigator could obtain event groups; all hyperparameters tuned on the catalogue |
 | Metrics | reported on all sentences and on event sentences only; GA (unique and occurrence-weighted), pairwise P/R/F1, ARI, NMI, over-merges; per-flight workload reduction and expert key-event recall | grouping quality + forensic utility |
 | Statistics | bootstrap 95% CIs (items and flights), paired bootstrap + exact McNemar, Holm correction | |
-| Agreement | blind second annotator; Cohen's κ on pairwise same-event decisions, ARI | |
+| Annotation | LLM-proposed labels under `annotation/GUIDELINE.md`, reviewed by the expert (catalogue: no changes; FPV: 9/78 sentences regrouped); proposals and corrections are kept in `data/labels/catalogue_sentence_labels.csv` | auditable correction rate |
 
 ## Repository layout
 
@@ -32,8 +32,8 @@ configs/smoke.yaml          tiny CPU run to test the plumbing (numbers are meani
 data/raw/catalogue/         DroPTC sentence split (train+test = LASeC training catalogue) + original message list
 data/raw/fpv/decrypted/     7 decrypted DJI FPV flight records (test) + SHA-256 hashes
 data/labels/                fpv_sentence_labels.csv, fpv_key_events.yaml, catalogue_sentence_labels.csv
-annotation/                 GUIDELINE.md (v2), review workbook, proposed labels, blind second-annotator sheets
-lasec/                      library: segmentation, data, training, clustering, baselines, LLM, metrics, stats, IAA, report
+annotation/                 GUIDELINE.md (v2) and the LLM-proposed catalogue labels with rationales
+lasec/                      library: segmentation, data, training, clustering, baselines, LLM, metrics, stats, report
 scripts/                    numbered pipeline steps (see below)
 tests/                      unit tests (pytest)
 results/                    outputs (results/paper/ = tables, figures, summary.md)
@@ -71,12 +71,14 @@ bash run_all.sh --smoke    # quick CPU check of the whole pipeline incl. tables/
 | 6 | `evaluate_fpv.py` | `results/fpv/metrics.csv` (per method x subset), `significance.csv`, `llm_summary.csv`, `sensitivity.csv`, `overmerges.json`, predictions |
 | 7 | `case_study.py` | `results/case_study/per_flight.csv`, `summary.csv`, annotated timelines |
 | 8 | `repeatability.py` | `results/repeatability/` (input-order spread per clustering algorithm) |
-| 9 | `compute_iaa.py` | `results/annotation/iaa.json` |
-| 10 | `make_tables.py` | `results/paper/tables/*.tex` + `.csv`, `results/paper/summary.md` |
-| 11 | `make_figures.py` | `results/paper/figures/*.pdf` + `.png` |
+| 9 | `make_tables.py` | `results/paper/tables/*.tex` + `.csv`, `results/paper/summary.md` |
+| 10 | `make_figures.py` | `results/paper/figures/*.pdf` + `.png` |
 
-**LLM baselines.** All models are called through OpenRouter: set `OPENROUTER_API_KEY` in `.env`. The models (flagship +
-small tier from OpenAI, Anthropic and Google) are listed in `configs/default.yaml` under `llm.models`; IDs were
+To regenerate one figure only, e.g. the t-SNE plot (it needs the trained model in `models/lasec-<base model>/`):
+`python scripts/make_figures.py --only tsne`.
+
+**LLM baselines.** All models are called through OpenRouter: set `OPENROUTER_API_KEY` in `.env`. The models (one each from OpenAI,
+Anthropic and Google: gpt-5.6-luna, claude-opus-5.5, gemini-3.8-flash) are listed in `configs/default.yaml` under `llm.models`; IDs were
 checked against the OpenRouter model list on 2026-10-17. Each model runs zero- and few-shot, 3 times with
 different presentation orders, with strict JSON-schema output and `reasoning.effort: high`. Raw responses
 (including latency, cost and the model that actually served the request) are cached in `results/llm/cache/`, so
@@ -100,10 +102,13 @@ See `annotation/GUIDELINE.md`.
 
 ```bash
 python scripts/build_review_sheet.py      # review workbook from annotation/catalogue_labels_v2_proposed.csv
-# expert edits annotation/catalogue_review_v2.xlsx; annotator 2 fills the two blind *_annotator2 sheets
+# the expert edits annotation/catalogue_review_v2.xlsx (final_type / final_label)
 python scripts/import_annotations.py      # validate + freeze labels into data/labels/
-python scripts/compute_iaa.py
 ```
+
+The frozen catalogue labels keep the proposed label and type next to the final ones (`changed` column), so the
+expert correction rate can be checked. The FPV test labels were drafted the same way (LLM proposal under the
+guideline) and verified by the expert, who changed the grouping of 9 of the 78 sentences.
 
 ## Reproducibility notes
 
@@ -116,6 +121,9 @@ python scripts/compute_iaa.py
   singleton event (a sentence that matches nothing else is still an event for triage).
 - `select_model.py` prints a NOTE if the selection evidence favours a different algorithm or encoder than the one
   configured (`clustering.algorithm`, `embedding.base_model`).
+- Only the primary model's significance tests depend on `embedding.base_model`. After changing it,
+  `python scripts/evaluate_fpv.py --stats-only` recomputes `significance.csv` from the saved predictions, without
+  the trained models.
 - Each model directory stores `lasec_meta.json` with package versions, device, training pairs and loss.
 - The decrypted evidence is checked against `data/raw/fpv/decrypted_sha256.json` on every run. The original
   encrypted records and their hashes are published with DroPTC (`raw_sha_hashes.json`).

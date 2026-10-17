@@ -1,0 +1,784 @@
+sent_id,sentence,type,label,note
+C0001,Abnormal compass function or GPS signal detected.,event,COMPASS_OR_GPS_ABNORMAL,single event stated as compass-or-GPS abnormality
+C0002,Accelerator is Over Range,event,ACCELEROMETER_OVER_RANGE,
+C0003,Account not logged in.,event,ACCOUNT_NOT_LOGGED_IN,
+C0004,ActiveTrack Flight Ended,event,ACTIVETRACK_ENDED,
+C0005,ActiveTrack Flight Paused,event,ACTIVETRACK_PAUSED,"paused is resumable, distinct from ended"
+C0006,ActiveTrack Flight Stopped,event,ACTIVETRACK_ENDED,stopped = ended
+C0007,Advanced RTH Image Transmission Recovered.,event,IMGTX_RESTORED,'Advanced RTH' names the feature; event = image transmission recovered
+C0008,AE Locked.,event,AE_LOCKED,
+C0009,Aircraft ActiveTrack available at max speed.,event,AIRCRAFT_ACTIVETRACK_MAX_SPEED_NNN,expert ID; available at max speed = max speed notice
+C0010,Aircraft ActiveTrack max speed of nnn and Obstacle Avoidance functions normally,event,AIRCRAFT_ACTIVETRACK_MAX_SPEED_NNN,expert decision
+C0011,Aircraft ActiveTrack max speed of nnn.,event,AIRCRAFT_ACTIVETRACK_MAX_SPEED_NNN,expert decision
+C0012,Aircraft in Altitude Zone.,event,IN_ALTITUDE_ZONE,
+C0013,Aircraft antenna satellite signal searching error.,event,GNSS_ANTENNA_SEARCH_ERROR,
+C0014,Aircraft approaching obstacle sensing blind spot and may be unable to detect obstacles.,event,OBSTACLE_SENSING_BLIND_SPOT,event part kept; 'may be unable to detect' is a possible consequence
+C0015,Aircraft in Attitude mode.,event,AIRCRAFT_ATTITUDE_MODE,expert ID
+C0016,Aircraft is in Attitude mode and hovering may be unstable.,event,AIRCRAFT_ATTITUDE_MODE,expert decision (possible consequence dropped)
+C0017,"Aircraft is in Attitude mode, so that it will not hover.",event,AIRCRAFT_ATTITUDE_MODE,expert decision
+C0018,Your aircraft is at the boundary of an Authorization Zone.,event,AT_BOUNDARY_AUTHORIZATION_ZONE,
+C0019,Aircraft in Authorization Zone.,event,IN_AUTHORIZATION_ZONE,
+C0020,Aircraft in Auto Power Off Protection.,event,AUTO_POWER_OFF_PROTECTION,
+C0021,Aircraft battery level low.,event,LOW_BATTERY,FPV ID
+C0022,aircraft braking distance is extended,event,AIRCRAFT_BRAKING_DISTANCE_EXTENDED,expert ID
+C0023,Aircraft braking distance increased and flight time decreased.,event,AIRCRAFT_BRAKING_DISTANCE_EXTENDED,expert decision
+C0024,Aircraft close to Home Point.,event,CLOSE_TO_HOME_POINT,
+C0025,Aircraft is close to Home Point.,event,CLOSE_TO_HOME_POINT,
+C0026,Aircraft is close to the Home Point.,event,CLOSE_TO_HOME_POINT,
+C0027,Aircraft Core Board Overheated,event,CORE_BOARD_OVERHEATED,core board kept apart from processor (different component) - check
+C0028,Aircraft will decelerate during landing.,event,LANDING_DECELERATION,"landing-protection deceleration, kept apart from C0029"
+C0029,Aircraft will decelerate to ensure safety,event,DECELERATE_FOR_SAFETY,
+C0030,Aircraft entered Fixed-Wing Mode.,event,AIRCRAFT_FIXED_WING_MODE,expert ID
+C0031,Your aircraft has entered a Warning Zone (Class D).,event,IN_WARNING_ZONE,
+C0032,Aircraft Entering Restricted Area,event,IN_RESTRICTED_ZONE,entering = in restricted zone
+C0033,Aircraft is entering a restricted area,event,IN_RESTRICTED_ZONE,
+C0034,Aircraft exceeded distance limit and has exited Hyperlapse mode,compound,DISTANCE_LIMIT_EXCEEDED_HYPERLAPSE_EXITED,two events (limit exceeded + exited Hyperlapse)
+C0035,Aircraft not in flight.,event,AIRCRAFT_NOT_FLIGHT,expert ID
+C0036,Aircraft flight control locked,event,FLIGHT_CONTROL_LOCKED,
+C0037,Aircraft flight control obtained by remote controller A,event,FLIGHT_CONTROL_OBTAINED_BY_RC,which controller (A/B/unknown) is a parameter
+C0038,Aircraft flight control obtained by remote controller B,event,FLIGHT_CONTROL_OBTAINED_BY_RC,
+C0039,Aircraft flight control obtained by remote controller UNKNOWN,event,FLIGHT_CONTROL_OBTAINED_BY_RC,
+C0040,Aircraft flight control unlocked,event,FLIGHT_CONTROL_UNLOCKED,
+C0041,Your aircraft is at the boundary of an Altitude Zone.,event,AIRCRAFT_AT_BOUNDARY_ALTITUDE_ZONE,expert ID
+C0042,Your aircraft is flying in an Altitude Zone (nnn).,event,IN_ALTITUDE_ZONE,
+C0043,Aircraft is flying back to the start point,event,RETURN_TO_START_POINT,
+C0044,Aircraft is returning to the starting point,event,RETURN_TO_START_POINT,
+C0045,The aircraft is flying back to the start point,event,RETURN_TO_START_POINT,
+C0046,Aircraft will be forced to land,event,FORCED_LANDING,forced (cannot be cancelled) kept apart from auto landing - check
+C0047,Aircraft GPS interference.,event,GPS_INTERFERENCE,
+C0048,Aircraft in high interference environment.,event,STRONG_AIRCRAFT_INTERFERENCE,high-interference environment = strong interference to aircraft
+C0049,Aircraft Landing,event,AUTO_LANDING_IN_PROGRESS,FPV ID; aircraft landing (automatic)
+C0050,Aircraft Landing.,event,AUTO_LANDING_IN_PROGRESS,
+C0051,Aircraft is landing,event,AUTO_LANDING_IN_PROGRESS,
+C0052,Aircraft will land,event,AUTO_LANDING_IN_PROGRESS,
+C0053,Aircraft landing automatically,event,AUTO_LANDING_IN_PROGRESS,
+C0054,"Aircraft is landing due to low voltage, which cannot be stopped.",event,FORCED_LANDING,landing that cannot be stopped = forced landing
+C0055,Warning: Aircraft is less than nnn (minimum) away from the object below,event,TOO_CLOSE_TO_OBJECT_BELOW,
+C0056,Aircraft not linked to phone number.,event,PHONE_NUMBER_NOT_LINKED,
+C0057,Aircraft max power load reached.,event,MAX_POWER_LOAD_REACHED,
+C0058,The aircraft is moving.,event,AIRCRAFT_MOVING,
+C0059,Aircraft is now following you.,event,FOLLOW_ME_ACTIVE,
+C0060,Aircraft is too far away,event,AIRCRAFT_TOO_FAR,
+C0061,Aircraft out of Range,event,AIRCRAFT_TOO_FAR,out of range = too far
+C0062,Aircraft performance decreased to ensure flight safety.,event,PERFORMANCE_DECREASED,
+C0063,Aircraft pitch angle too large.,event,AIRCRAFT_NOT_LEVEL,pitch too large before takeoff = not level
+C0064,Aircraft power insufficient.,event,POWER_INSUFFICIENT,
+C0065,Aircraft processor chip overheated.,event,PROCESSOR_OVERHEATED,
+C0066,Aircraft processor overheated.,event,PROCESSOR_OVERHEATED,
+C0067,Aircraft propulsion system error.,event,PROPULSION_SYSTEM_ERROR,
+C0068,Aircraft is in QuickShot Mode.,event,QUICKSHOT_MODE,
+C0069,Aircraft in Restricted Zone.,event,IN_RESTRICTED_ZONE,
+C0070,Aircraft in Restricted Zones.,event,IN_RESTRICTED_ZONE,
+C0071,Aircraft returning to home automatically,event,RTH_ACTIVE,FPV ID
+C0072,Aircraft settings updated to comply with national regulations,event,SETTINGS_UPDATED_FOR_REGULATIONS,
+C0073,Aircraft is in Sport Mode.,event,SPORT_MODE,
+C0074,Aircraft stopped.,event,AIRCRAFT_STOPPED,
+C0075,Aircraft switched to ATTI mode,event,MODE_ATTITUDE,'switched to ATTI' is a mode-change notification - check vs AIRCRAFT_ATTITUDE_MODE
+C0076,Aircraft takeoff altitude error.,event,TAKEOFF_ALTITUDE_ERROR,
+C0077,"Aircraft is tilted, please keep the aircraft stationary and level before flight",event,AIRCRAFT_NOT_LEVEL,event part kept; instruction dropped
+C0078,Aircraft too Far.,event,AIRCRAFT_TOO_FAR,
+C0079,Aircraft is in Tripod Mode.,event,TRIPOD_MODE,
+C0080,Aircraft unable to auto hover and takeoff restricted.,compound,UNABLE_HOVER_TAKEOFF_RESTRICTED,two events (unable to hover + takeoff restricted)
+C0081,Aircraft unable to fly stably.,event,UNABLE_TO_FLY_STABLY,
+C0082,Aircraft unable to hover.,event,UNABLE_TO_HOVER,
+C0083,Aircraft unable to return to home automatically.,event,RTH_UNAVAILABLE,
+C0084,Aircraft unstable at low altitude.,event,UNSTABLE_AT_LOW_ALTITUDE,
+C0085,Aircraft may be in violation of local laws and regulations.,possible,POSS_REGULATION_VIOLATION,'may be in violation'
+C0086,AirSense communication error.,event,AIRSENSE_COMM_ERROR,
+C0087,AI Spot-Check failed.,event,AI_SPOTCHECK_FAILED,
+C0088,Not Allowed to change Aircraft Mode.,event,FLIGHT_MODE_CHANGE_REJECTED,
+C0089,Altitude above the takeoff point exceeds nnn.,event,ALTITUDE_LIMIT_EXCEEDED,
+C0090,Altitude Less than nnn.,event,ALTITUDE_TOO_LOW,
+C0091,Altitude Zone nnn,event,IN_ALTITUDE_ZONE,fragment-like
+C0092,Always fly in compliance with altitude limitations,instruction,INSTR_COMPLY_ALTITUDE_LIMITS,
+C0093,Always maintain visual line of sight unless otherwise authorized,instruction,INSTR_MAINTAIN_VLOS,
+C0094,Ambient light too low.,event,AMBIENT_LIGHT_LOW,FPV ID
+C0095,Backward ambient light too low.,event,AMBIENT_LIGHT_LOW,
+C0096,Downward ambient light too low.,event,AMBIENT_LIGHT_LOW,
+C0097,Ambient Light is too weak,event,AMBIENT_LIGHT_LOW,too weak = too low
+C0098,Ambient Light is too weak.,event,AMBIENT_LIGHT_LOW,
+C0099,Ambient Light too Weak,event,AMBIENT_LIGHT_LOW,
+C0100,"Ambient Light too Weak, Backward obstacle sensing is unavailable.",compound,AMBIENT_LIGHT_LOW_BACKWARD_SENSING_UNAVAILABLE,two events
+C0101,"Ambient Light too Weak, Vision Positioning obstacle sensing is unavailable.",compound,AMBIENT_LIGHT_LOW_VISION_POSITIONING_UNAVAILABLE,two events
+C0102,"Ambient Light too Weak, Forward obstacle sensing is unavailable.",compound,AMBIENT_LIGHT_LOW_FORWARD_SENSING_UNAVAILABLE,two events
+C0103,"Another aircraft is dangerously close, please descend to a safer altitude",event,ANOTHER_AIRCRAFT_NEARBY,event part kept; 'dangerously close' is severity
+C0104,Another aircraft is nearby.,event,ANOTHER_AIRCRAFT_NEARBY,
+C0105,APAS has been enabled,event,APAS_ENABLED,
+C0106,API Automatic Return Home,event,API_RTH,RTH triggered via API (trigger variant)
+C0107,API Automatic Takeoff,event,API_TAKEOFF,
+C0108,Approaching a No-Fly Zone.,event,APPROACHING_NFZ,
+C0109,Approaching NFZ or pre-set distance limit of (nnn).,event,APPROACHING_NFZ_OR_DISTANCE_LIMIT,'NFZ or distance limit' kept apart - check
+C0110,Arrived at destination,event,ARRIVED_AT_END_POINT,destination = end point
+C0111,Arrived at End Point,event,ARRIVED_AT_END_POINT,
+C0112,Arrived at Start Point.,event,ARRIVED_AT_START_POINT,
+C0113,Attitude is too large.,event,ATTITUDE_ANGLE_TOO_LARGE,
+C0114,At Least Two Waypoints Required,instruction,INSTR_TWO_WAYPOINTS_REQUIRED,requirement message
+C0115,At least two Waypoints are needed,instruction,INSTR_TWO_WAYPOINTS_REQUIRED,
+C0116,Automatically returning to home,event,RTH_ACTIVE,
+C0117,Auto calibration in progress,event,AUTO_CALIBRATION_IN_PROGRESS,
+C0118,Auto landing initiated,event,AUTO_LANDING_IN_PROGRESS,initiated = in progress
+C0119,Aircraft will automatically descend in nnn,event,AUTO_LANDING_COUNTDOWN,
+C0120,Auto Landing in nnn(s),event,AUTO_LANDING_COUNTDOWN,
+C0121,Auxiliary Bottom Light turned on,event,AUX_BOTTOM_LIGHT_ON,
+C0122,Auxiliary Bottom Light turned off,event,AUX_BOTTOM_LIGHT_OFF,
+C0123,Away and Follow in progress.,event,AWAY_AND_FOLLOW_ACTIVE,
+C0124,Backward Obstacle Sensing is not functioning,event,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,not functioning = unavailable; directions kept apart - check
+C0125,Backward Obstacle Sensing is not functioning.,event,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0126,Downward Obstacle Sensing is not functioning.,event,DOWNWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0127,Forward Obstacle Sensing is not functioning.,event,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0128,Forward Obstacle Sensing not Responding,event,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,not responding = unavailable
+C0129,Forward Obstacle Sensing not Working.,event,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0130,Backward obstacle sensing is unavailable,event,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0131,Backward sensor(s) blocked.,event,BACKWARD_SENSOR_BLOCKED,
+C0132,Barometer Dead in Air,event,BAROMETER_FAILURE,
+C0133,Barometer initialization failed.,event,BAROMETER_INIT_FAILED,
+C0134,Battery Alert Battery installation error.,event,BATTERY_INSTALLATION_ERROR,
+C0135,Battery cells undervoltage,event,BATTERY_CELL_UNDERVOLTAGE,
+C0136,"Battery cell broken, please replace the battery",event,BATTERY_CELL_BROKEN,instruction part dropped
+C0137,Battery communication malfunction.,event,BATTERY_COMM_ERROR,
+C0138,Battery: Connection Error,event,BATTERY_COMM_ERROR,connection error = communication error - check
+C0139,Battery error.,event,BATTERY_ERROR,
+C0140,Battery: Battery Error.,event,BATTERY_ERROR,
+C0141,Battery installed incorrectly.,event,BATTERY_INSTALLATION_ERROR,
+C0142,Battery not installed properly.,event,BATTERY_INSTALLATION_ERROR,
+C0143,Battery: Low Voltage Protection,event,BATTERY_LOW_VOLTAGE_PROTECTION,
+C0144,Battery nnn requires maintenance,event,BATTERY_MAINTENANCE_REQUIRED,
+C0145,Battery: Overcurrent During Discharge,event,BATTERY_OVERCURRENT,
+C0146,Battery overheating.,event,BATTERY_OVERHEATING,
+C0147,Battery power limit will automatically reduce the aircraft's mobility to ensure flight safety,event,PERFORMANCE_DECREASED,event = mobility reduced by battery power limit
+C0148,Battery power restricted.,event,BATTERY_POWER_RESTRICTED,
+C0149,Battery Signal Error.,event,BATTERY_COMM_ERROR,signal error = communication error - check
+C0150,Warning: Battery Temperature Below 15°C (59F).,event,BATTERY_TEMPERATURE_LOW,threshold value is a parameter
+C0151,Battery temperature is below 15 degrees Celsius.,event,BATTERY_TEMPERATURE_LOW,
+C0152,Battery temperature too low.,event,BATTERY_TEMPERATURE_LOW,
+C0153,Battery Voltage Difference too large.,event,BATTERY_CELL_VOLTAGE_DIFFERENCE,
+C0154,Braking now.,event,BRAKING,FPV ID
+C0155,Braking now! Return sticks to midpoints first.,event,BRAKING,instruction part dropped
+C0156,Braking now! No use to move the stick right.,event,BRAKING,
+C0157,Cache Space Full,event,CACHE_FULL,
+C0158,Calibration subject is too close.,event,CALIBRATION_TARGET_TOO_CLOSE,
+C0159,Calibration target not far away enough.,event,CALIBRATION_TARGET_TOO_CLOSE,
+C0160,"Camera busy, cannot enter playback",compound,CAMERA_BUSY_PLAYBACK_UNAVAILABLE,two events
+C0161,Camera not calibrated.,event,CAMERA_NOT_CALIBRATED,
+C0162,Camera Error.,event,CAMERA_ERROR,
+C0163,Camera error.,event,CAMERA_ERROR,
+C0164,Camera sensor error.,event,CAMERA_SENSOR_ERROR,
+C0165,Camera RCAM not connected.,event,CAMERA_NOT_CONNECTED,
+C0166,Camera Settings ActiveTrack Optimized,event,CAMERA_SETTINGS_ADJUSTED,
+C0167,Camera Settings Adjusted,event,CAMERA_SETTINGS_ADJUSTED,
+C0168,Camera storage full,event,STORAGE_FULL,
+C0169,Cancel Landing Failed,event,CANCEL_LANDING_FAILED,
+C0170,Failed to cancel landing,event,CANCEL_LANDING_FAILED,
+C0171,Cancel Return-to-Home Failed,event,CANCEL_RTH_FAILED,
+C0172,Failed to cancel Return to Home,event,CANCEL_RTH_FAILED,
+C0173,Cannot enable Intelligent Flight Mode,event,INTELLIGENT_FLIGHT_MODE_UNAVAILABLE,
+C0174,Cannot enter ActiveTrack.,event,ACTIVETRACK_UNAVAILABLE,
+C0175,Cannot enable Follow Me Mode,event,FOLLOW_ME_UNAVAILABLE,
+C0176,Cannot enter Follow Me Mode,event,FOLLOW_ME_UNAVAILABLE,
+C0177,Cannot enter Pano mode,event,PANORAMA_UNAVAILABLE,
+C0178,Cannot Enter TapFly,event,TAPFLY_UNAVAILABLE,
+C0179,Cannot enter TapFly Mode,event,TAPFLY_UNAVAILABLE,
+C0180,Cannot exit ActiveTrack,event,ACTIVETRACK_EXIT_FAILED,
+C0181,Cannot find subject,event,SUBJECT_NOT_FOUND,
+C0182,Cannot fly in that direction,event,DIRECTION_BLOCKED,
+C0183,Cannot Identify Subject,event,SUBJECT_NOT_FOUND,cannot identify = cannot find
+C0184,Cannot send ActiveTrack command,event,ACTIVETRACK_COMMAND_FAILED,
+C0185,Cannot shoot panorama,event,PANORAMA_UNAVAILABLE,
+C0186,cannot start recording QuickShot,event,QUICKSHOT_RECORDING_FAILED,
+C0187,Cannot start Return to Home due to weak GPS signal,compound,RTH_UNAVAILABLE_WEAK_GPS,two events (cannot start RTH + weak GPS)
+C0188,Cannot start Self-Timer.,event,SELF_TIMER_UNAVAILABLE,
+C0189,Cannot change current flight mode.,event,FLIGHT_MODE_CHANGE_REJECTED,
+C0190,Cannot enter the selected flight mode.,event,FLIGHT_MODE_CHANGE_REJECTED,
+C0191,Cannot switch flight mode.,event,FLIGHT_MODE_CHANGE_REJECTED,
+C0192,Cannot takeoff.,event,TAKEOFF_UNAVAILABLE,
+C0193,Cannot takeoff in a no-fly zone,compound,TAKEOFF_UNAVAILABLE_IN_NFZ,two events
+C0194,Cannot Takeoff in Travel Mode.,compound,TAKEOFF_UNAVAILABLE_TRAVEL_MODE,two events
+C0195,Cannot Track Subject.,event,TRACKING_FAILED,
+C0196,Cannot track subject,event,TRACKING_FAILED,
+C0197,Capture Failed.,event,CAPTURE_FAILED,
+C0198,Be careful when flying long distances.,instruction,INSTR_FLY_CAUTION,FPV ID
+C0199,Color display in Liveview is enhanced.,event,LIVEVIEW_COLOR_ENHANCED,
+C0200,Color display in the Liveview has been enhanced.,event,LIVEVIEW_COLOR_ENHANCED,
+C0201,Command Failed,event,COMMAND_FAILED,
+C0202,Warning: Command Failed,event,COMMAND_FAILED,
+C0203,Command Timeout,event,COMMAND_TIMEOUT,
+C0204,Warning: Command Timeout,event,COMMAND_TIMEOUT,
+C0205,Compass abnormal.,event,COMPASS_ERROR,FPV ID; abnormal = error
+C0206,Compass direction is not the same with IMU,event,COMPASS_IMU_MISMATCH,
+C0207,Compass disconnected,event,COMPASS_DISCONNECTED,
+C0208,Compass Error,event,COMPASS_ERROR,
+C0209,Compass Error.,event,COMPASS_ERROR,
+C0210,Compass data error.,event,COMPASS_DATA_ERROR,kept apart from generic compass error - check
+C0211,"Compass error, calibration required",event,COMPASS_ERROR,instruction part dropped
+C0212,Compass error.,event,COMPASS_ERROR,
+C0213,Compass initialization failed.,event,COMPASS_INIT_FAILED,
+C0214,Compass Interference.,event,COMPASS_INTERFERENCE,
+C0215,Compass interference.,event,COMPASS_INTERFERENCE,
+C0216,Compass Redundancy Switch,event,COMPASS_REDUNDANCY_SWITCH,
+C0217,Compass Stuck.,event,COMPASS_STUCK,
+C0218,Control Signal Timeout (RC),event,RC_SIGNAL_LOST,FPV ID; control signal timeout = RC signal lost - check
+C0219,Cool down the monitor to prevent overheating,mitigation,INSTR_COOL_DOWN_MONITOR,
+C0220,Warning: Critically low battery.,event,CRITICAL_LOW_BATTERY,kept apart from LOW_BATTERY: distinct threshold that triggers landing - check
+C0221,Critically Low Power.,event,CRITICAL_LOW_BATTERY,power = battery
+C0222,Critically low power.,event,CRITICAL_LOW_BATTERY,
+C0223,Critically Low Voltage Warning.,event,CRITICAL_LOW_BATTERY,voltage wording - check
+C0224,Critically Low Voltage.,event,CRITICAL_LOW_BATTERY,
+C0225,Critical Low Battery,event,CRITICAL_LOW_BATTERY,
+C0226,Critical low battery.,event,CRITICAL_LOW_BATTERY,
+C0227,Critical low battery voltage,event,CRITICAL_LOW_BATTERY,
+C0228,CrystalSky is too hot.,event,MONITOR_OVERHEATED,
+C0229,Current elevation above nnn.,event,ALTITUDE_LIMIT_EXCEEDED,elevation above limit
+C0230,Current flight speed is nnn.,info,INFO_CURRENT_SPEED,
+C0231,Current RTH route will pass a No-Fly zone.,event,RTH_ROUTE_THROUGH_NFZ,
+C0232,Decrease altitude and fly with caution.,mitigation,INSTR_DECREASE_ALTITUDE,
+C0233,Descending.,event,DESCENDING,
+C0234,Descend as soon as possible,mitigation,INSTR_DESCEND,
+C0235,Detecting subject,event,SEARCHING_SUBJECT,detecting = searching
+C0236,Distance limit enabled.,event,DISTANCE_LIMIT_ENABLED,
+C0237,Distance limit exceeded.,event,DISTANCE_LIMIT_EXCEEDED,
+C0238,Downlink Lost.,event,DOWNLINK_LOST,FPV ID
+C0239,Downlink data connection lost for nnn seconds,event,DOWNLINK_LOST,duration is a parameter
+C0240,Downlink Restored (after 0m 0.9s).,event,DOWNLINK_RESTORED,FPV ID
+C0241,Downlink Restored (after 0m 1.1s).,event,DOWNLINK_RESTORED,
+C0242,Downlink Restored (after 0m 1.2s).,event,DOWNLINK_RESTORED,
+C0243,Downlink Restored (after 0m 1.4s).,event,DOWNLINK_RESTORED,
+C0244,Downlink Restored (after 0m 1.5s).,event,DOWNLINK_RESTORED,
+C0245,Downlink Restored (after 0m 1.6s).,event,DOWNLINK_RESTORED,
+C0246,Downlink Restored (after 0m 1.7s).,event,DOWNLINK_RESTORED,
+C0247,Downlink Restored (after 0m 11.3s).,event,DOWNLINK_RESTORED,
+C0248,Downlink Restored (after 0m 11s).,event,DOWNLINK_RESTORED,
+C0249,Downlink Restored (after 0m 1s).,event,DOWNLINK_RESTORED,
+C0250,Downlink Restored (after 0m 2.2s).,event,DOWNLINK_RESTORED,
+C0251,Downlink Restored (after 0m 2.3s).,event,DOWNLINK_RESTORED,
+C0252,Downlink Restored (after 0m 2.9s).,event,DOWNLINK_RESTORED,
+C0253,Downlink Restored (after 0m 5.6s).,event,DOWNLINK_RESTORED,
+C0254,Downlink Restored (after 0m 5.8s).,event,DOWNLINK_RESTORED,
+C0255,Downward altitude sensor data error.,event,DOWNWARD_ALTITUDE_SENSOR_ERROR,
+C0256,Downward infrared sensor failure.,event,DOWNWARD_INFRARED_SENSOR_FAILURE,
+C0257,Downward sensor error.,event,DOWNWARD_SENSOR_ERROR,
+C0258,Downward vision sensor calibration error.,event,DOWNWARD_VISION_CALIBRATION_ERROR,
+C0259,Downward vision sensor error.,event,DOWNWARD_VISION_SENSOR_ERROR,
+C0260,Drag a box around or tap a target on screen.,instruction,INSTR_SELECT_TARGET,
+C0261,Drone is Vibrating,event,AIRCRAFT_VIBRATING,
+C0262,"During Smart Track, you can control lens zoom within a certain limit",info,INFO_SMART_TRACK_ZOOM,
+C0263,EMMC is full,event,INTERNAL_STORAGE_FULL,eMMC kept apart from camera storage - check
+C0264,Not Enough Force/ESC Error,event,ESC_ERROR_INSUFFICIENT_FORCE,
+C0265,Entered Cruise Control mode.,event,CRUISE_CONTROL_ENTERED,
+C0266,Error: Course angle control error.,event,COURSE_ANGLE_CONTROL_ERROR,
+C0267,Warning,info,INFO_WARNING_FRAGMENT,bare 'Warning' fragment
+C0268,Excessive attitude angle detected,event,ATTITUDE_ANGLE_TOO_LARGE,
+C0269,Excessive gimbal vibration.,event,GIMBAL_VIBRATION_EXCESSIVE,
+C0270,Exited Cruise Control mode,event,CRUISE_CONTROL_EXITED,
+C0271,Exited Hyperlapse mode,event,HYPERLAPSE_EXITED,
+C0272,Exited Visual Avoidance System,event,VISUAL_AVOIDANCE_EXITED,
+C0273,Exited Visual Avoidance System.,event,VISUAL_AVOIDANCE_EXITED,
+C0274,Exiting GPS mode: Unknown Error,compound,GPS_MODE_EXIT_ERROR,exiting GPS mode + unknown error
+C0275,Exposure time is too long,event,EXPOSURE_TOO_LONG,
+C0276,Extended flight distance detected.,event,EXTENDED_FLIGHT_DISTANCE,
+C0277,Extra payload detected.,event,PAYLOAD_DETECTED,
+C0278,Failed to lower or pack up landing gear.,event,LANDING_GEAR_FAILED,lower or pack up = one landing-gear failure
+C0279,Failed to take off.,event,TAKEOFF_UNAVAILABLE,failed to take off = cannot take off
+C0280,File system error.,event,FILE_SYSTEM_ERROR,
+C0281,In Flight.,event,IN_FLIGHT,opposite of AIRCRAFT_NOT_FLIGHT
+C0282,Flight altitude exceeds nnn.,event,ALTITUDE_LIMIT_EXCEEDED,
+C0283,Flight altitude and distance restricted to nnn and nnn.,event,MAX_ALT_AND_DISTANCE_SET,restricted to = limits set
+C0284,Flight altitude restricted to nnn,event,MAX_ALT_SET,restricted to = max altitude set
+C0285,The flight attitude angle is larger in Sport mode.,info,INFO_SPORT_MODE_ATTITUDE,static information
+C0286,Flight control mode error,event,FLIGHT_CONTROL_MODE_ERROR,
+C0287,Flight distance may exceed line-of-sight.,possible,POSS_BEYOND_LINE_OF_SIGHT,'may exceed'
+C0288,Flight height too low,event,ALTITUDE_TOO_LOW,
+C0289,Flight performance will be affected.,possible,POSS_PERFORMANCE_AFFECTED,predicted consequence
+C0290,Flight range restricted.,event,FLIGHT_RANGE_RESTRICTED,
+C0291,flight time is shortened.,possible,POSS_FLIGHT_TIME_SHORTENED,"consequence of high altitude, not an event (cf. expert decision on C0023)"
+C0292,Flying without broadcasting required remote ID messages may violate local regulations,possible,POSS_REGULATION_VIOLATION,
+C0293,Forced landing.,event,FORCED_LANDING,
+C0294,Forced landing in progress,event,FORCED_LANDING,
+C0295,forward obstacle avoidance has stopped working,event,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,avoidance stopped working = sensing unavailable
+C0296,Forward Obstacle Sensing will be automatically switched off,event,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,announced switch-off
+C0297,Forward obstacle sensing is unavailable,event,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0298,Forward vision sensor calibration error.,event,FORWARD_VISION_CALIBRATION_ERROR,
+C0299,Forward vision sensor error.,event,FORWARD_VISION_SENSOR_ERROR,
+C0300,Geo-awareness function degraded,event,GEO_AWARENESS_DEGRADED,
+C0301,GEO: You are in a Warning Zone (Airport Class Airspace Unpaved Airports Power Plant).,event,IN_WARNING_ZONE,zone list is a parameter
+C0302,GEO Zone Info: The target area is in an Altitude Zone.,event,TARGET_IN_ALTITUDE_ZONE,"about the target area, not the aircraft"
+C0303,Get Closer and retry,instruction,INSTR_GET_CLOSER_RETRY,
+C0304,Gimbal calibrating,event,GIMBAL_CALIBRATING,
+C0305,Gimbal calibration error.,event,GIMBAL_CALIBRATION_ERROR,
+C0306,Gimbal IMU data error.,event,GIMBAL_IMU_DATA_ERROR,
+C0307,Gimbal motor overloaded.,event,GIMBAL_MOTOR_OVERLOADED,
+C0308,The gimbal is moving.,event,GIMBAL_MOVING,
+C0309,Gimbal nnn pan axis endpoint reached,event,GIMBAL_YAW_LIMIT,pan axis = yaw axis
+C0310,Gimbal nnn pitch axis endpoint reached,event,GIMBAL_PITCH_LIMIT,FPV ID
+C0311,Gimbal nnn roll axis endpoint reached,event,GIMBAL_ROLL_LIMIT,
+C0312,Gimbal Pitch Limit Reached.,event,GIMBAL_PITCH_LIMIT,
+C0313,Gimbal Pitch Reached Movement Limit,event,GIMBAL_PITCH_LIMIT,
+C0314,Gimbal Recenter,event,GIMBAL_RECENTER,
+C0315,Recenter Gimbal Pan,event,GIMBAL_RECENTER,pan recenter merged - check
+C0316,Gimbal Roll Limit Reached.,event,GIMBAL_ROLL_LIMIT,
+C0317,The gimbal will rotate when the aircraft starts or stops.,info,INFO_GIMBAL_ROTATES_SPORT_MODE,
+C0318,Gimbal stuck.,event,GIMBAL_STUCK,FPV ID
+C0319,Gimbal Tilt too Large,event,GIMBAL_TILT_TOO_LARGE,
+C0320,Gimbal Yaw Limit Reached,event,GIMBAL_YAW_LIMIT,
+C0321,No GPS.,event,NO_GPS_SIGNAL,
+C0322,GPS module error.,event,GPS_MODULE_ERROR,
+C0323,GPS Position Mismatch.,event,GPS_POSITION_MISMATCH,
+C0324,No GPS signal.,event,NO_GPS_SIGNAL,
+C0325,Aircraft GPS signal too weak.,event,GPS_SIGNAL_WEAK,
+C0326,GPS signal low.,event,GPS_SIGNAL_WEAK,
+C0327,GPS signal weak.,event,GPS_SIGNAL_WEAK,
+C0328,Weak GPS signal.,event,GPS_SIGNAL_WEAK,
+C0329,Ground Plain.,event,LANDING_SURFACE_SAFE,'ground plain' = flat landing surface
+C0330,The ground or walls may contain metal.,possible,POSS_METAL_NEARBY,
+C0331,Gyroscope initialization failed.,event,GYROSCOPE_INIT_FAILED,
+C0332,Hardware malfunction,event,HARDWARE_MALFUNCTION,
+C0333,High altitude.,event,HIGH_ALTITUDE_FLIGHT,
+C0334,High-altitude flight,event,HIGH_ALTITUDE_FLIGHT,
+C0335,High wind velocity.,event,HIGH_WIND,
+C0336,Large Wind Velocity.,event,HIGH_WIND,
+C0337,High Wind Velocity: Fly with caution and ensure the aircraft remains within your line of sight,event,HIGH_WIND,instruction part dropped
+C0338,Home Point Recorded,event,HOME_POINT_RECORDED,kept apart from HOME_POINT_UPDATED (first fix vs change) - check
+C0339,Home Point Recorded.,event,HOME_POINT_RECORDED,
+C0340,Home Point recorded.,event,HOME_POINT_RECORDED,
+C0341,Return-to-Home Altitude : 65FT,event,RTH_ALT_SET,"FPV ID; current RTH altitude notification, value is a parameter - check"
+C0342,Return-to-Home Altitude : 98FT,event,RTH_ALT_SET,
+C0343,Return-to-Home Altitude : 98FT.,event,RTH_ALT_SET,
+C0344,Home Point Updated.,event,HOME_POINT_UPDATED,FPV ID
+C0345,Home Point updated.,event,HOME_POINT_UPDATED,
+C0346,Home Point not updated,event,HOME_POINT_NOT_UPDATED,
+C0347,Hovering unstable.,event,HOVERING_UNSTABLE,unstable hover kept apart from unable to hover
+C0348,No image,event,TRACKING_NO_IMAGE,no image for the tracker; kept apart from NO_IMGTX - check
+C0349,Image quality affected.,possible,POSS_IMAGE_QUALITY_AFFECTED,consequence
+C0350,Image Transmission Recovered.,event,IMGTX_RESTORED,
+C0351,Image transmission signal lost,event,IMGTX_LOST,FPV ID
+C0352,Impact detected.,event,IMPACT_DETECTED,
+C0353,IMU attitude restricted.,event,IMU_ATTITUDE_RESTRICTED,
+C0354,IMU not calibrated.,event,IMU_CALIBRATION_REQUIRED,not calibrated = calibration required
+C0355,IMU calibration required.,event,IMU_CALIBRATION_REQUIRED,
+C0356,IMU warming up.,event,IMU_WARMING_UP,
+C0357,Incompatible firmware version.,event,FIRMWARE_INCOMPATIBLE,
+C0358,Incorrect installation will cause the aircraft to roll over during takeoff,possible,POSS_ROLLOVER_ON_TAKEOFF,
+C0359,Insufficient SD card space.,event,STORAGE_FULL,
+C0360,Insufficient storage space.,event,STORAGE_FULL,
+C0361,Intelligent Flight Modes have not been enabled.,event,INTELLIGENT_FLIGHT_MODES_DISABLED,setting off; kept apart from 'cannot enable'
+C0362,Landing.,event,AUTO_LANDING_IN_PROGRESS,
+C0363,Landing Canceled.,event,LANDING_CANCELED,
+C0364,Landing gear function restored,event,LANDING_GEAR_RESTORED,
+C0365,Landing Gear Lowered.,event,LANDING_GEAR_LOWERED,
+C0366,Landing Gear Lowering.,event,LANDING_GEAR_LOWERED,lowering = lowered (same action)
+C0367,Landing gear lowered.,event,LANDING_GEAR_LOWERED,
+C0368,Landing Gear Paused.,event,LANDING_GEAR_PAUSED,
+C0369,Landing Gear Raised.,event,LANDING_GEAR_RAISED,
+C0370,Landing Gear Raising.,event,LANDING_GEAR_RAISED,
+C0371,Landing Protection Activated.,event,LANDING_PROTECTION_ACTIVATED,
+C0372,Left and right Obstacle Sensing systems are available,event,LATERAL_OBSTACLE_SENSING_AVAILABLE,
+C0373,Lens not connected,event,LENS_NOT_CONNECTED,
+C0374,Lighting environment too dark.,event,AMBIENT_LIGHT_LOW,too dark = ambient light low
+C0375,Live stream video frame rate less than 9Hz.,event,LIVESTREAM_FRAMERATE_LOW,
+C0376,Loading database failed.,event,DATABASE_LOAD_FAILED,
+C0377,Battery level low.,event,LOW_BATTERY,
+C0378,Battery power low.,event,LOW_BATTERY,
+C0379,Low Battery,event,LOW_BATTERY,
+C0380,Low battery.,event,LOW_BATTERY,
+C0381,Low battery voltage.,event,LOW_BATTERY,voltage wording - check
+C0382,Low Power.,event,LOW_BATTERY,
+C0383,Low power,event,LOW_BATTERY,instruction part dropped
+C0384,Magnetic Filed Interference.,event,COMPASS_INTERFERENCE,magnetic field interference = compass interference - check
+C0385,Another aircraft is approaching.,event,ANOTHER_AIRCRAFT_NEARBY,
+C0386,Manned aircraft approaching.,event,MANNED_AIRCRAFT_NEARBY,
+C0387,Manned aircraft detected nearby.,event,MANNED_AIRCRAFT_NEARBY,
+C0388,Manned aircraft too close.,event,MANNED_AIRCRAFT_NEARBY,severity ignored
+C0389,Max altitude and distance set.,event,MAX_ALT_AND_DISTANCE_SET,
+C0390,Max Altitude Approached.,event,MAX_ALTITUDE_APPROACHING,approaching kept apart from reached
+C0391,Max Flight Altitude Reached.,event,MAX_ALTITUDE_REACHED,
+C0392,Max altitude reached (Altitude limit: nnn),event,MAX_ALTITUDE_REACHED,
+C0393,Maximum Flight Altitude Reached.,event,MAX_ALTITUDE_REACHED,
+C0394,Reaching maximum altitude...,event,MAX_ALTITUDE_APPROACHING,
+C0395,Warning: Max Flight Altitude Reached.,event,MAX_ALTITUDE_REACHED,
+C0396,Max Flight Distance Reached.,event,MAX_DISTANCE_REACHED,
+C0397,Maximum Flight Distance Reached.,event,MAX_DISTANCE_REACHED,
+C0398,Maximum flight distance reached.,event,MAX_DISTANCE_REACHED,
+C0399,Metering disabled,event,METERING_DISABLED,
+C0400,Minimum RTH Altitude is 30m.,info,INFO_MIN_RTH_ALTITUDE,
+C0401,Minimum RTH Altitude is 98ft.,info,INFO_MIN_RTH_ALTITUDE,
+C0402,Min Waypoint Distance: nnn,info,INFO_MIN_WAYPOINT_DISTANCE,
+C0403,Mobile device CPU fully loaded.,event,MOBILE_CPU_OVERLOADED,
+C0404,Mobile device version too old to support HD image transmission and the image transmission mode has been switch to normal mode.,compound,MOBILE_OUTDATED_IMGTX_MODE_SWITCHED,two events (device too old + transmission mode switched)
+C0405,Motors Started.,event,MOTORS_STARTING,FPV ID; started = starting
+C0406,Motor is Blocked,event,MOTOR_BLOCKED,
+C0407,Motor is Blocked.,event,MOTOR_BLOCKED,
+C0408,Motor error.,event,MOTOR_ERROR,
+C0409,Motor idle.,event,MOTOR_IDLE,
+C0410,Motor is idling (lost or missing propeller),event,MOTOR_IDLE,cause in brackets
+C0411,Motor nnn propeller detached or installed incorrectly,event,PROPELLER_DETACHED,
+C0412,Motor nnn stalled.,event,MOTOR_STALLED,kept apart from blocked - check
+C0413,Motor Obstructed.,event,MOTOR_BLOCKED,obstructed = blocked
+C0414,Warning: Motor Obstructed,event,MOTOR_BLOCKED,
+C0415,Warning: Motor Overloaded.,event,MOTOR_OVERLOADED,
+C0416,Motor or propeller error.,event,MOTOR_ERROR,motor-or-propeller error - check
+C0417,Motor speed error.,event,MOTOR_SPEED_ERROR,
+C0418,Motor stuck.,event,MOTOR_BLOCKED,stuck = blocked
+C0419,Motor unable to rotate.,event,MOTOR_BLOCKED,unable to rotate = blocked
+C0420,Navigation system error.,event,NAVIGATION_SYSTEM_ERROR,
+C0421,Backward obstacle avoidance unavailable.,event,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,avoidance = sensing function
+C0422,Obstacle avoidance unavailable.,event,OA_UNAVAILABLE,FPV ID
+C0423,Object too close to laser rangefinder,event,LASER_RANGEFINDER_TOO_CLOSE,
+C0424,Object too far for laser rangefinder,event,LASER_RANGEFINDER_TOO_FAR,
+C0425,Obstacle Avoidance is not available,event,OA_UNAVAILABLE,
+C0426,Obstacle Avoidance Disabled.,event,OA_UNAVAILABLE,disabled = unavailable (same underlying event)
+C0427,Obstacle Avoidance disabled.,event,OA_UNAVAILABLE,
+C0428,Obstacle Avoidance has been disabled.,event,OA_UNAVAILABLE,
+C0429,Obstacle Avoidance will be disabled in landing.,info,INFO_OA_DISABLED_WHEN_LANDING,"announced behaviour, not an occurrence"
+C0430,Obstacle Avoided.,event,OBSTACLE_AVOIDED,
+C0431,Obstacle sensing not available at night.,event,OA_UNAVAILABLE_AT_NIGHT,
+C0432,Obstacle Sensing will be disabled when aircraft is landing.,info,INFO_OA_DISABLED_WHEN_LANDING,
+C0433,Only infrared sensors available.,event,ONLY_INFRARED_SENSORS_AVAILABLE,
+C0434,PalmControl in Process,event,PALM_CONTROL_ACTIVE,
+C0435,Your palm is too close to the aircraft.,event,PALM_TOO_CLOSE,
+C0436,Your palm is too far away from the aircraft.,event,PALM_TOO_FAR,
+C0437,Panorama Captured Successfully,event,PANORAMA_COMPLETED,
+C0438,Panorama has stopped,event,PANORAMA_STOPPED,
+C0439,Pano shooting completed.,event,PANORAMA_COMPLETED,
+C0440,Pano successful,event,PANORAMA_COMPLETED,
+C0441,A passenger aircraft is approaching.,event,MANNED_AIRCRAFT_NEARBY,passenger aircraft = manned aircraft
+C0442,A passenger aircraft is nearby.,event,MANNED_AIRCRAFT_NEARBY,
+C0443,Payload mode enabled.,event,PAYLOAD_MODE_ENABLED,
+C0444,Pay attention to the aircraft's position to avoid RTH failure.,mitigation,INSTR_WATCH_POSITION_AVOID_RTH_FAILURE,
+C0445,Positioning accuracy affected.,event,POSITIONING_ACCURACY_AFFECTED,stated as fact
+C0446,Positioning accuracy may be compromised.,possible,POSS_POSITIONING_ACCURACY_AFFECTED,'may be compromised'
+C0447,Correcting Landing Position,event,PRECISION_LANDING_CORRECTING,
+C0448,Correcting Landing Position.,event,PRECISION_LANDING_CORRECTING,
+C0449,Locating Landing Point,event,PRECISION_LANDING_LOCATING,
+C0450,Precision Landing,event,PRECISION_LANDING,
+C0451,Precision Landing.,event,PRECISION_LANDING,
+C0452,Propellers not installed,event,PROPELLERS_NOT_INSTALLED,
+C0453,Propeller Fell Off,event,PROPELLER_DETACHED,fell off = detached
+C0454,Propeller Fell Off.,event,PROPELLER_DETACHED,
+C0455,Propeller guard or extra payload detected.,event,PROPELLER_GUARD_OR_PAYLOAD_DETECTED,
+C0456,Propeller Guard Mounted Propeller Guard mounted.,event,PROPELLER_GUARD_MOUNTED,
+C0457,Propeller rotating too fast.,event,MOTOR_SPEED_ERROR,propeller over-speed - check
+C0458,Propulsion output has been limited to ensure battery health.,event,PROPULSION_LIMITED,
+C0459,Propulsion output is limited to ensure the health of the battery,event,PROPULSION_LIMITED,
+C0460,QuickShots stopped,event,QUICKSHOT_ENDED,
+C0461,QuickShot has ended,event,QUICKSHOT_ENDED,
+C0462,Recharge promptly,mitigation,INSTR_CHARGE_BATTERY,
+C0463,Rectifying aircraft position,event,PRECISION_LANDING_CORRECTING,rectifying = correcting
+C0464,Rectifying aircraft position.,event,PRECISION_LANDING_CORRECTING,
+C0465,Reinstall battery.,mitigation,INSTR_REINSTALL_BATTERY,
+C0466,Related performance will be affected.,possible,POSS_PERFORMANCE_AFFECTED,
+C0467,The remaining battery is only enough for RTH.,event,BATTERY_ONLY_FOR_RTH,FPV ID
+C0468,WarningThe remaining battery is only enough for RTH.,event,BATTERY_ONLY_FOR_RTH,
+C0469,Remote controller assisted takeoff initiated.,event,RC_ASSISTED_TAKEOFF,
+C0470,Remote controller battery level low.,event,RC_BATTERY_LOW,
+C0471,Remote controller disconnected from aircraft,event,RC_DISCONNECTED,FPV ID
+C0472,Remote controller in high interference environment.,event,RC_INTERFERENCE,
+C0473,Remote Controller Right Dial Locked.,event,RC_DIAL_LOCKED,
+C0474,Remote controller signal lost,event,RC_SIGNAL_LOST,FPV ID
+C0475,Remote controller signal weak.,event,RC_SIGNAL_WEAK,FPV ID
+C0476,Remote ID error.,event,REMOTE_ID_ERROR,
+C0477,Remote ID functionality normal,event,REMOTE_ID_NORMAL,
+C0478,Reselect subject,instruction,INSTR_SELECT_TARGET,reselect = select target
+C0479,Returning home.,event,RTH_ACTIVE,
+C0480,Returning to the Home Point,event,RTH_ACTIVE,
+C0481,Initiating Return to Home will now trigger Auto Landing.,event,RTH_SWITCHED_TO_AUTO_LANDING,
+C0482,Return-to-Home Mode is now Auto Landing Mode.,event,RTH_SWITCHED_TO_AUTO_LANDING,
+C0483,Revise Flight Route,mitigation,INSTR_ADJUST_ROUTE_OR_RTH,revise route
+C0484,Right Dial Locked.,event,RC_DIAL_LOCKED,
+C0485,Aircraft is returning home,event,RTH_ACTIVE,
+C0486,Aircraft is returning home.,event,RTH_ACTIVE,
+C0487,Aircraft is returning to the Home Point.,event,RTH_ACTIVE,
+C0488,Aircraft returning to Home Point,event,RTH_ACTIVE,
+C0489,Aircraft returning to home,event,RTH_ACTIVE,
+C0490,RTH may be affected.,possible,POSS_RTH_AFFECTED,
+C0491,RTH Altitude : 30m.,event,RTH_ALT_SET,
+C0492,RTH Altitude : 65FT.,event,RTH_ALT_SET,
+C0493,RTH Altitude : 98FT.,event,RTH_ALT_SET,
+C0494,RTH Altitude is 30m.,event,RTH_ALT_SET,
+C0495,RTH Altitude is nnn.,event,RTH_ALT_SET,
+C0496,RTH : Ascending to RTH altitude.,event,RTH_ASCENDING,FPV ID
+C0497,RTH : Cruise.,event,RTH_CRUISE,
+C0498,RTH : Heading alignment.,event,RTH_HEADING_ALIGNMENT,
+C0499,RTH : Preascending.,event,RTH_PREASCENDING,
+C0500,RTK Base Station Data Not Received,event,RTK_BASE_NO_DATA,
+C0501,RTK Base Station Data Not Received.,event,RTK_BASE_NO_DATA,
+C0502,RTK signal weak.,event,RTK_SIGNAL_WEAK,
+C0503,Running Flight Simulator.,event,SIMULATOR_RUNNING,
+C0504,Safe to Land.,event,LANDING_SURFACE_SAFE,
+C0505,Satellite positioning off.,event,SATELLITE_POSITIONING_OFF,
+C0506,No SD card.,event,NO_SD_CARD,
+C0507,SD card full.,event,STORAGE_FULL,
+C0508,SD card malfunction.,event,SD_CARD_ERROR,
+C0509,SD card speed low.,event,SD_CARD_SLOW,
+C0510,SD card write speed is too slow.,event,SD_CARD_SLOW,
+C0511,Searching …,event,SEARCHING_SUBJECT,
+C0512,Sensing system is blocked or too close to the obstacle.,event,SENSOR_BLOCKED_OR_TOO_CLOSE,
+C0513,Shooting is currently not permitted,event,SHOOTING_NOT_PERMITTED,
+C0514,Shooting interrupted,event,SHOOTING_INTERRUPTED,
+C0515,Signal interruption may be more likely.,possible,POSS_SIGNAL_INTERRUPTION,
+C0516,Signal interruption maybe more likely.,possible,POSS_SIGNAL_INTERRUPTION,
+C0517,Signal Lost.,event,RC_SIGNAL_LOST,unspecified 'signal lost' followed by failsafe RTH - check
+C0518,The sky part is filled automatically,event,PANO_SKY_FILLED,
+C0519,Solution: 1. Ensure there are no magnets or metal objects near the aircraft.,mitigation,INSTR_REMOVE_MAGNETIC_OBJECTS,
+C0520,Solution: Move away from ground magnetic interference,mitigation,INSTR_MOVE_AWAY_FROM_INTERFERENCE,
+C0521,"Solution: Restart the aircraft, if the problem persists, contact DJI Support",mitigation,INSTR_CONTACT_SUPPORT,restart-or-contact
+C0522,Sprayer turned ON,event,SPRAYER_ON,
+C0523,"Sprayer turned OFF, sprayed nnn at nnn liters/min",event,SPRAYER_OFF,sprayed amount is a parameter
+C0524,Starting Smart Track,event,SMART_TRACK_STARTED,
+C0525,Stick movement detected.,event,STICK_MOVEMENT_DETECTED,
+C0526,Strong Aircraft Interference,event,STRONG_AIRCRAFT_INTERFERENCE,
+C0527,Strong Interference to Aircraft.,event,STRONG_AIRCRAFT_INTERFERENCE,
+C0528,Strong Interference.,event,STRONG_INTERFERENCE,unspecified target kept apart - check
+C0529,Strong Interference Detected.,event,STRONG_INTERFERENCE,
+C0530,Strong Interference Now.,event,STRONG_INTERFERENCE,
+C0531,Strong Interference to Remote Controller.,event,RC_INTERFERENCE,
+C0532,Strong Remote Controller Interference,event,RC_INTERFERENCE,
+C0533,Strong Remote Controller Interference.,event,RC_INTERFERENCE,
+C0534,Strong wind warning.,event,HIGH_WIND,
+C0535,Strong wind.,event,HIGH_WIND,
+C0536,Strong wireless interference.,event,STRONG_INTERFERENCE,
+C0537,Subject lost.,event,SUBJECT_LOST,
+C0538,Subject too Large,event,SUBJECT_TOO_LARGE,
+C0539,Subject too Large.,event,SUBJECT_TOO_LARGE,
+C0540,Subject too Small,event,SUBJECT_TOO_SMALL,
+C0541,Subject too Small.,event,SUBJECT_TOO_SMALL,
+C0542,Not suitable for shooting a 4K video.,possible,POSS_4K_RECORDING_UNSUITABLE,consequence of slow card
+C0543,Switched to A (Attitude)-mode,event,MODE_ATTITUDE,mode-change notification (cf. FPV MODE_*); kept apart from AIRCRAFT_ATTITUDE_MODE state - check
+C0544,Switched to P (Positioning)-mode.,event,MODE_PGPS,FPV ID; P (Positioning) mode = P-GPS
+C0545,Switched to S (Sport)-mode.,event,MODE_SPORT,
+C0546,Switched to T (Tripod)-mode.,event,MODE_TRIPOD,
+C0547,Take care of your gimbal when landing,instruction,INSTR_PROTECT_GIMBAL_ON_LANDING,
+C0548,Take off in P-Mode,instruction,INSTR_TAKEOFF_IN_P_MODE,
+C0549,"To take off in non-P mode, toggle Flight Mode Switch to another mode and then toggle it back.",instruction,INSTR_TOGGLE_MODE_SWITCH,
+C0550,Take off and retry this function.,instruction,INSTR_TAKEOFF_AND_RETRY,
+C0551,Taking Off.,event,TAKING_OFF,
+C0552,Taking off.,event,TAKING_OFF,
+C0553,Target lost.,event,SUBJECT_LOST,target lost = subject lost
+C0554,Temp Max Altitude : 98ft,event,TEMP_MAX_ALT_SET,
+C0555,Temp Max Altitude: nnn,event,TEMP_MAX_ALT_SET,
+C0556,Then tap Go.,instruction,INSTR_SELECT_TARGET,
+C0557,Throttle up to reduce the speed of descent and use sticks to avoid obstacles,mitigation,INSTR_MANUAL_DESCENT_CONTROL,
+C0558,Tip: Aircraft reached maximum distance,event,MAX_DISTANCE_REACHED,
+C0559,Tip: Only the first camera can tap-zoom in dual gimbal control mode,info,INFO_DUAL_GIMBAL_TAP_ZOOM,
+C0560,"Tip: When multi-gimbals are controlled together, only the first gimbal spotlight feature is available",info,INFO_MULTI_GIMBAL_SPOTLIGHT,
+C0561,Unable to display nearby manned aircraft and anti-collision warnings.,event,AIRSENSE_WARNINGS_UNAVAILABLE,
+C0562,Unable to hover.,event,UNABLE_TO_HOVER,
+C0563,Unable to take off,event,TAKEOFF_UNAVAILABLE,
+C0564,Unable to take off.,event,TAKEOFF_UNAVAILABLE,context-dependent DroPTC type; event identity unchanged
+C0565,Unable to take off before unlocking,event,TAKEOFF_UNAVAILABLE,"'before unlocking' is a condition, not a second event"
+C0566,Unable to take off in low light environment.,compound,TAKEOFF_UNAVAILABLE_LOW_LIGHT,two events (takeoff blocked + low light)
+C0567,"Unknown Error, Cannot Takeoff.",compound,TAKEOFF_UNAVAILABLE_UNKNOWN_ERROR,two events (unknown error + takeoff blocked)
+C0568,Unlocking takeoff restrictions not recommended,instruction,INSTR_DO_NOT_UNLOCK_TAKEOFF_RESTRICTION,
+C0569,Upward Obstacle Detected,event,UPWARD_OBSTACLE_DETECTED,
+C0570,Videos and photos will still be shot in D-Log mode,info,INFO_DLOG_RECORDING,
+C0571,Video cache has stopped because there is not enough storage space.,compound,VIDEO_CACHE_STOPPED_STORAGE_FULL,two events
+C0572,May violate local policies and regulations.,possible,POSS_REGULATION_VIOLATION,
+C0573,Vision sensor error.,event,VISION_SENSOR_ERROR,
+C0574,Vision sensor(s) blocked.,event,VISION_SENSOR_BLOCKED,
+C0575,Vision systems and obstacle avoidance disabled,event,VISION_AND_OA_UNAVAILABLE,disabled = unavailable here - check
+C0576,Vision system and obstacle sensing unavailable,event,VISION_AND_OA_UNAVAILABLE,
+C0577,Vision system and obstacle sensing unavailable.,event,VISION_AND_OA_UNAVAILABLE,
+C0578,Vision System unavailable.,event,VISION_SYSTEM_UNAVAILABLE,
+C0579,Visual positioning inaccurate.,event,VISUAL_POSITIONING_INACCURATE,
+C0580,Warm battery to above 25°C (77F) before flying,mitigation,INSTR_WARM_BATTERY,
+C0581,Warm up the battery temperature to above 25 degree Celsius to ensure a safe flight.,mitigation,INSTR_WARM_BATTERY,
+C0582,Waypoint Mission Paused,event,WAYPOINT_MISSION_PAUSED,
+C0583,Waypoint Mission Resumed,event,WAYPOINT_MISSION_RESUMED,
+C0584,Executing waypoint mission,event,WAYPOINT_MISSION_ACTIVE,executing = started
+C0585,Starting Waypoint Mission,event,WAYPOINT_MISSION_ACTIVE,
+C0586,Waypoint Mission Start,event,WAYPOINT_MISSION_ACTIVE,
+C0587,Weak image transmission signal.,event,IMGTX_SIGNAL_WEAK,FPV ID
+C0588,Weak signal.,event,SIGNAL_WEAK,unspecified link - check
+C0589,Wind resistance affected.,possible,POSS_WIND_RESISTANCE_AFFECTED,consequence
+C0590,Yaw Error.,event,YAW_ERROR,
+C0591,You can decelerate the descending speed and avoid obstacles using sticks,mitigation,INSTR_MANUAL_DESCENT_CONTROL,
+C0592,You can enable Auto Cache Clear or manually delete cache to get enough space,mitigation,INSTR_FREE_STORAGE,
+C0593,You can reset the RTH Altitude in Remote Controller Settings after cancelling RTH if necessary,instruction,INSTR_RESET_RTH_ALTITUDE,
+C0594,You can reset the RTH Altitude in Remote Controller Settings after cancelling RTH if necessary.,instruction,INSTR_RESET_RTH_ALTITUDE,
+C0595,You can reset the RTH Altitude in Remote Controller Settings after cancelling RTH.,instruction,INSTR_RESET_RTH_ALTITUDE,
+C0596,Adjust altitude in MC Settings if required.,mitigation,INSTR_ADJUST_LIMIT_IN_SETTINGS,
+C0597,Adjust antennas,mitigation,INSTR_ADJUST_ANTENNA,FPV ID
+C0598,Adjust antenna and avoid signal block.,mitigation,INSTR_ADJUST_ANTENNA,
+C0599,Adjust distance in MC Settings if required.,mitigation,INSTR_ADJUST_LIMIT_IN_SETTINGS,
+C0600,Adjust the distance in MC Settings if required.,mitigation,INSTR_ADJUST_LIMIT_IN_SETTINGS,
+C0601,Adjust in Main Controller Settings if necessary,mitigation,INSTR_ADJUST_LIMIT_IN_SETTINGS,
+C0602,Adjust in Main Controller Settings if necessary.,mitigation,INSTR_ADJUST_LIMIT_IN_SETTINGS,
+C0603,Adjust remote controller antennas,mitigation,INSTR_ADJUST_ANTENNA,
+C0604,Adjust RTH altitude to above tallest surrounding building before flying,mitigation,INSTR_RAISE_RTH_ALTITUDE,
+C0605,"After powering off the aircraft, replace the propeller on the beeping ESC.",mitigation,INSTR_REPLACE_PROPELLER,
+C0606,Avoid blocking the antennas and keep the antennas parallel to and facing toward the aircraft during flight.,mitigation,INSTR_ADJUST_ANTENNA,
+C0607,Avoid the obstacle,instruction,INSTR_AVOID_OBSTACLE,
+C0608,2. Calibrate Compass Before Takeoff,mitigation,INSTR_CALIBRATE_COMPASS,
+C0609,Calibrate IMU,mitigation,INSTR_CALIBRATE_IMU,
+C0610,Please calibrate using infinity,mitigation,INSTR_RECALIBRATE_FARTHER_TARGET,
+C0611,Please change the battery,mitigation,INSTR_REPLACE_BATTERY,
+C0612,please replace the battery,mitigation,INSTR_REPLACE_BATTERY,
+C0613,Change card,mitigation,INSTR_CHANGE_SD_CARD,
+C0614,Change card or delete files,mitigation,INSTR_FREE_STORAGE,
+C0615,Change SD card,mitigation,INSTR_CHANGE_SD_CARD,
+C0616,Charge battery,mitigation,INSTR_CHARGE_BATTERY,
+C0617,Please check the batteries are inserted correctly,mitigation,INSTR_REINSTALL_BATTERY,
+C0618,Check battery connection.,mitigation,INSTR_REINSTALL_BATTERY,check connection = reinstall/seat battery
+C0619,Check Battery Status,mitigation,INSTR_CHECK_BATTERY,
+C0620,Check battery status and charge or warm up battery,mitigation,INSTR_CHECK_BATTERY,
+C0621,Please check the Compass installation and interference,mitigation,INSTR_CHECK_COMPASS,
+C0622,Check and link phone number,mitigation,INSTR_LINK_PHONE_NUMBER,
+C0623,Check and log in,mitigation,INSTR_LOG_IN,
+C0624,Check map to find Recommended Zones,instruction,INSTR_CHECK_MAP_ZONES,
+C0625,Check motor,mitigation,INSTR_CHECK_MOTOR_PROPELLERS,
+C0626,Check the motors and propellers.,mitigation,INSTR_CHECK_MOTOR_PROPELLERS,
+C0627,Check for objects blocking motor or contact DJI Support for assistance,mitigation,INSTR_CHECK_MOTOR_PROPELLERS,
+C0628,Check propellers and fly with caution,mitigation,INSTR_CHECK_MOTOR_PROPELLERS,
+C0629,Check and re-install battery,mitigation,INSTR_REINSTALL_BATTERY,
+C0630,Check the USB connection with aircraft.,mitigation,INSTR_CHECK_USB_CONNECTION,
+C0631,Check whether gimbal lock is removed and ensure gimbal can rotate freely,mitigation,INSTR_CHECK_GIMBAL_LOCK,FPV ID
+C0632,Check whether gimbal can rotate freely,mitigation,INSTR_CHECK_GIMBAL_LOCK,
+C0633,Check whether propellers are installed,mitigation,INSTR_CHECK_PROPELLER_INSTALLATION,
+C0634,Check whether propellers are installed correctly.,mitigation,INSTR_CHECK_PROPELLER_INSTALLATION,
+C0635,Check whether the propellers are attached to the correct motors based on their markings.,mitigation,INSTR_CHECK_PROPELLER_INSTALLATION,
+C0636,Please ensure the propellers are installed on the correct motors,mitigation,INSTR_CHECK_PROPELLER_INSTALLATION,
+C0637,Check whether propeller on beeping ESC is warped or damaged,mitigation,INSTR_REPLACE_PROPELLER,
+C0638,Connect to network to obtain mobile device location.,mitigation,INSTR_CONNECT_NETWORK,
+C0639,Contact DJI Support for assistance,mitigation,INSTR_CONTACT_SUPPORT,
+C0640,Contact DJI Support to arrange for repairs,mitigation,INSTR_CONTACT_SUPPORT,
+C0641,Contact DJI support,mitigation,INSTR_CONTACT_SUPPORT,
+C0642,Please contact DJI Support,mitigation,INSTR_CONTACT_SUPPORT,
+C0643,Please contact DJI Support for help,mitigation,INSTR_CONTACT_SUPPORT,
+C0644,Please contact DJI Support.,mitigation,INSTR_CONTACT_SUPPORT,
+C0645,Contact DJI Support if this error persists after restarting,mitigation,INSTR_CONTACT_SUPPORT,
+C0646,Contact DJI Support if this persists.,mitigation,INSTR_CONTACT_SUPPORT,
+C0647,"If the issue persists, contact DJI Support",mitigation,INSTR_CONTACT_SUPPORT,
+C0648,Restart aircraft or contact DJI Support if the issue persists,mitigation,INSTR_CONTACT_SUPPORT,restart-or-contact
+C0649,Detach battery and reinstall it,mitigation,INSTR_REINSTALL_BATTERY,
+C0650,Disable SD card read and write protection or change card,mitigation,INSTR_CHANGE_SD_CARD,
+C0651,Enable Multiple Flight Modes in Settings menu to change.,mitigation,INSTR_ENABLE_MULTIPLE_FLIGHT_MODES,
+C0652,Enable this option in Main Controller Settings if needed.,mitigation,INSTR_ENABLE_IN_SETTINGS,
+C0653,Ensure the aircraft battery is properly connected,mitigation,INSTR_REINSTALL_BATTERY,
+C0654,Ensure aircraft is level,mitigation,INSTR_ENSURE_LEVEL,
+C0655,Ensure aircraft is level before taking off,mitigation,INSTR_ENSURE_LEVEL,
+C0656,Ensure the aircraft remains within your line of sight and fly with caution.,instruction,INSTR_MAINTAIN_VLOS,
+C0657,Fly with caution and ensure the aircraft remains within your line of sight.,instruction,INSTR_MAINTAIN_VLOS,
+C0658,Ensure control sticks are centered during takeoff,instruction,INSTR_CENTER_STICKS,
+C0659,Ensure your enviornment is free of potential obstacles.,instruction,INSTR_CLEAR_SURROUNDINGS,
+C0660,please ensure safety during the flight,instruction,INSTR_FLY_CAUTION,
+C0661,please pay attention to flight safety,instruction,INSTR_FLY_CAUTION,
+C0662,Ensure there are no magnets or metal objects near the aircraft.,mitigation,INSTR_REMOVE_MAGNETIC_OBJECTS,
+C0663,Ensure there are no metal and magnetic objects near the aircraft and calibrate compass,mitigation,INSTR_REMOVE_MAGNETIC_OBJECTS_AND_CALIBRATE,
+C0664,Ensure there are no metal or magnetic objects near the aircraft and calibrate it before use,mitigation,INSTR_REMOVE_MAGNETIC_OBJECTS_AND_CALIBRATE,
+C0665,Check and make sure you have obtained proper authorization to fly in this airspace,mitigation,INSTR_OBTAIN_AUTHORIZATION,
+C0666,Ensure you have obtained proper airspace authorization,mitigation,INSTR_OBTAIN_AUTHORIZATION,
+C0667,Exit Backward Sensing system,event,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,"read as status 'sensing system exited', not an instruction - check"
+C0668,Exit Downward Sensing system,event,DOWNWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0669,Exit Forward Sensing system,event,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0670,Exit this mode and try again,mitigation,INSTR_EXIT_MODE,
+C0671,Exit P-GPS Mode,event,PGPS_MODE_EXITED,read as status after compass error - check (instruction?)
+C0672,Exit P-GPS Mode.,event,PGPS_MODE_EXITED,
+C0673,Exit Travel Mode.,mitigation,INSTR_EXIT_MODE,
+C0674,Exit Upward Sensing system,event,UPWARD_OBSTACLE_SENSING_UNAVAILABLE,
+C0675,Fly at a safe altitude,mitigation,INSTR_FLY_SAFE_ALTITUDE,
+C0676,Please fly away or land with caution,mitigation,INSTR_FLY_AWAY,
+C0677,Please fly away with caution,mitigation,INSTR_FLY_AWAY,
+C0678,Fly safely,instruction,INSTR_FLY_CAUTION,
+C0679,Fly with Caution.,instruction,INSTR_FLY_CAUTION,
+C0680,Fly with caution,instruction,INSTR_FLY_CAUTION,
+C0681,Fly with caution.,instruction,INSTR_FLY_CAUTION,
+C0682,Please fly with caution,instruction,INSTR_FLY_CAUTION,
+C0683,Please fly with caution.,instruction,INSTR_FLY_CAUTION,
+C0684,Fly with caution and land in a safe place ASAP.,mitigation,INSTR_LAND_PROMPTLY,
+C0685,Fly in a wind-free environment to ensure flight safety,mitigation,INSTR_FLY_WIND_FREE,
+C0686,go home shifts to landing.,event,RTH_SWITCHED_TO_AUTO_LANDING,
+C0687,Go to Profile > Settings to update firmware,mitigation,INSTR_UPDATE_FIRMWARE,
+C0688,"If this issue persists, land immediately",mitigation,INSTR_LAND_PROMPTLY,
+C0689,"If the issue persists, replace battery",mitigation,INSTR_REPLACE_BATTERY,
+C0690,If needed,info,INFO_FRAGMENT,'If needed' fragment
+C0691,"If needed, enable it in Main Controller Settings",mitigation,INSTR_ENABLE_IN_SETTINGS,
+C0692,"If the propellers are installed correctly and the aircraft still cannot takeoff, a motor error may exist.",possible,POSS_MOTOR_ERROR,
+C0693,Insert card,mitigation,INSTR_INSERT_SD_CARD,
+C0694,Land aircraft immediately,mitigation,INSTR_LAND_PROMPTLY,
+C0695,Land as soon as possible,mitigation,INSTR_LAND_PROMPTLY,
+C0696,"Land as soon as possible, otherwise the battery will be damaged",mitigation,INSTR_LAND_PROMPTLY,
+C0697,Land or return to home promptly,mitigation,INSTR_LAND_OR_RTH,
+C0698,Land or return to home promptly.,mitigation,INSTR_LAND_OR_RTH,
+C0699,Return to home and land promptly.,mitigation,INSTR_LAND_OR_RTH,
+C0700,Return to home or land promptly,mitigation,INSTR_LAND_OR_RTH,
+C0701,Lightly press it to adjust.,instruction,INSTR_PRESS_DIAL_TO_ADJUST,
+C0702,Lightly press to adjust.,instruction,INSTR_PRESS_DIAL_TO_ADJUST,
+C0703,Lower altitude immediately and manually return to home,mitigation,INSTR_MANUAL_RTH,
+C0704,Lower altitude immediately and return to home manually,mitigation,INSTR_MANUAL_RTH,
+C0705,Please make sure base station antenna is connected to the correct port,mitigation,INSTR_CHECK_RTK_ANTENNA,
+C0706,Make sure the remote controller is facing aircraft and avoid blocking the signal,mitigation,INSTR_ADJUST_ANTENNA,
+C0707,Manually adjust flight route or return to home,mitigation,INSTR_ADJUST_ROUTE_OR_RTH,
+C0708,Manually control the aircraft and land in an open area,mitigation,INSTR_MANUAL_LANDING,
+C0709,Please move the aircraft away from potential interference source or calibrate the compass,mitigation,INSTR_MOVE_AWAY_FROM_INTERFERENCE,
+C0710,Move away from sources of interference before,mitigation,INSTR_MOVE_AWAY_FROM_INTERFERENCE,
+C0711,Move away from sources of interference before attempting flight.,mitigation,INSTR_MOVE_AWAY_FROM_INTERFERENCE,
+C0712,Move Away and retry,instruction,INSTR_MOVE_AWAY_AND_RETRY,
+C0713,Move to environment with adequate light.,mitigation,INSTR_MOVE_TO_ADEQUATE_LIGHT,
+C0714,Move to an open area or exit flight tutorial,mitigation,INSTR_MOVE_TO_OPEN_AREA,
+C0715,Move to an open area for takeoff or turn off RTK,mitigation,INSTR_MOVE_TO_OPEN_AREA,
+C0716,Power off aircraft and wait for temperature to return to normal,mitigation,INSTR_WAIT_TO_COOL_DOWN,
+C0717,Press C1 or C2 to exit,instruction,INSTR_PRESS_BUTTON_TO_EXIT,
+C0718,Press C2 to exit,instruction,INSTR_PRESS_BUTTON_TO_EXIT,
+C0719,Recalibrate using a subject that is farther away,mitigation,INSTR_RECALIBRATE_FARTHER_TARGET,
+C0720,Restart Aircraft.,mitigation,INSTR_RESTART,
+C0721,Restart aircraft,mitigation,INSTR_RESTART,
+C0722,Restart aircraft and DJI Fly,mitigation,INSTR_RESTART,
+C0723,Restart aircraft to take off,mitigation,INSTR_RESTART,
+C0724,Restart camera,mitigation,INSTR_RESTART,camera restart merged with aircraft restart - check
+C0725,Please retry,instruction,INSTR_RETRY,
+C0726,Return aircraft to an area nearby the home point promptly and fly in a wind-free environment to ensure flight safety,mitigation,INSTR_RETURN_NEAR_HOME,
+C0727,Return the aircraft to an area nearby the home point promptly to ensure flight safety,mitigation,INSTR_RETURN_NEAR_HOME,
+C0728,Return the aircraft to home manually,mitigation,INSTR_MANUAL_RTH,
+C0729,Return to Home failed.,event,RTH_UNAVAILABLE,RTH failed = unable to RTH
+C0730,Return to home immediately.,mitigation,INSTR_RETURN_HOME,
+C0731,Return home and land soon.,mitigation,INSTR_LAND_OR_RTH,
+C0732,Return home now.,mitigation,INSTR_RETURN_HOME,
+C0733,Return to home promptly,mitigation,INSTR_RETURN_HOME,
+C0734,"Return sticks to midpoints, then continue flying.",instruction,INSTR_CENTER_STICKS,
+C0735,Please step closer.,instruction,INSTR_STEP_CLOSER,
+C0736,Please step farther away.,instruction,INSTR_STEP_FARTHER,
+C0737,Stop flying and wait for battery temperature to return to normal,mitigation,INSTR_WAIT_TO_COOL_DOWN,
+C0738,"Please switch to Normal mode, then back to S-mode to enable it",instruction,INSTR_TOGGLE_MODE_SWITCH,
+C0739,Tap to choose a valid zone.,instruction,INSTR_TAP_VALID_ZONE,
+C0740,Tap Fly Flight Ended Landing Gear Lowered,compound,TAPFLY_ENDED_LANDING_GEAR_LOWERED,two events
+C0741,Tap the screen lightly to focus.,instruction,INSTR_TAP_TO_FOCUS,
+C0742,Tap the screen to focus.,instruction,INSTR_TAP_TO_FOCUS,
+C0743,Try again later.,instruction,INSTR_RETRY,
+C0744,"Turn on ""Multiple Flight Modes"" to enable Atti and Sport Modes",mitigation,INSTR_ENABLE_MULTIPLE_FLIGHT_MODES,
+C0745,"Turn on ""Multiple Flight Modes"" to enable Atti and Sport Modes.",mitigation,INSTR_ENABLE_MULTIPLE_FLIGHT_MODES,
+C0746,Use Normal mode if required for stable shooting,instruction,INSTR_USE_NORMAL_MODE,
+C0747,Use the RC to control aircraft yaw,instruction,INSTR_RC_YAW_CONTROL,
+C0748,View the checklist after landing,instruction,INSTR_VIEW_CHECKLIST,
+C0749,Wait before taking off,instruction,INSTR_WAIT_BEFORE_TAKEOFF,
+C0750,Wait for the GPS satellite signal recovery before ascend,mitigation,INSTR_WAIT_FOR_GPS,
+C0751,"When exceeding nnn, Obstacle Avoidance is not available",info,INFO_OA_SPEED_LIMIT,
+C0752,Switched to gimbal free mode.,event,GIMBAL_FREE_MODE,
+C0753,Aircraft will not enter S-mode if powered on with the remote controller set to S-mode.,info,INFO_S_MODE_POWER_ON,
+C0754,Auxiliary Bottom Light set to automatic mode,event,AUX_BOTTOM_LIGHT_AUTO,
+C0755,Camera Settings Adjusted to ActiveTrack,event,CAMERA_SETTINGS_ADJUSTED,
+C0756,Flight Mode Set to Attitude,event,MODE_ATTITUDE,mode set = mode changed
+C0757,Max altitude set to nnn,event,MAX_ALT_SET,FPV ID
+C0758,Max altitude set to nnn and max distance set to nnn.,event,MAX_ALT_AND_DISTANCE_SET,
+C0759,Max altitude set to nnn and max distance set to nnn to ensure flight safety,event,MAX_ALT_AND_DISTANCE_SET,
+C0760,RTH altitude adjusted to nnn,event,RTH_ALT_SET,FPV ID
+C0761,Setting new Maximum Flight Altitude to nnn,event,MAX_ALT_SET,
+C0762,Setting new Return-To-Home altitude to nnn,event,RTH_ALT_SET,
+C0763,Set Flight Mode to GPS to fly safe,instruction,INSTR_SET_GPS_MODE,
+C0764,Data Recorder File Index is 1.,info,DATA_RECORDER_INDEX,"FPV ID; bookkeeping record, not an event"
+C0765,Data Recorder File Index is 12.,info,DATA_RECORDER_INDEX,
+C0766,Data Recorder File Index is 13.,info,DATA_RECORDER_INDEX,
+C0767,Data Recorder File Index is 15.,info,DATA_RECORDER_INDEX,
+C0768,Data Recorder File Index is 17.,info,DATA_RECORDER_INDEX,
+C0769,Data Recorder File Index is 18.,info,DATA_RECORDER_INDEX,
+C0770,Data Recorder File Index is 19.,info,DATA_RECORDER_INDEX,
+C0771,Data Recorder File Index is 2.,info,DATA_RECORDER_INDEX,
+C0772,Data Recorder File Index is 21.,info,DATA_RECORDER_INDEX,
+C0773,Data Recorder File Index is 29.,info,DATA_RECORDER_INDEX,
+C0774,Data Recorder File Index is 3.,info,DATA_RECORDER_INDEX,
+C0775,Data Recorder File Index is 30.,info,DATA_RECORDER_INDEX,
+C0776,Data Recorder File Index is 4.,info,DATA_RECORDER_INDEX,
+C0777,Data Recorder File Index is 45.,info,DATA_RECORDER_INDEX,
+C0778,Data Recorder File Index is 46.,info,DATA_RECORDER_INDEX,
+C0779,Data Recorder File Index is 5.,info,DATA_RECORDER_INDEX,
+C0780,Data Recorder File Index is 57.,info,DATA_RECORDER_INDEX,
+C0781,Data Recorder File Index is 65.,info,DATA_RECORDER_INDEX,
+C0782,Data Recorder File Index is 7.,info,DATA_RECORDER_INDEX,
+C0783,Data Recorder File Index is 8.,info,DATA_RECORDER_INDEX,

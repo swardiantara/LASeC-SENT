@@ -1,0 +1,277 @@
+time,kind,message,sentence,triage_event,representative,gold_event,expert_key_event,sentence_type
+3:31:40.97 AM,tip,Motors starting.,Motors starting.,18,Motors starting.,MOTORS_STARTING,False,event
+3:31:40.97 AM,tip,Flight mode changed to Starting Motors.,Flight mode changed to Starting Motors.,37,Flight mode changed to Starting Motors.,MODE_STARTING_MOTORS,False,event
+3:31:40.97 AM,warning,Compass error.,Compass error.,17,Compass error.,COMPASS_ERROR,True,event
+3:31:40.97 AM,warning,Compass error. Fly with caution.,Compass error.,17,Compass error.,COMPASS_ERROR,True,event
+3:31:40.97 AM,warning,Compass error. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:31:41.17 AM,tip,Data Recorder File Index is 88.,Data Recorder File Index is 88.,21,Data Recorder File Index is 88.,DATA_RECORDER_INDEX,False,info
+3:31:41.17 AM,tip,Set Return to Home (RTH) altitude to 100 m (328 ft).,Set Return to Home (RTH) altitude to 100 m (328 ft).,4,RTH altitude adjusted to 100m.,RTH_ALT_SET,False,event
+3:31:41.17 AM,tip,Set maximum flight altitude to 500 m (1640 ft).,Set maximum flight altitude to 500 m (1640 ft).,9,Set maximum flight altitude to 500 m (1640 ft).,MAX_ALT_SET,False,event
+3:31:41.77 AM,tip,Motors starting.,Motors starting.,18,Motors starting.,MOTORS_STARTING,False,event
+3:31:41.77 AM,warning,Compass error.,Compass error.,17,Compass error.,COMPASS_ERROR,True,event
+3:31:42.37 AM,tip,Flight mode changed to Manual Takeoff.,Flight mode changed to Manual Takeoff.,23,Flight mode changed to Manual Takeoff.,MODE_MANUAL_TAKEOFF,False,event
+3:31:46.17 AM,tip,Home point updated. RTH altitude adjusted to 100m.,Home point updated.,12,Home point updated.,HOME_POINT_UPDATED,False,event
+3:31:46.17 AM,tip,Home point updated. RTH altitude adjusted to 100m.,RTH altitude adjusted to 100m.,4,RTH altitude adjusted to 100m.,RTH_ALT_SET,False,event
+3:31:46.17 AM,tip,Flight mode changed to P-GPS.,Flight mode changed to P-GPS.,10,Flight mode changed to P-GPS.,MODE_PGPS,False,event
+3:31:46.97 AM,tip,Home point updated. RTH altitude adjusted to 100m.,Home point updated.,12,Home point updated.,HOME_POINT_UPDATED,False,event
+3:31:46.97 AM,tip,Home point updated. RTH altitude adjusted to 100m.,RTH altitude adjusted to 100m.,4,RTH altitude adjusted to 100m.,RTH_ALT_SET,False,event
+3:31:46.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:46.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:46.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:31:46.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:46.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:46.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:31:47.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:47.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:47.97 AM,tip,Home point updated. RTH altitude adjusted to 100m.,Home point updated.,12,Home point updated.,HOME_POINT_UPDATED,False,event
+3:31:47.97 AM,tip,Home point updated. RTH altitude adjusted to 100m.,RTH altitude adjusted to 100m.,4,RTH altitude adjusted to 100m.,RTH_ALT_SET,False,event
+3:31:47.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:47.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:47.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:31:47.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:47.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:47.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:31:48.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:48.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:48.77 AM,tip,Home point updated. RTH altitude adjusted to 100m.,Home point updated.,12,Home point updated.,HOME_POINT_UPDATED,False,event
+3:31:48.77 AM,tip,Home point updated. RTH altitude adjusted to 100m.,RTH altitude adjusted to 100m.,4,RTH altitude adjusted to 100m.,RTH_ALT_SET,False,event
+3:31:48.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:48.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:48.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:31:48.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:48.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:48.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:31:49.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:49.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:52.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:52.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:53.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:53.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:54.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:54.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:55.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:55.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:57.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:57.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:58.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:58.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:31:59.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:31:59.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:00.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:00.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:02.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:02.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:05.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:05.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:08.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:08.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:09.17 AM,tip,Low battery. Auto RTH in 9 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:09.17 AM,tip,Low battery. Auto RTH in 9 s. Press the start/stop button to cancel.,Auto RTH in 9 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:09.17 AM,tip,Low battery. Auto RTH in 9 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:09.17 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:09.17 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:09.17 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:09.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:09.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:09.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:09.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:09.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:09.77 AM,tip,Low battery. Auto RTH in 9 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:09.77 AM,tip,Low battery. Auto RTH in 9 s. Press the start/stop button to cancel.,Auto RTH in 9 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:09.77 AM,tip,Low battery. Auto RTH in 9 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:09.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:09.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:09.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:09.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:09.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:09.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:10.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:10.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:10.17 AM,tip,Low battery. Auto RTH in 8 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:10.17 AM,tip,Low battery. Auto RTH in 8 s. Press the start/stop button to cancel.,Auto RTH in 8 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:10.17 AM,tip,Low battery. Auto RTH in 8 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:10.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:10.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:10.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:10.17 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:10.17 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:10.17 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:10.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:10.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:10.77 AM,tip,Low battery. Auto RTH in 8 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:10.77 AM,tip,Low battery. Auto RTH in 8 s. Press the start/stop button to cancel.,Auto RTH in 8 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:10.77 AM,tip,Low battery. Auto RTH in 8 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:10.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:10.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:10.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:11.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:11.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:11.17 AM,tip,Low battery. Auto RTH in 7 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:11.17 AM,tip,Low battery. Auto RTH in 7 s. Press the start/stop button to cancel.,Auto RTH in 7 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:11.17 AM,tip,Low battery. Auto RTH in 7 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:11.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:11.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:11.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:12.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:12.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:12.17 AM,tip,Low battery. Auto RTH in 6 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:12.17 AM,tip,Low battery. Auto RTH in 6 s. Press the start/stop button to cancel.,Auto RTH in 6 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:12.17 AM,tip,Low battery. Auto RTH in 6 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:12.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:12.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:12.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:13.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:13.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:13.17 AM,tip,Low battery. Auto RTH in 5 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:13.17 AM,tip,Low battery. Auto RTH in 5 s. Press the start/stop button to cancel.,Auto RTH in 5 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:13.17 AM,tip,Low battery. Auto RTH in 5 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:13.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:13.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:13.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:14.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:14.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:14.17 AM,tip,Low battery. Auto RTH in 4 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:14.17 AM,tip,Low battery. Auto RTH in 4 s. Press the start/stop button to cancel.,Auto RTH in 4 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:14.17 AM,tip,Low battery. Auto RTH in 4 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:14.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:14.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:14.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:15.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:15.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:15.17 AM,tip,Low battery. Auto RTH in 3 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:15.17 AM,tip,Low battery. Auto RTH in 3 s. Press the start/stop button to cancel.,Auto RTH in 3 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:15.17 AM,tip,Low battery. Auto RTH in 3 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:15.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:15.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:15.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:16.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:16.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:16.17 AM,tip,Low battery. Auto RTH in 2 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:16.17 AM,tip,Low battery. Auto RTH in 2 s. Press the start/stop button to cancel.,Auto RTH in 2 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:16.17 AM,tip,Low battery. Auto RTH in 2 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:16.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:16.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:16.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:17.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:17.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:17.17 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:17.17 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Auto RTH in 1 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:17.17 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:17.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:17.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:17.17 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:17.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:17.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:17.97 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:17.97 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Auto RTH in 1 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:17.97 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:17.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:17.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:17.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:17.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:17.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:17.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:19.37 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:19.37 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:19.37 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:19.37 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Auto RTH in 1 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:19.37 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:19.37 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Remaining battery only enough for RTH.,11,Remaining battery only enough for RTH.,BATTERY_ONLY_FOR_RTH,True,event
+3:32:19.37 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Aircraft returning.,3,Aircraft returning.,RTH_ACTIVE,False,event
+3:32:19.37 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:19.37 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:19.37 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:19.37 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:19.37 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:19.37 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:19.37 AM,tip,Low battery RTH.,Low battery RTH.,5,Low battery.,LOW_BATTERY_RTH,True,event
+3:32:19.37 AM,tip,Flight mode changed to Go Home.,Flight mode changed to Go Home.,44,Flight mode changed to Go Home.,MODE_GO_HOME,False,event
+3:32:19.97 AM,tip,Low battery RTH.,Low battery RTH.,5,Low battery.,LOW_BATTERY_RTH,True,event
+3:32:19.97 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Low battery.,5,Low battery.,LOW_BATTERY,True,event
+3:32:19.97 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Auto RTH in 1 s.,22,Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN,False,event
+3:32:19.97 AM,tip,Low battery. Auto RTH in 1 s. Press the start/stop button to cancel.,Press the start/stop button to cancel.,46,Press the start/stop button to cancel.,INSTR_STARTSTOP_CANCEL,False,instruction
+3:32:19.97 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Remaining battery only enough for RTH.,11,Remaining battery only enough for RTH.,BATTERY_ONLY_FOR_RTH,True,event
+3:32:19.97 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Aircraft returning.,3,Aircraft returning.,RTH_ACTIVE,False,event
+3:32:19.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:19.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:19.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:19.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:19.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:19.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:20.17 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:32:20.77 AM,tip,Low battery RTH.,Low battery RTH.,5,Low battery.,LOW_BATTERY_RTH,True,event
+3:32:20.77 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:32:20.77 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Remaining battery only enough for RTH.,11,Remaining battery only enough for RTH.,BATTERY_ONLY_FOR_RTH,True,event
+3:32:20.77 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Aircraft returning.,3,Aircraft returning.,RTH_ACTIVE,False,event
+3:32:20.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:20.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:20.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:20.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:20.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:20.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:21.77 AM,tip,Low battery RTH.,Low battery RTH.,5,Low battery.,LOW_BATTERY_RTH,True,event
+3:32:21.77 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:32:21.77 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Remaining battery only enough for RTH.,11,Remaining battery only enough for RTH.,BATTERY_ONLY_FOR_RTH,True,event
+3:32:21.77 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Aircraft returning.,3,Aircraft returning.,RTH_ACTIVE,False,event
+3:32:21.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:21.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:21.77 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:21.77 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:32:21.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:21.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:21.77 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:21.97 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Controller triggered aircraft to descend.,40,Controller triggered aircraft to descend.,RC_TRIGGER_DESCEND,False,event
+3:32:21.97 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Auto RTH canceled.,34,Auto RTH canceled.,AUTO_RTH_CANCELED,False,event
+3:32:23.17 AM,tip,Flight mode changed to P-GPS.,Flight mode changed to P-GPS.,10,Flight mode changed to P-GPS.,MODE_PGPS,False,event
+3:32:23.97 AM,tip,Low battery RTH.,Low battery RTH.,5,Low battery.,LOW_BATTERY_RTH,True,event
+3:32:23.97 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Controller triggered aircraft to descend.,40,Controller triggered aircraft to descend.,RC_TRIGGER_DESCEND,False,event
+3:32:23.97 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Auto RTH canceled.,34,Auto RTH canceled.,AUTO_RTH_CANCELED,False,event
+3:32:23.97 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Remaining battery only enough for RTH.,11,Remaining battery only enough for RTH.,BATTERY_ONLY_FOR_RTH,True,event
+3:32:23.97 AM,tip,Remaining battery only enough for RTH. Aircraft returning.,Aircraft returning.,3,Aircraft returning.,RTH_ACTIVE,False,event
+3:32:23.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:23.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:23.97 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:23.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:23.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:23.97 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:23.97 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:32:24.57 AM,tip,Low battery RTH.,Low battery RTH.,5,Low battery.,LOW_BATTERY_RTH,True,event
+3:32:24.57 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Controller triggered aircraft to descend.,40,Controller triggered aircraft to descend.,RC_TRIGGER_DESCEND,False,event
+3:32:24.57 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Auto RTH canceled.,34,Auto RTH canceled.,AUTO_RTH_CANCELED,False,event
+3:32:24.57 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Forward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:24.57 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:24.57 AM,tip,Forward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:24.57 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Downward ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:24.57 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:24.57 AM,tip,Downward ambient light too low. Obstacle avoidance unavailable. Fly with caution.,Fly with caution.,27,Fly with caution.,INSTR_FLY_CAUTION,False,instruction
+3:32:24.57 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:32:24.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:24.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:25.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:25.17 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:28.37 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:28.37 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:28.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:28.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:29.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:29.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:30.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:30.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:49.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:49.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:50.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:50.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:51.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:51.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:32:52.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:32:52.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:33:07.37 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:33:07.37 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:33:07.37 AM,tip,Flight mode changed to Confirm Landing.,Flight mode changed to Confirm Landing.,19,Flight mode changed to Confirm Landing.,MODE_CONFIRM_LANDING,False,event
+3:33:07.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:33:07.97 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:33:08.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Ambient light too low.,2,Ambient light too low.,AMBIENT_LIGHT_LOW,True,event
+3:33:08.77 AM,tip,Ambient light too low. Obstacle avoidance unavailable.,Obstacle avoidance unavailable.,15,Obstacle avoidance unavailable.,OA_UNAVAILABLE,False,event
+3:33:08.77 AM,tip,Auto landing in progress.,Auto landing in progress.,32,Auto landing in progress.,AUTO_LANDING_IN_PROGRESS,False,event
+3:33:09.77 AM,tip,Auto landing in progress.,Auto landing in progress.,32,Auto landing in progress.,AUTO_LANDING_IN_PROGRESS,False,event
+3:33:11.17 AM,tip,Flight mode changed to P-GPS.,Flight mode changed to P-GPS.,10,Flight mode changed to P-GPS.,MODE_PGPS,False,event

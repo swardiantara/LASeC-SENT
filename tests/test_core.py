@@ -6,7 +6,6 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lasec.baselines import mask, regex_masked_dedup
-from lasec.iaa import pairwise_agreement
 from lasec.llm.grouping import validate
 from lasec.llm.prompts import build_demonstrations
 from lasec.metrics import ga_correct, grouping_report, pairwise_prf, triage_report
@@ -65,11 +64,6 @@ def test_triage_report_hidden_key_event():
     r = triage_report(occ, gold, pred, ["RC signal weak.", "Compass error."])
     assert r["n_triage_events"] == 2 and r["key_recovered"] == 1 and r["hidden_key_events"] == ["RC_WEAK"]
     assert math.isclose(r["workload_reduction"], 0.5)
-
-
-def test_iaa_perfect_and_renamed():
-    r = pairwise_agreement(["A", "A", "B"], ["x", "x", "y"])
-    assert r["kappa"] == 1.0 and r["ari"] == 1.0
 
 
 def test_validate_llm_output():

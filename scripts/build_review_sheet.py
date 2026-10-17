@@ -16,9 +16,8 @@ from openpyxl.worksheet.datavalidation import DataValidation
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from annotation_sheets import F, _cell, _header, _notes  # noqa: E402
+from annotation_sheets import F, _cell, _header, _notes, archive  # noqa: E402
 from lasec.utils import ROOT, load_config, path  # noqa: E402
-from prelabel_catalogue import archive  # noqa: E402
 
 TYPES = ["event", "compound", "instruction", "mitigation", "possible", "info"]
 TYPE_ORDER = {t: i for i, t in enumerate(TYPES)}

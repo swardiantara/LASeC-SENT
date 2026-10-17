@@ -10,8 +10,8 @@
     "most_accurate": "all-distilroberta-v1",
     "efficient_within_tolerance": "all-distilroberta-v1",
     "tolerance": 0.02,
-    "configured_embedding": "all-MiniLM-L6-v2",
-    "consistent": false
+    "configured_embedding": "all-distilroberta-v1",
+    "consistent": true
   },
   "environment": {
     "python": "3.12.4",

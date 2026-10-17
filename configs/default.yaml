@@ -16,7 +16,6 @@ paths:
 
 labels:
   fpv_column: event_annotator1            # expert labels are the gold standard
-  fpv_iaa_column: event_annotator2        # second annotator, used for agreement only
   catalogue_column: event
   event_sentences_only: false        # true = drop instruction/mitigation/possible/info sentences (pending decision)
 
@@ -25,7 +24,8 @@ segmentation:
   language: en
 
 embedding:
-  base_model: sentence-transformers/all-MiniLM-L6-v2
+  base_model: sentence-transformers/all-distilroberta-v1     # primary LASeC encoder (most accurate in Stage B)
+  lightweight_model: sentence-transformers/all-MiniLM-L6-v2  # CPU-friendly variant reported next to the primary
   base_model_variants:                    # effect-of-base-model analysis
     - sentence-transformers/all-MiniLM-L6-v2
     - sentence-transformers/all-MiniLM-L12-v2
@@ -64,7 +64,7 @@ drain3:
   sim_th_grid: [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
   depth_grid: [3, 4, 5, 6]
 
-baselines:                                # embedding + BIRCH without our fine-tuning (one per base model)
+baselines:                                # pre-trained embedding + the main clustering, no fine-tuning (one per base model)
   pretrained:
     - sentence-transformers/all-MiniLM-L6-v2
     - sentence-transformers/all-MiniLM-L12-v2

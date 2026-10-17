@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lasec.data import load_key_events
 from lasec.cluster import ALGORITHM_LABEL
 from lasec.experiment import EVENT_TYPES, slug
-from lasec.report import BASE_ORDER, BASE_PARAMS_M, FAMILY_LABEL, SUBSET_LABEL, llm_display, load_all, method_table
+from lasec.report import BASE_ORDER, BASE_PARAMS_M, FAMILY_LABEL, SUBSET_LABEL, llm_display, load_all, method_table, reported_bases
 from lasec.utils import load_config, path
 
 
@@ -115,20 +115,11 @@ def dataset_tables(R, W, cfg):
 
 
 def annotation_tables(R, W):
-    s, iaa = R["ann_stats"], R["iaa"]
+    s = R["ann_stats"]
     if s:
         W.text(f"- Catalogue annotation: {s['sentences']} sentences, {s['labels']} groups "
                f"({s['event_labels']} event groups over {s['event_sentences']} event sentences); "
                f"expert correction rate of the proposed labels {s['correction_rate']:.1%}.\n")
-    rows = []
-    for name, v in (iaa or {}).items():
-        if v:
-            rows.append((name, v["n_items"], v["n_pairs"], f3(v["kappa"]), f3(v["ari"]), f3(v["pair_agreement"])))
-    if rows:
-        W.table("iaa", pd.DataFrame(rows, columns=["Set", "Sentences", "Pairs", "Cohen's kappa", "ARI", "Pair agreement"]),
-                "Inter-annotator agreement (pairwise same-event decisions), before adjudication.")
-    else:
-        W.skip("iaa", "second-annotator labels not imported yet")
 
 
 def selection_tables(R, W, cfg):
@@ -288,7 +279,10 @@ def case_table(R, W, cfg):
                                                      key_recovered=("key_recovered", "mean"), key_events=("key_events", "first")).reset_index()
             agg["display"] = agg.conf.map(lambda c: llm_display(c, cfg))
             y = pd.concat([y[~y.family.astype(str).str.startswith("llm")], agg], ignore_index=True)
-        y = y[~y.family.isin(["pretrained", "lasec"]) | (y.method.str.contains(slug(cfg["embedding"]["base_model"]), regex=False))]
+        bases = reported_bases(cfg)
+        keep = (((y.family == "pretrained") & y.method.str.contains(bases[0], regex=False))
+                | ((y.family == "lasec") & y.method.isin([f"LASeC ({b})" for b in bases])))
+        y = y[~y.family.isin(["pretrained", "lasec"]) | keep]
         for r in y.itertuples():
             rows.append((SUBSET_LABEL[sub], r.display, FAMILY_LABEL.get(r.family, r.family), int(r.sentences),
                          f"{r.triage_events:.1f}", f"{1 - r.triage_events / r.sentences:.1%}",

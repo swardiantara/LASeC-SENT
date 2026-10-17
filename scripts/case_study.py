@@ -2,7 +2,7 @@
 
 For every method (from results/fpv/predictions) and every flight: number of sentences the analyst would
 otherwise read, number of triage events, workload reduction, and recall of the expert key events.
-For the primary LASeC model it also writes an annotated timeline per flight.
+For the primary and lightweight LASeC models it also writes an annotated timeline per flight.
 """
 import argparse
 import glob
@@ -13,8 +13,9 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lasec.data import load_key_events
-from lasec.experiment import EVENT_TYPES, load_fpv, method_file, primary_method
+from lasec.experiment import EVENT_TYPES, load_fpv, method_file
 from lasec.metrics import representative, triage_report
+from lasec.report import reported_bases
 from lasec.utils import load_config, path, write_json
 
 
@@ -32,7 +33,7 @@ def main():
     res = path(cfg, "results")
     out = res / "case_study"
     (out / "timelines").mkdir(parents=True, exist_ok=True)
-    primary = primary_method(cfg)
+    timeline_methods = {f"LASeC ({b})" for b in reported_bases(cfg)}
 
     methods = pd.read_csv(res / "fpv" / "metrics.csv")
     methods = methods[methods.subset == "all"].reindex(columns=["method", "family", "llm_config"]).drop_duplicates("method")
@@ -50,7 +51,7 @@ def main():
                          n_cells=int(sub.cell_id.nunique()))
                 hidden[f"{method}|{subset}|{flight}"] = r.pop("gold_events_hidden")
                 rows.append(r)
-            if method == primary:
+            if method in timeline_methods:
                 counts = sub.sentence.value_counts().to_dict()
                 members = {}
                 for s in counts:

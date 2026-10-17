@@ -1,0 +1,127 @@
+time,kind,message,sentence,triage_event,representative,gold_event,expert_key_event,sentence_type
+3:23:15.27 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:23:15.27 AM,tip,Motors starting.,Motors starting.,18,Motors starting.,MOTORS_STARTING,False,event
+3:23:15.27 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:23:15.27 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:23:15.27 AM,tip,Data Recorder File Index is 88.,Data Recorder File Index is 88.,21,Data Recorder File Index is 88.,DATA_RECORDER_INDEX,False,info
+3:23:15.27 AM,tip,Set Return to Home (RTH) altitude to 100 m (328 ft).,Set Return to Home (RTH) altitude to 100 m (328 ft).,4,Set Return to Home (RTH) altitude to 100 m (328 ft).,RTH_ALT_SET,False,event
+3:23:15.27 AM,tip,Set maximum flight altitude to 500 m (1640 ft).,Set maximum flight altitude to 500 m (1640 ft).,9,Set maximum flight altitude to 500 m (1640 ft).,MAX_ALT_SET,False,event
+3:23:15.27 AM,tip,Flight mode changed to Starting Motors.,Flight mode changed to Starting Motors.,37,Flight mode changed to Starting Motors.,MODE_STARTING_MOTORS,False,event
+3:23:16.66 AM,tip,Flight mode changed to Manual Takeoff.,Flight mode changed to Manual Takeoff.,23,Flight mode changed to Manual Takeoff.,MODE_MANUAL_TAKEOFF,False,event
+3:23:18.27 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:23:20.66 AM,tip,Flight mode changed to P-GPS (Brake).,Flight mode changed to P-GPS (Brake).,10,Flight mode changed to P-GPS (Brake).,MODE_PGPS_BRAKE,False,event
+3:23:21.28 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:23:21.28 AM,tip,Home point updated. RTH altitude adjusted to 100m.,Home point updated.,12,Home point updated.,HOME_POINT_UPDATED,False,event
+3:23:21.28 AM,tip,Home point updated. RTH altitude adjusted to 100m.,RTH altitude adjusted to 100m.,4,Set Return to Home (RTH) altitude to 100 m (328 ft).,RTH_ALT_SET,False,event
+3:23:21.28 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:23:21.28 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:23:24.27 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:24:25.29 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:24:25.29 AM,tip,Image transmission signal weak.,Image transmission signal weak.,30,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:24:27.87 AM,tip,Image transmission signal weak.,Image transmission signal weak.,30,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:24:27.87 AM,tip,Aircraft braking.,Aircraft braking.,31,Aircraft braking.,BRAKING,False,event
+3:24:27.87 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:24:27.87 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:24:27.87 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Image transmission signal weak.,30,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:24:27.87 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,6,Avoid blocking antennas and adjust antenna orientation.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:24:28.07 AM,tip,RC signal lost.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:29.27 AM,tip,RC signal lost.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:29.27 AM,tip,Aircraft braking.,Aircraft braking.,31,Aircraft braking.,BRAKING,False,event
+3:24:29.27 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:24:29.27 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:24:29.27 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Image transmission signal weak.,30,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:24:29.27 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,6,Avoid blocking antennas and adjust antenna orientation.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:24:29.27 AM,warning,Downlink Lost.,Downlink Lost.,29,Downlink Lost.,DOWNLINK_LOST,True,event
+3:24:34.50 AM,tip,Failsafe RTH.,Failsafe RTH.,39,Failsafe RTH.,FAILSAFE_RTH,False,event
+3:24:34.50 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:24:34.50 AM,tip,RC signal lost. Returning to home.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:34.50 AM,tip,RC signal lost. Returning to home.,Returning to home.,3,Returning to home.,RTH_ACTIVE,False,event
+3:24:34.50 AM,tip,Downlink Restored (after 0m 5.2s).,Downlink Restored (after 0m 5.2s).,13,Downlink Restored (after 0m 5.2s).,DOWNLINK_RESTORED,False,event
+3:24:34.50 AM,tip,Flight mode changed to Go Home.,Flight mode changed to Go Home.,44,Flight mode changed to Go Home.,MODE_GO_HOME,False,event
+3:24:34.91 AM,tip,RTH in progress.,RTH in progress.,1,RTH in progress.,RTH_ACTIVE,False,event
+3:24:35.07 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:24:35.07 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:24:35.27 AM,tip,RC signal weak. Avoid blocking antennas and adjust antenna orientation.,RC signal weak.,7,RC signal weak.,RC_SIGNAL_WEAK,True,event
+3:24:35.27 AM,tip,RC signal weak. Avoid blocking antennas and adjust antenna orientation.,Avoid blocking antennas and adjust antenna orientation.,6,Avoid blocking antennas and adjust antenna orientation.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:24:36.07 AM,tip,Failsafe RTH.,Failsafe RTH.,39,Failsafe RTH.,FAILSAFE_RTH,False,event
+3:24:36.07 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:24:36.07 AM,tip,RC signal lost. Returning to home.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:36.07 AM,tip,RC signal lost. Returning to home.,Returning to home.,3,Returning to home.,RTH_ACTIVE,False,event
+3:24:36.07 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:24:36.07 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:24:36.07 AM,tip,RC signal weak. Avoid blocking antennas and adjust antenna orientation.,RC signal weak.,7,RC signal weak.,RC_SIGNAL_WEAK,True,event
+3:24:36.07 AM,tip,RC signal weak. Avoid blocking antennas and adjust antenna orientation.,Avoid blocking antennas and adjust antenna orientation.,6,Avoid blocking antennas and adjust antenna orientation.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:24:36.07 AM,tip,RTH in progress.,RTH in progress.,1,RTH in progress.,RTH_ACTIVE,False,event
+3:24:36.86 AM,tip,Failsafe RTH.,Failsafe RTH.,39,Failsafe RTH.,FAILSAFE_RTH,False,event
+3:24:36.86 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:24:36.86 AM,tip,RC signal lost. Returning to home.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:36.86 AM,tip,RC signal lost. Returning to home.,Returning to home.,3,Returning to home.,RTH_ACTIVE,False,event
+3:24:36.86 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:24:36.86 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:24:36.86 AM,tip,RC signal weak. Avoid blocking antennas and adjust antenna orientation.,RC signal weak.,7,RC signal weak.,RC_SIGNAL_WEAK,True,event
+3:24:36.86 AM,tip,RC signal weak. Avoid blocking antennas and adjust antenna orientation.,Avoid blocking antennas and adjust antenna orientation.,6,Avoid blocking antennas and adjust antenna orientation.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:24:36.86 AM,tip,RTH in progress.,RTH in progress.,1,RTH in progress.,RTH_ACTIVE,False,event
+3:24:36.86 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:24:37.68 AM,tip,Failsafe RTH.,Failsafe RTH.,39,Failsafe RTH.,FAILSAFE_RTH,False,event
+3:24:37.68 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:24:37.68 AM,tip,RC signal lost. Returning to home.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:37.68 AM,tip,RC signal lost. Returning to home.,Returning to home.,3,Returning to home.,RTH_ACTIVE,False,event
+3:24:37.68 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:24:37.68 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:24:37.68 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:24:38.29 AM,tip,Failsafe RTH.,Failsafe RTH.,39,Failsafe RTH.,FAILSAFE_RTH,False,event
+3:24:38.29 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Controller triggered aircraft to descend.,40,Controller triggered aircraft to descend.,RC_TRIGGER_DESCEND,False,event
+3:24:38.29 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Auto RTH canceled.,34,Auto RTH canceled.,AUTO_RTH_CANCELED,False,event
+3:24:38.29 AM,tip,RC signal lost. Returning to home.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:38.29 AM,tip,RC signal lost. Returning to home.,Returning to home.,3,Returning to home.,RTH_ACTIVE,False,event
+3:24:38.29 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:24:38.29 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:24:38.29 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:24:38.70 AM,tip,Flight mode changed to P-GPS (Brake).,Flight mode changed to P-GPS (Brake).,10,Flight mode changed to P-GPS (Brake).,MODE_PGPS_BRAKE,False,event
+3:24:39.67 AM,tip,Failsafe RTH.,Failsafe RTH.,39,Failsafe RTH.,FAILSAFE_RTH,False,event
+3:24:39.67 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Controller triggered aircraft to descend.,40,Controller triggered aircraft to descend.,RC_TRIGGER_DESCEND,False,event
+3:24:39.67 AM,tip,Controller triggered aircraft to descend. Auto RTH canceled.,Auto RTH canceled.,34,Auto RTH canceled.,AUTO_RTH_CANCELED,False,event
+3:24:39.67 AM,tip,RC signal lost. Returning to home.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:39.67 AM,tip,RC signal lost. Returning to home.,Returning to home.,3,Returning to home.,RTH_ACTIVE,False,event
+3:24:39.67 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:24:39.67 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:24:40.27 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:24:41.06 AM,tip,RC signal lost. Aircraft will follow preset action for lost signal.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:41.06 AM,tip,RC signal lost. Aircraft will follow preset action for lost signal.,Aircraft will follow preset action for lost signal.,35,Aircraft will follow preset action for lost signal.,FAILSAFE_PRESET_ACTION,False,event
+3:24:42.29 AM,tip,RC signal lost.,RC signal lost.,8,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:24:43.11 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:24:43.47 AM,tip,RC signal weak.,RC signal weak.,7,RC signal weak.,RC_SIGNAL_WEAK,True,event
+3:24:44.07 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:24:45.06 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:25:00.27 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:25:00.27 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:25:00.27 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:25:00.27 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:25:00.27 AM,tip,RTH in progress.,RTH in progress.,1,RTH in progress.,RTH_ACTIVE,False,event
+3:25:00.27 AM,tip,Flight mode changed to Go Home.,Flight mode changed to Go Home.,44,Flight mode changed to Go Home.,MODE_GO_HOME,False,event
+3:25:03.87 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:25:04.66 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:25:04.66 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:25:04.66 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:25:04.66 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:25:04.66 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:25:04.66 AM,tip,RTH in progress.,RTH in progress.,1,RTH in progress.,RTH_ACTIVE,False,event
+3:25:10.87 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:25:10.87 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:25:10.87 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:25:10.87 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:25:10.87 AM,tip,RTH in progress.,RTH in progress.,1,RTH in progress.,RTH_ACTIVE,False,event
+3:25:10.87 AM,tip,RTH ascending.,RTH ascending.,20,RTH ascending.,RTH_ASCENDING,False,event
+3:25:11.67 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:25:11.67 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:25:11.67 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:25:11.67 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:25:11.67 AM,tip,RTH in progress.,RTH in progress.,1,RTH in progress.,RTH_ACTIVE,False,event
+3:26:08.66 AM,tip,Gimbal auto check failed.,Gimbal auto check failed.,41,Gimbal auto check failed.,GIMBAL_AUTOCHECK_FAILED,True,event
+3:26:08.66 AM,tip,Press Brake button to cancel RTH.,Press Brake button to cancel RTH.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_RTH,False,instruction
+3:26:08.66 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Gimbal stuck.,33,Gimbal stuck.,GIMBAL_STUCK,True,event
+3:26:08.66 AM,tip,Gimbal stuck. Check whether gimbal lock is removed and make sure gimbal can rotate freely.,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,26,Check whether gimbal lock is removed and make sure gimbal can rotate freely.,INSTR_CHECK_GIMBAL_LOCK,False,mitigation
+3:26:08.66 AM,tip,RTH in progress.,RTH in progress.,1,RTH in progress.,RTH_ACTIVE,False,event
+3:26:08.66 AM,tip,Auto landing in progress.,Auto landing in progress.,32,Auto landing in progress.,AUTO_LANDING_IN_PROGRESS,False,event
+3:26:08.66 AM,tip,Press brake button to cancel landing.,Press brake button to cancel landing.,0,Press Brake button to cancel RTH.,INSTR_BRAKE_CANCEL_LANDING,False,instruction
+3:26:08.66 AM,tip,Flight mode changed to Auto Landing.,Flight mode changed to Auto Landing.,47,Flight mode changed to Auto Landing.,MODE_AUTO_LANDING,False,event

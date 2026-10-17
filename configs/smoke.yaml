@@ -14,7 +14,6 @@ paths:
   results: results_smoke
 labels:
   fpv_column: event_annotator1
-  fpv_iaa_column: event_annotator2
   catalogue_column: event
   event_sentences_only: false
 segmentation:

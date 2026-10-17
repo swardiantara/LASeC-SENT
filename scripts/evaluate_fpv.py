@@ -131,9 +131,56 @@ def score(name, pred, gold, sents, w, occ, fpv, mask, B):
     return row, c, r["overmerges"]
 
 
+def significance(primary, correct, info, subsets, w, B):
+    """Primary LASeC vs each baseline (first LLM run only): paired bootstrap, exact McNemar, Holm within subset."""
+    tests = []
+    for sub in subsets:
+        fam_tests = []
+        for name in info:
+            fam = info[name]["family"]
+            if name == primary or fam == "lasec" or (fam.startswith("llm") and info[name]["llm_run"] != 0):
+                continue
+            a_, b_ = correct[(primary, sub)], correct[(name, sub)]
+            ww = w[subsets[sub]]
+            pb, pw, mc = paired_bootstrap(a_, b_, None, B), paired_bootstrap(a_, b_, ww, B), mcnemar_exact(a_, b_)
+            fam_tests.append(dict(subset=sub, baseline=name, family=fam, diff_ga=pb["diff"], ci_low=pb["ci"][0],
+                                  ci_high=pb["ci"][1], p_bootstrap=pb["p"], diff_ga_weighted=pw["diff"],
+                                  p_bootstrap_weighted=pw["p"], lasec_only_correct=mc["a_only"],
+                                  baseline_only_correct=mc["b_only"], p_mcnemar=mc["p"]))
+        t = pd.DataFrame(fam_tests)
+        for col in ("p_bootstrap", "p_bootstrap_weighted", "p_mcnemar"):  # Holm within each subset's family
+            adj = holm(dict(zip(t.baseline, t[col])))
+            t[col + "_holm"] = t.baseline.map(adj)
+        tests.append(t)
+    sig = pd.concat(tests, ignore_index=True)
+    sig.insert(0, "lasec", primary)
+    return sig
+
+
+def stats_only(cfg, fpv, subsets, w, B):
+    """Recompute significance.csv for the configured primary model from saved predictions (no models needed)."""
+    out = path(cfg, "results") / "fpv"
+    metrics = pd.read_csv(out / "metrics.csv")
+    info = {r.method: dict(family=r.family, llm_run=r.llm_run) for r in metrics[metrics.subset == "all"].itertuples()}
+    gold = fpv.event.tolist()
+    correct = {}
+    for name in info:
+        p = pd.read_csv(out / "predictions" / (method_file(name) + ".csv")).set_index("sentence").loc[fpv.sentence]
+        for sub, mask in subsets.items():
+            correct[(name, sub)] = ga_correct([g for g, k in zip(gold, mask) if k], p.pred.to_numpy()[mask].tolist())
+    primary = primary_method(cfg)
+    if primary not in info:
+        sys.exit(f"{primary} not found in {out / 'metrics.csv'}")
+    sig = significance(primary, correct, info, subsets, w, B)
+    sig.to_csv(out / "significance.csv", index=False)
+    print(sig[["subset", "baseline", "diff_ga", "ci_low", "ci_high", "p_mcnemar_holm"]].round(3).to_string(index=False))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default=None)
+    ap.add_argument("--stats-only", action="store_true",
+                    help="only recompute significance.csv for the configured primary model from saved predictions")
     a = ap.parse_args()
     cfg = load_config(a.config) if a.config else load_config()
     B = cfg["stats"]["bootstrap"]
@@ -143,6 +190,8 @@ def main():
     subsets = {"all": np.ones(len(fpv), bool)}
     if "sentence_type" in fpv:
         subsets["events"] = fpv.sentence_type.isin(EVENT_TYPES).to_numpy()
+    if a.stats_only:
+        return stats_only(cfg, fpv, subsets, w, B)
     methods, info, sweeps = collect_methods(cfg, sents)
     primary = primary_method(cfg) if primary_method(cfg) in methods else None
     out = path(cfg, "results") / "fpv"
@@ -176,28 +225,7 @@ def main():
         agg.to_csv(out / "llm_summary.csv", index=False)
 
     if primary:
-        tests = []
-        for sub in subsets:
-            fam_tests = []
-            for name in methods:
-                fam = info[name]["family"]
-                if name == primary or fam == "lasec" or (fam.startswith("llm") and info[name]["llm_run"] != 0):
-                    continue
-                a_, b_ = correct[(primary, sub)], correct[(name, sub)]
-                ww = w[subsets[sub]]
-                pb, pw, mc = paired_bootstrap(a_, b_, None, B), paired_bootstrap(a_, b_, ww, B), mcnemar_exact(a_, b_)
-                fam_tests.append(dict(subset=sub, baseline=name, family=fam, diff_ga=pb["diff"], ci_low=pb["ci"][0],
-                                      ci_high=pb["ci"][1], p_bootstrap=pb["p"], diff_ga_weighted=pw["diff"],
-                                      p_bootstrap_weighted=pw["p"], lasec_only_correct=mc["a_only"],
-                                      baseline_only_correct=mc["b_only"], p_mcnemar=mc["p"]))
-            t = pd.DataFrame(fam_tests)
-            for col in ("p_bootstrap", "p_bootstrap_weighted", "p_mcnemar"):  # Holm within each subset's family
-                adj = holm(dict(zip(t.baseline, t[col])))
-                t[col + "_holm"] = t.baseline.map(adj)
-            tests.append(t)
-        sig = pd.concat(tests, ignore_index=True)
-        sig.insert(0, "lasec", primary)
-        sig.to_csv(out / "significance.csv", index=False)
+        significance(primary, correct, info, subsets, w, B).to_csv(out / "significance.csv", index=False)
 
     srows = []
     for name, fam, t, pred_map in sweeps:

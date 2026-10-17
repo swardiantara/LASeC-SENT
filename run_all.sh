@@ -27,6 +27,5 @@ fi
 $PY scripts/evaluate_fpv.py --config $CFG                 # 6. held-out evaluation, significance, sensitivity
 $PY scripts/case_study.py --config $CFG                   # 7. forensic case study per flight
 $PY scripts/repeatability.py --config $CFG                # 8. input-order repeatability per clustering algorithm
-$PY scripts/compute_iaa.py --config $CFG                  # 9. inter-annotator agreement (when available)
-$PY scripts/make_tables.py --config $CFG                  # 10. LaTeX/CSV tables + summary.md
-$PY scripts/make_figures.py --config $CFG                 # 11. figures (PDF + PNG)
+$PY scripts/make_tables.py --config $CFG                  # 9. LaTeX/CSV tables + summary.md
+$PY scripts/make_figures.py --config $CFG                 # 10. figures (PDF + PNG)

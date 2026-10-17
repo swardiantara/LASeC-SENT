@@ -1,0 +1,24 @@
+{
+  "sentences": 783,
+  "labels": 429,
+  "event_sentences": 553,
+  "event_labels": 318,
+  "sentence_types": {
+    "event": 538,
+    "mitigation": 127,
+    "instruction": 50,
+    "info": 36,
+    "possible": 17,
+    "compound": 15
+  },
+  "correction_rate": 0.0,
+  "correction_rate_by_proposed_type": {
+    "compound": 0.0,
+    "event": 0.0,
+    "info": 0.0,
+    "instruction": 0.0,
+    "mitigation": 0.0,
+    "possible": 0.0
+  },
+  "unsure": 0
+}

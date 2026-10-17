@@ -40,7 +40,6 @@ def load_all(cfg) -> dict:
     r["fpv_labels"] = _read_csv(path(cfg, "fpv_labels"))
     r["fpv_occ"] = _read_csv(proc / "fpv_occurrences.csv")
     r["ann_stats"] = _read_json(res / "annotation" / "catalogue_annotation_stats.json")
-    r["iaa"] = _read_json(res / "annotation" / "iaa.json")
     r["selection"] = _read_json(res / "baselines" / "selection.json")
     sel = res / "selection"
     r["model_selection"] = _read_json(sel / "selection.json")
@@ -71,12 +70,23 @@ def load_all(cfg) -> dict:
     return r
 
 
+def reported_bases(cfg) -> list[str]:
+    """Encoders shown in the main tables: the primary model, then the lightweight variant (if configured)."""
+    base, light = slug(cfg["embedding"]["base_model"]), cfg["embedding"].get("lightweight_model")
+    return [base] + ([slug(light)] if light and slug(light) != base else [])
+
+
 def method_table(metrics: pd.DataFrame, subset: str, cfg, primary_base_only=True) -> pd.DataFrame:
-    """One row per method for a subset; LLM runs collapsed to mean/sd per configuration, in display order."""
+    """One row per method for a subset; LLM runs collapsed to mean/sd per configuration, in display order.
+
+    With primary_base_only, embedding rows are restricted to the main clustering algorithm: the pre-trained
+    primary encoder and LASeC with the primary and lightweight encoders."""
     m = metrics[metrics.subset == subset].copy()
-    base = slug(cfg["embedding"]["base_model"])
     if primary_base_only:
-        m = m[~m.family.isin(["pretrained", "lasec"]) | (m.base_model == base)]
+        bases, main = reported_bases(cfg), cfg["clustering"]["algorithm"]
+        keep = (((m.family == "pretrained") & (m.base_model == bases[0]))
+                | ((m.family == "lasec") & m.base_model.isin(bases) & (m.algorithm == main)))
+        m = m[~m.family.isin(["pretrained", "lasec"]) | keep]
     non = m[~m.family.str.startswith("llm")].copy()
     non["display"] = non.method
     non["ga_sd"] = float("nan")
