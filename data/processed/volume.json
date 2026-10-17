@@ -1,0 +1,52 @@
+{
+  "catalogue": {
+    "source": "DroPTC manual sentence segmentation",
+    "messages": 585,
+    "sentences": 1035,
+    "unique_sentences": 783,
+    "pysbd_vs_manual_segmentation": {
+      "messages": 568,
+      "skipped_incomplete": 17,
+      "pysbd_matches_manual": 546,
+      "share": 0.9612676056338029
+    }
+  },
+  "fpv": {
+    "cells": 658,
+    "unique_cells": 201,
+    "atomic_messages": 1466,
+    "unique_atomic_messages": 69,
+    "sentences": 2158,
+    "unique_sentences": 78,
+    "per_flight": {
+      "1": {
+        "sentences": 45,
+        "unique_sentences": 17
+      },
+      "2": {
+        "sentences": 392,
+        "unique_sentences": 35
+      },
+      "3": {
+        "sentences": 593,
+        "unique_sentences": 37
+      },
+      "4": {
+        "sentences": 126,
+        "unique_sentences": 32
+      },
+      "5": {
+        "sentences": 186,
+        "unique_sentences": 30
+      },
+      "6": {
+        "sentences": 276,
+        "unique_sentences": 36
+      },
+      "7": {
+        "sentences": 540,
+        "unique_sentences": 39
+      }
+    }
+  }
+}
