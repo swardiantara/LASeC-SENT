@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- LASeC-SENT ---
+models/
+models_smoke/
+results_smoke/
+data/processed/
+~$*.xlsx
+
+annotation
+results

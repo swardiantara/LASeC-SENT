@@ -1,0 +1,49 @@
+# Expert key events per FPV flight (manual investigation; same ground truth as DroPTC, Table 3).
+# Flight numbers follow the sorted decrypted file names (= flight_log_N.xlsx in the DroPTC evidence README).
+flights:
+  1:  # DJIFlightRecord_2024-11-10_[03-09-29]
+    - Gimbal pitch axis endpoint reached.
+    - Image transmission signal weak.
+    - RC signal lost.
+  2:  # DJIFlightRecord_2025-05-12_[08-01-12]
+    - Image transmission signal weak.
+    - RC signal lost.
+    - No image transmission.
+    - RC signal weak.
+    - Gimbal pitch axis endpoint reached.
+  3:  # DJIFlightRecord_2025-05-12_[08-20-56]
+    - Image transmission signal weak.
+    - RC signal lost.
+    - No image transmission.
+    - RC signal weak.
+    - Downlink Lost.
+  4:  # DJIFlightRecord_2025-06-27_[03-23-15]
+    - Gimbal auto check failed.
+    - Gimbal stuck.
+    - Image transmission signal weak.
+    - RC signal lost.
+    - Downlink Lost.
+    - RC signal weak.
+  5:  # DJIFlightRecord_2025-06-27_[03-27-42]
+    - Compass error.
+    - Ambient light too low.
+    - RC signal lost.
+    - Gimbal pitch axis endpoint reached.
+    - Downward ambient light too low.
+    - RC signal weak.
+  6:  # DJIFlightRecord_2025-06-27_[03-31-40]
+    - Compass error.
+    - Downward ambient light too low.
+    - Forward ambient light too low.
+    - Low battery.
+    - Remaining battery only enough for RTH.
+    - Low battery RTH.
+  7:  # DJIFlightRecord_2025-06-27_[03-34-35]
+    - Forward ambient light too low.
+    - Downward ambient light too low.
+    - Ambient light too low.
+    - RC signal lost.
+    - Image transmission signal weak.
+    - Image transmission signal lost.
+    - Downlink Lost.
+    - RC signal weak.

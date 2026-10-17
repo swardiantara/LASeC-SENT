@@ -1,0 +1,104 @@
+# SMOKE-TEST configuration: frozen labels but tiny training (1 epoch, sampled pairs, 2 folds). Numbers produced with it are meaningless.
+seed: 42
+paths:
+  catalogue_train: data/raw/catalogue/droptc_train_sentence.xlsx
+  catalogue_test: data/raw/catalogue/droptc_test_sentence.xlsx
+  catalogue_messages: data/raw/catalogue/Drone_584.log_structured.csv
+  fpv_decrypted: data/raw/fpv/decrypted
+  fpv_decrypted_hashes: data/raw/fpv/decrypted_sha256.json
+  catalogue_labels: data/labels/catalogue_sentence_labels.csv
+  fpv_labels: data/labels/fpv_sentence_labels.csv
+  fpv_key_events: data/labels/fpv_key_events.yaml
+  processed: data/processed
+  models: models_smoke
+  results: results_smoke
+labels:
+  fpv_column: event_annotator1
+  fpv_iaa_column: event_annotator2
+  catalogue_column: event
+  event_sentences_only: false
+segmentation:
+  message_separator: ;
+  language: en
+embedding:
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  base_model_variants:
+  - sentence-transformers/all-MiniLM-L6-v2
+  - sentence-transformers/all-mpnet-base-v2
+  normalize: true
+  batch_size: 64
+training:
+  epochs: 3
+  lr: 2.0e-05
+  batch_size: 64
+  margin: 0.5
+  warmup_ratio: 0.1
+  negatives: all
+  neg_per_pos: 5
+clustering:
+  algorithm: agglomerative
+  linkage: average
+  ablation_algorithms:
+  - birch
+  branching_factor: 50
+  order: sorted
+  threshold_grid:
+    start: 0.05
+    stop: 1.0
+    step: 0.05
+cv:
+  n_folds: 2
+drain3:
+  sim_th_grid:
+  - 0.4
+  - 0.6
+  depth_grid:
+  - 4
+baselines:
+  pretrained:
+  - sentence-transformers/all-MiniLM-L6-v2
+llm:
+  runs: 1
+  batch_size: 100
+  few_shot:
+    n_groups: 15
+    max_members: 3
+  defaults:
+    reasoning_effort: high
+    temperature: null
+    max_tokens: 32000
+  models:
+  - name: gpt-6.1-sol
+    model: openai/gpt-6.1-sol
+    enabled: true
+  - name: gpt-6-luna
+    model: openai/gpt-6-luna
+    enabled: true
+  - name: claude-opus-5.5
+    model: anthropic/claude-opus-5.5
+    enabled: true
+  - name: claude-haiku-5.5
+    model: anthropic/claude-haiku-5.5
+    enabled: true
+  - name: gemini-4-argon
+    model: google/gemini-4-argon
+    enabled: true
+  - name: gemini-3.8-flash
+    model: google/gemini-3.8-flash
+    enabled: true
+stats:
+  bootstrap: 200
+  alpha: 0.05
+selection:
+  embedding: sentence-transformers/all-MiniLM-L6-v2
+  algorithms:
+  - agglomerative
+  - birch
+  - dbscan
+  - hdbscan
+  - optics
+  threshold_grid:
+    start: 0.1
+    stop: 1.0
+    step: 0.1
+  efficiency_tolerance: 0.02

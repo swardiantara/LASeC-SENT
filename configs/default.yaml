@@ -1,0 +1,94 @@
+# LASeC (sentence-level) experiment configuration. All paths are relative to the repository root.
+seed: 42
+
+paths:
+  catalogue_train: data/raw/catalogue/droptc_train_sentence.xlsx   # training catalogue: DroPTC manual sentence split (both DroPTC splits)
+  catalogue_test: data/raw/catalogue/droptc_test_sentence.xlsx
+  catalogue_messages: data/raw/catalogue/Drone_584.log_structured.csv   # original messages (old message-level IDs, hints only)
+  fpv_decrypted: data/raw/fpv/decrypted                            # held-out test data (7 DJI FPV flights)
+  fpv_decrypted_hashes: data/raw/fpv/decrypted_sha256.json
+  catalogue_labels: data/labels/catalogue_sentence_labels.csv      # produced by scripts/import_annotations.py
+  fpv_labels: data/labels/fpv_sentence_labels.csv
+  fpv_key_events: data/labels/fpv_key_events.yaml
+  processed: data/processed
+  models: models
+  results: results
+
+labels:
+  fpv_column: event_annotator1            # expert labels are the gold standard
+  fpv_iaa_column: event_annotator2        # second annotator, used for agreement only
+  catalogue_column: event
+  event_sentences_only: false        # true = drop instruction/mitigation/possible/info sentences (pending decision)
+
+segmentation:
+  message_separator: ";"                  # joins several app messages in one decrypted cell
+  language: en
+
+embedding:
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  base_model_variants:                    # effect-of-base-model analysis
+    - sentence-transformers/all-MiniLM-L6-v2
+    - sentence-transformers/all-MiniLM-L12-v2
+    - sentence-transformers/all-mpnet-base-v2
+    - sentence-transformers/all-distilroberta-v1
+  normalize: true                         # unit vectors (cosine geometry; required for the BIRCH ablation)
+  batch_size: 64
+
+training:
+  epochs: 3
+  lr: 2.0e-5
+  batch_size: 64
+  margin: 0.5                             # cosine-distance margin for negative pairs
+  warmup_ratio: 0.1
+  negatives: all                          # all | sampled
+  neg_per_pos: 5                          # only used when negatives: sampled
+
+clustering:
+  algorithm: agglomerative                # main algorithm (chosen in scripts/select_model.py, Stage A)
+  linkage: average                        # agglomerative linkage on cosine distances
+  ablation_algorithms: [birch]            # also evaluated with the fine-tuned encoder (CV threshold, FPV rows)
+  branching_factor: 50                    # BIRCH only
+  order: sorted                           # sorted | shuffle (see scripts/repeatability.py)
+  threshold_grid: {start: 0.01, stop: 1.00, step: 0.01}   # cosine distance (BIRCH: Euclidean radius on unit vectors)
+
+selection:                                # model selection on the catalogue with pre-trained encoders (no fine-tuning)
+  embedding: sentence-transformers/all-mpnet-base-v2   # Stage A (algorithm grid, old Fig. 4): pre-trained SBERT
+  algorithms: [agglomerative, birch, dbscan, hdbscan, optics]
+  threshold_grid: {start: 0.05, stop: 1.00, step: 0.05}
+  efficiency_tolerance: 0.02              # Stage B: fastest encoder within this GA of the best is 'efficient choice'
+
+cv:
+  n_folds: 5
+
+drain3:
+  sim_th_grid: [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  depth_grid: [3, 4, 5, 6]
+
+baselines:                                # embedding + BIRCH without our fine-tuning (one per base model)
+  pretrained:
+    - sentence-transformers/all-MiniLM-L6-v2
+    - sentence-transformers/all-MiniLM-L12-v2
+    - sentence-transformers/all-mpnet-base-v2
+    - sentence-transformers/all-distilroberta-v1
+
+llm:
+  runs: 3                                 # repeated runs (different presentation orders) for variance
+  batch_size: 100                         # FPV has 78 unique sentences -> one call per run
+  few_shot: {n_groups: 15, max_members: 3}
+  # All models are called through OpenRouter (OPENROUTER_API_KEY). IDs checked against
+  # https://openrouter.ai/api/v1/models on 2026-10-17. Flagship + small tier per provider.
+  defaults:
+    reasoning_effort: high
+    temperature: null                     # not supported by the OpenAI/Anthropic reasoning models
+    max_tokens: 32000
+  models:
+    - {name: gpt-6.1-sol, model: openai/gpt-6.1-sol, enabled: true}
+    - {name: gpt-6-luna, model: openai/gpt-6-luna, enabled: true}
+    - {name: claude-opus-5.5, model: anthropic/claude-opus-5.5, enabled: true}
+    - {name: claude-haiku-5.5, model: anthropic/claude-haiku-5.5, enabled: true}
+    - {name: gemini-4-argon, model: google/gemini-4-argon, enabled: true}
+    - {name: gemini-3.8-flash, model: google/gemini-3.8-flash, enabled: true}
+
+stats:
+  bootstrap: 2000
+  alpha: 0.05

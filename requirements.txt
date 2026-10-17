@@ -1,0 +1,17 @@
+# Install PyTorch first for your platform/CUDA version (https://pytorch.org/get-started/locally/), tested with torch 2.7.1
+transformers==4.46.1
+sentence-transformers==3.4.1
+scikit-learn==1.7.2
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+pysbd==0.3.4
+drain3==0.9.11
+openpyxl==3.1.5
+pyyaml==6.0.3
+tqdm==4.66.5
+pydantic==2.9.2
+pytest==8.4.2
+# LLM baselines (OpenRouter, OpenAI-compatible API)
+openai==1.59.7
+matplotlib==3.9.2
