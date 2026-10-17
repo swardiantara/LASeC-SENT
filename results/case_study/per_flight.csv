@@ -1,0 +1,463 @@
+n_sentences,n_unique_sentences,n_gold_events,n_triage_events,workload_reduction,key_events,key_recovered,key_recall,hidden_key_events,method,family,llm_config,subset,flight,n_cells
+45,17,17,17,0.6222222222222222,3,3,1.0,[],Exact dedup,string,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],Exact dedup,string,,events,1,22
+392,35,30,35,0.9107142857142857,5,5,1.0,[],Exact dedup,string,,all,2,133
+330,30,26,30,0.9090909090909091,5,5,1.0,[],Exact dedup,string,,events,2,133
+593,37,30,37,0.9376053962900506,5,5,1.0,[],Exact dedup,string,,all,3,186
+482,29,23,29,0.9398340248962656,5,5,1.0,[],Exact dedup,string,,events,3,186
+126,32,29,32,0.746031746031746,6,6,1.0,[],Exact dedup,string,,all,4,34
+95,26,24,26,0.7263157894736842,6,6,1.0,[],Exact dedup,string,,events,4,34
+186,30,27,30,0.8387096774193549,5,5,1.0,[],Exact dedup,string,,all,5,75
+176,26,23,26,0.8522727272727273,5,5,1.0,[],Exact dedup,string,,events,5,75
+276,36,25,36,0.8695652173913043,5,5,1.0,[],Exact dedup,string,,all,6,58
+223,32,21,32,0.8565022421524664,5,5,1.0,[],Exact dedup,string,,events,6,58
+540,39,32,39,0.9277777777777778,6,6,1.0,[],Exact dedup,string,,all,7,150
+461,34,28,34,0.9262472885032538,6,6,1.0,[],Exact dedup,string,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],Regex-masked dedup,string,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],Regex-masked dedup,string,,events,1,22
+392,35,30,34,0.9132653061224489,5,5,1.0,[],Regex-masked dedup,string,,all,2,133
+330,30,26,29,0.9121212121212121,5,5,1.0,[],Regex-masked dedup,string,,events,2,133
+593,37,30,34,0.9426644182124789,5,5,1.0,[],Regex-masked dedup,string,,all,3,186
+482,29,23,26,0.946058091286307,5,5,1.0,[],Regex-masked dedup,string,,events,3,186
+126,32,29,32,0.746031746031746,6,6,1.0,[],Regex-masked dedup,string,,all,4,34
+95,26,24,26,0.7263157894736842,6,6,1.0,[],Regex-masked dedup,string,,events,4,34
+186,30,27,30,0.8387096774193549,5,5,1.0,[],Regex-masked dedup,string,,all,5,75
+176,26,23,26,0.8522727272727273,5,5,1.0,[],Regex-masked dedup,string,,events,5,75
+276,36,25,28,0.8985507246376812,5,5,1.0,[],Regex-masked dedup,string,,all,6,58
+223,32,21,24,0.8923766816143498,5,5,1.0,[],Regex-masked dedup,string,,events,6,58
+540,39,32,38,0.9296296296296296,6,6,1.0,[],Regex-masked dedup,string,,all,7,150
+461,34,28,33,0.9284164859002169,6,6,1.0,[],Regex-masked dedup,string,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],Drain3,parser,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],Drain3,parser,,events,1,22
+392,35,30,34,0.9132653061224489,5,5,1.0,[],Drain3,parser,,all,2,133
+330,30,26,29,0.9121212121212121,5,5,1.0,[],Drain3,parser,,events,2,133
+593,37,30,33,0.9443507588532883,5,5,1.0,[],Drain3,parser,,all,3,186
+482,29,23,25,0.9481327800829875,5,5,1.0,[],Drain3,parser,,events,3,186
+126,32,29,32,0.746031746031746,6,6,1.0,[],Drain3,parser,,all,4,34
+95,26,24,26,0.7263157894736842,6,6,1.0,[],Drain3,parser,,events,4,34
+186,30,27,30,0.8387096774193549,5,5,1.0,[],Drain3,parser,,all,5,75
+176,26,23,26,0.8522727272727273,5,5,1.0,[],Drain3,parser,,events,5,75
+276,36,25,27,0.9021739130434783,5,5,1.0,[],Drain3,parser,,all,6,58
+223,32,21,23,0.8968609865470852,5,5,1.0,[],Drain3,parser,,events,6,58
+540,39,32,37,0.9314814814814815,6,6,1.0,[],Drain3,parser,,all,7,150
+461,34,28,32,0.93058568329718,6,6,1.0,[],Drain3,parser,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,events,1,22
+392,35,30,33,0.9158163265306123,5,5,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,all,2,133
+330,30,26,28,0.9151515151515152,5,5,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,events,2,133
+593,37,30,33,0.9443507588532883,5,5,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,all,3,186
+482,29,23,25,0.9481327800829875,5,5,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,events,3,186
+126,32,29,32,0.746031746031746,6,6,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,all,4,34
+95,26,24,26,0.7263157894736842,6,6,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,events,4,34
+186,30,27,29,0.8440860215053764,5,5,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,all,5,75
+176,26,23,25,0.8579545454545454,5,5,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,events,6,58
+540,39,32,36,0.9333333333333333,6,6,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,all,7,150
+461,34,28,31,0.9327548806941431,6,6,1.0,[],Pre-trained all-MiniLM-L6-v2 + Agglomerative,pretrained,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,events,1,22
+392,35,30,34,0.9132653061224489,5,5,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,all,2,133
+330,30,26,29,0.9121212121212121,5,5,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,events,2,133
+593,37,30,34,0.9426644182124789,5,5,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,all,3,186
+482,29,23,26,0.946058091286307,5,5,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,events,3,186
+126,32,29,32,0.746031746031746,6,6,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,all,4,34
+95,26,24,26,0.7263157894736842,6,6,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,events,4,34
+186,30,27,29,0.8440860215053764,5,5,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,all,5,75
+176,26,23,25,0.8579545454545454,5,5,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,events,6,58
+540,39,32,36,0.9333333333333333,6,6,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,all,7,150
+461,34,28,31,0.9327548806941431,6,6,1.0,[],Pre-trained all-MiniLM-L12-v2 + Agglomerative,pretrained,,events,7,150
+45,17,17,16,0.6444444444444444,3,3,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,all,1,22
+34,13,13,12,0.6470588235294117,3,3,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,events,1,22
+392,35,30,32,0.9183673469387755,5,5,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,all,2,133
+330,30,26,28,0.9151515151515152,5,5,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,events,2,133
+593,37,30,32,0.9460370994940979,5,5,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,all,3,186
+482,29,23,26,0.946058091286307,5,5,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,events,3,186
+126,32,29,30,0.7619047619047619,6,6,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,events,4,34
+186,30,27,29,0.8440860215053764,5,5,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,all,5,75
+176,26,23,25,0.8579545454545454,5,5,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,events,5,75
+276,36,25,25,0.9094202898550725,5,4,0.8,['BATTERY_ONLY_FOR_RTH'],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,all,6,58
+223,32,21,21,0.905829596412556,5,4,0.8,['BATTERY_ONLY_FOR_RTH'],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,events,6,58
+540,39,32,35,0.9351851851851852,6,6,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,all,7,150
+461,34,28,31,0.9327548806941431,6,6,1.0,[],Pre-trained all-mpnet-base-v2 + Agglomerative,pretrained,,events,7,150
+45,17,17,16,0.6444444444444444,3,3,1.0,[],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,all,1,22
+34,13,13,12,0.6470588235294117,3,3,1.0,[],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,events,1,22
+392,35,30,27,0.9311224489795918,5,4,0.8,['RC_SIGNAL_LOST'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,all,2,133
+330,30,26,23,0.9303030303030303,5,4,0.8,['RC_SIGNAL_LOST'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,events,2,133
+593,37,30,27,0.954468802698145,5,4,0.8,['RC_SIGNAL_WEAK'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,all,3,186
+482,29,23,20,0.9585062240663901,5,4,0.8,['RC_SIGNAL_WEAK'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,events,3,186
+126,32,29,27,0.7857142857142857,6,5,0.8333333333333334,['RC_SIGNAL_WEAK'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,all,4,34
+95,26,24,22,0.7684210526315789,6,5,0.8333333333333334,['RC_SIGNAL_WEAK'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,events,4,34
+186,30,27,25,0.8655913978494624,5,4,0.8,['RC_SIGNAL_WEAK'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,all,5,75
+176,26,23,21,0.8806818181818181,5,4,0.8,['RC_SIGNAL_WEAK'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,events,5,75
+276,36,25,23,0.9166666666666666,5,4,0.8,['BATTERY_ONLY_FOR_RTH'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,all,6,58
+223,32,21,19,0.9147982062780269,5,4,0.8,['BATTERY_ONLY_FOR_RTH'],Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,events,6,58
+540,39,32,30,0.9444444444444444,6,4,0.6666666666666666,"['IMGTX_LOST', 'RC_SIGNAL_WEAK']",Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,all,7,150
+461,34,28,26,0.9436008676789588,6,4,0.6666666666666666,"['IMGTX_LOST', 'RC_SIGNAL_WEAK']",Pre-trained all-distilroberta-v1 + Agglomerative,pretrained,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,all,2,133
+330,30,26,28,0.9151515151515152,5,5,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,events,2,133
+593,37,30,31,0.9477234401349073,5,5,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,all,3,186
+482,29,23,25,0.9481327800829875,5,5,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,events,5,75
+276,36,25,25,0.9094202898550725,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-MiniLM-L12-v2),lasec,,all,6,58
+223,32,21,21,0.905829596412556,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-MiniLM-L12-v2),lasec,,events,6,58
+540,39,32,34,0.937037037037037,6,6,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,all,7,150
+461,34,28,30,0.9349240780911063,6,6,1.0,[],LASeC (all-MiniLM-L12-v2),lasec,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,all,2,133
+330,30,26,28,0.9151515151515152,5,5,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,events,2,133
+593,37,30,31,0.9477234401349073,5,5,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,all,3,186
+482,29,23,25,0.9481327800829875,5,5,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,events,5,75
+276,36,25,25,0.9094202898550725,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,all,6,58
+223,32,21,21,0.905829596412556,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,events,6,58
+540,39,32,34,0.937037037037037,6,6,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,all,7,150
+461,34,28,30,0.9349240780911063,6,6,1.0,[],LASeC (all-MiniLM-L12-v2) + BIRCH,lasec,,events,7,150
+45,17,17,16,0.6444444444444444,3,3,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,all,1,22
+34,13,13,12,0.6470588235294117,3,3,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,all,2,133
+330,30,26,27,0.9181818181818182,5,5,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,all,3,186
+482,29,23,24,0.950207468879668,5,5,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,events,3,186
+126,32,29,28,0.7777777777777778,6,6,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,all,4,34
+95,26,24,24,0.7473684210526316,6,6,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,events,4,34
+186,30,27,27,0.8548387096774194,5,5,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,all,5,75
+176,26,23,23,0.8693181818181819,5,5,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,events,5,75
+276,36,25,22,0.9202898550724637,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-MiniLM-L6-v2),lasec,,all,6,58
+223,32,21,19,0.9147982062780269,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-MiniLM-L6-v2),lasec,,events,6,58
+540,39,32,32,0.9407407407407408,6,6,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,all,7,150
+461,34,28,28,0.9392624728850325,6,6,1.0,[],LASeC (all-MiniLM-L6-v2),lasec,,events,7,150
+45,17,17,16,0.6444444444444444,3,3,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,all,1,22
+34,13,13,12,0.6470588235294117,3,3,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,all,2,133
+330,30,26,27,0.9181818181818182,5,5,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,all,3,186
+482,29,23,24,0.950207468879668,5,5,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,events,3,186
+126,32,29,28,0.7777777777777778,6,6,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,all,4,34
+95,26,24,24,0.7473684210526316,6,6,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,events,4,34
+186,30,27,27,0.8548387096774194,5,5,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,all,5,75
+176,26,23,23,0.8693181818181819,5,5,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,events,5,75
+276,36,25,23,0.9166666666666666,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,all,6,58
+223,32,21,19,0.9147982062780269,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,events,6,58
+540,39,32,32,0.9407407407407408,6,6,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,all,7,150
+461,34,28,28,0.9392624728850325,6,6,1.0,[],LASeC (all-MiniLM-L6-v2) + BIRCH,lasec,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LASeC (all-distilroberta-v1),lasec,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LASeC (all-distilroberta-v1),lasec,,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LASeC (all-distilroberta-v1),lasec,,all,2,133
+330,30,26,27,0.9181818181818182,5,5,1.0,[],LASeC (all-distilroberta-v1),lasec,,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LASeC (all-distilroberta-v1),lasec,,all,3,186
+482,29,23,24,0.950207468879668,5,5,1.0,[],LASeC (all-distilroberta-v1),lasec,,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LASeC (all-distilroberta-v1),lasec,,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LASeC (all-distilroberta-v1),lasec,,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LASeC (all-distilroberta-v1),lasec,,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LASeC (all-distilroberta-v1),lasec,,events,5,75
+276,36,25,24,0.9130434782608696,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-distilroberta-v1),lasec,,all,6,58
+223,32,21,20,0.9103139013452914,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-distilroberta-v1),lasec,,events,6,58
+540,39,32,33,0.9388888888888889,6,6,1.0,[],LASeC (all-distilroberta-v1),lasec,,all,7,150
+461,34,28,29,0.9370932754880694,6,6,1.0,[],LASeC (all-distilroberta-v1),lasec,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,all,2,133
+330,30,26,27,0.9181818181818182,5,5,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,all,3,186
+482,29,23,24,0.950207468879668,5,5,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,events,5,75
+276,36,25,24,0.9130434782608696,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-distilroberta-v1) + BIRCH,lasec,,all,6,58
+223,32,21,20,0.9103139013452914,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-distilroberta-v1) + BIRCH,lasec,,events,6,58
+540,39,32,33,0.9388888888888889,6,6,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,all,7,150
+461,34,28,29,0.9370932754880694,6,6,1.0,[],LASeC (all-distilroberta-v1) + BIRCH,lasec,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LASeC (all-mpnet-base-v2),lasec,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LASeC (all-mpnet-base-v2),lasec,,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LASeC (all-mpnet-base-v2),lasec,,all,2,133
+330,30,26,28,0.9151515151515152,5,5,1.0,[],LASeC (all-mpnet-base-v2),lasec,,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LASeC (all-mpnet-base-v2),lasec,,all,3,186
+482,29,23,24,0.950207468879668,5,5,1.0,[],LASeC (all-mpnet-base-v2),lasec,,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LASeC (all-mpnet-base-v2),lasec,,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LASeC (all-mpnet-base-v2),lasec,,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LASeC (all-mpnet-base-v2),lasec,,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LASeC (all-mpnet-base-v2),lasec,,events,5,75
+276,36,25,24,0.9130434782608696,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-mpnet-base-v2),lasec,,all,6,58
+223,32,21,20,0.9103139013452914,5,4,0.8,['LOW_BATTERY_RTH'],LASeC (all-mpnet-base-v2),lasec,,events,6,58
+540,39,32,33,0.9388888888888889,6,6,1.0,[],LASeC (all-mpnet-base-v2),lasec,,all,7,150
+461,34,28,29,0.9370932754880694,6,6,1.0,[],LASeC (all-mpnet-base-v2),lasec,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,all,2,133
+330,30,26,28,0.9151515151515152,5,5,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,all,3,186
+482,29,23,24,0.950207468879668,5,5,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,events,5,75
+276,36,25,25,0.9094202898550725,5,5,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,all,6,58
+223,32,21,21,0.905829596412556,5,5,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,events,6,58
+540,39,32,33,0.9388888888888889,6,6,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,all,7,150
+461,34,28,29,0.9370932754880694,6,6,1.0,[],LASeC (all-mpnet-base-v2) + BIRCH,lasec,,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,events,2,133
+593,37,30,31,0.9477234401349073,5,5,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,events,3,186
+126,32,29,31,0.753968253968254,6,6,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,events,6,58
+540,39,32,34,0.937037037037037,6,6,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,all,7,150
+461,34,28,29,0.9370932754880694,6,6,1.0,[],LLM claude-opus-5.5_few run0,llm-few,claude-opus-5.5_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,events,2,133
+593,37,30,31,0.9477234401349073,5,5,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,events,3,186
+126,32,29,31,0.753968253968254,6,6,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,events,6,58
+540,39,32,33,0.9388888888888889,6,5,0.8333333333333334,['IMGTX_LOST'],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM claude-opus-5.5_few run1,llm-few,claude-opus-5.5_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,events,2,133
+593,37,30,31,0.9477234401349073,5,5,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,events,3,186
+126,32,29,31,0.753968253968254,6,6,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,events,6,58
+540,39,32,34,0.937037037037037,6,6,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,all,7,150
+461,34,28,29,0.9370932754880694,6,6,1.0,[],LLM claude-opus-5.5_few run2,llm-few,claude-opus-5.5_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,events,2,133
+593,37,30,31,0.9477234401349073,5,5,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,events,3,186
+126,32,29,31,0.753968253968254,6,6,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,events,6,58
+540,39,32,32,0.9407407407407408,6,5,0.8333333333333334,['IMGTX_LOST'],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,all,7,150
+461,34,28,27,0.9414316702819957,6,5,0.8333333333333334,['IMGTX_LOST'],LLM claude-opus-5.5_zero run0,llm-zero,claude-opus-5.5_zero,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,events,1,22
+392,35,30,32,0.9183673469387755,5,5,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,all,2,133
+330,30,26,27,0.9181818181818182,5,5,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,events,2,133
+593,37,30,32,0.9460370994940979,5,5,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,all,3,186
+482,29,23,24,0.950207468879668,5,5,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,events,3,186
+126,32,29,31,0.753968253968254,6,6,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,events,6,58
+540,39,32,33,0.9388888888888889,6,5,0.8333333333333334,['IMGTX_LOST'],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM claude-opus-5.5_zero run1,llm-zero,claude-opus-5.5_zero,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,events,1,22
+392,35,30,31,0.9209183673469388,5,5,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,events,2,133
+593,37,30,31,0.9477234401349073,5,5,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,events,3,186
+126,32,29,31,0.753968253968254,6,6,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,events,6,58
+540,39,32,34,0.937037037037037,6,6,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,all,7,150
+461,34,28,29,0.9370932754880694,6,6,1.0,[],LLM claude-opus-5.5_zero run2,llm-zero,claude-opus-5.5_zero,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,all,4,34
+95,26,24,24,0.7473684210526316,6,6,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,events,4,34
+186,30,27,27,0.8548387096774194,5,5,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,all,5,75
+176,26,23,23,0.8693181818181819,5,5,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,events,5,75
+276,36,25,25,0.9094202898550725,5,5,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,all,6,58
+223,32,21,21,0.905829596412556,5,5,1.0,[],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,events,6,58
+540,39,32,30,0.9444444444444444,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,all,7,150
+461,34,28,26,0.9436008676789588,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_few run0,llm-few,gemini-3.8-flash_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,all,4,34
+95,26,24,24,0.7473684210526316,6,6,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,events,4,34
+186,30,27,27,0.8548387096774194,5,5,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,all,5,75
+176,26,23,23,0.8693181818181819,5,5,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,events,5,75
+276,36,25,25,0.9094202898550725,5,5,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,all,6,58
+223,32,21,21,0.905829596412556,5,5,1.0,[],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,events,6,58
+540,39,32,30,0.9444444444444444,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,all,7,150
+461,34,28,26,0.9436008676789588,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_few run1,llm-few,gemini-3.8-flash_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,all,4,34
+95,26,24,24,0.7473684210526316,6,6,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,events,4,34
+186,30,27,27,0.8548387096774194,5,5,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,all,5,75
+176,26,23,23,0.8693181818181819,5,5,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,events,5,75
+276,36,25,25,0.9094202898550725,5,5,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,all,6,58
+223,32,21,21,0.905829596412556,5,5,1.0,[],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,events,6,58
+540,39,32,31,0.9425925925925926,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,all,7,150
+461,34,28,27,0.9414316702819957,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_few run2,llm-few,gemini-3.8-flash_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,events,3,186
+126,32,29,30,0.7619047619047619,6,6,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,events,6,58
+540,39,32,32,0.9407407407407408,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_zero run0,llm-zero,gemini-3.8-flash_zero,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,all,4,34
+95,26,24,24,0.7473684210526316,6,6,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,events,4,34
+186,30,27,27,0.8548387096774194,5,5,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,all,5,75
+176,26,23,23,0.8693181818181819,5,5,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,events,5,75
+276,36,25,25,0.9094202898550725,5,5,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,all,6,58
+223,32,21,21,0.905829596412556,5,5,1.0,[],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,events,6,58
+540,39,32,30,0.9444444444444444,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,all,7,150
+461,34,28,26,0.9436008676789588,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_zero run1,llm-zero,gemini-3.8-flash_zero,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,events,3,186
+126,32,29,29,0.7698412698412699,6,6,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,all,4,34
+95,26,24,24,0.7473684210526316,6,6,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,events,4,34
+186,30,27,27,0.8548387096774194,5,5,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,all,5,75
+176,26,23,23,0.8693181818181819,5,5,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,events,5,75
+276,36,25,25,0.9094202898550725,5,5,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,all,6,58
+223,32,21,21,0.905829596412556,5,5,1.0,[],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,events,6,58
+540,39,32,30,0.9444444444444444,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,all,7,150
+461,34,28,26,0.9436008676789588,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gemini-3.8-flash_zero run2,llm-zero,gemini-3.8-flash_zero,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,events,3,186
+126,32,29,30,0.7619047619047619,6,6,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,events,6,58
+540,39,32,32,0.9407407407407408,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_few run0,llm-few,gpt-5.6-luna_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,events,3,186
+126,32,29,30,0.7619047619047619,6,6,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,events,5,75
+276,36,25,25,0.9094202898550725,5,4,0.8,['BATTERY_ONLY_FOR_RTH'],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,all,6,58
+223,32,21,21,0.905829596412556,5,4,0.8,['BATTERY_ONLY_FOR_RTH'],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,events,6,58
+540,39,32,32,0.9407407407407408,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_few run1,llm-few,gpt-5.6-luna_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,events,3,186
+126,32,29,30,0.7619047619047619,6,6,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,events,6,58
+540,39,32,32,0.9407407407407408,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_few run2,llm-few,gpt-5.6-luna_few,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,events,3,186
+126,32,29,30,0.7619047619047619,6,6,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,events,6,58
+540,39,32,32,0.9407407407407408,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_zero run0,llm-zero,gpt-5.6-luna_zero,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,events,3,186
+126,32,29,30,0.7619047619047619,6,6,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,events,6,58
+540,39,32,32,0.9407407407407408,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_zero run1,llm-zero,gpt-5.6-luna_zero,events,7,150
+45,17,17,17,0.6222222222222222,3,3,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,all,1,22
+34,13,13,13,0.6176470588235294,3,3,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,events,1,22
+392,35,30,30,0.923469387755102,5,5,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,all,2,133
+330,30,26,26,0.9212121212121213,5,5,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,events,2,133
+593,37,30,30,0.9494097807757167,5,5,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,all,3,186
+482,29,23,23,0.9522821576763485,5,5,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,events,3,186
+126,32,29,30,0.7619047619047619,6,6,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,all,4,34
+95,26,24,25,0.736842105263158,6,6,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,events,4,34
+186,30,27,28,0.8494623655913979,5,5,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,all,5,75
+176,26,23,24,0.8636363636363636,5,5,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,events,5,75
+276,36,25,26,0.9057971014492754,5,5,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,all,6,58
+223,32,21,22,0.9013452914798207,5,5,1.0,[],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,events,6,58
+540,39,32,32,0.9407407407407408,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,all,7,150
+461,34,28,28,0.9392624728850325,6,5,0.8333333333333334,['IMGTX_LOST'],LLM gpt-5.6-luna_zero run2,llm-zero,gpt-5.6-luna_zero,events,7,150

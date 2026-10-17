@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{5-fold cross-validation on the catalogue (mean ± sd over folds). Main clustering: Agglomerative; t is the threshold selected by CV; 'seen/novel event' splits held-out sentences by whether their event occurs in the training folds.}
+\label{tab:cv}
+\small
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Base model & Params (M) & t (pre-trained) & GA pre-trained & t (LASeC) & GA LASeC & Pair F1 & GA seen event & GA novel event & LASeC with ablation clustering \\
+\midrule
+all-MiniLM-L6-v2 & 22.7 & 0.170 & 0.804 ± 0.043 & 0.230 & 0.872 ± 0.027 & 0.828 & 0.841 & 0.916 & BIRCH 0.853 (t=0.34) \\
+all-MiniLM-L12-v2 & 33.4 & 0.160 & 0.808 ± 0.043 & 0.170 & 0.871 ± 0.033 & 0.822 & 0.830 & 0.933 & BIRCH 0.858 (t=0.29) \\
+all-distilroberta-v1 & 82.1 & 0.230 & 0.793 ± 0.034 & 0.180 & 0.875 ± 0.027 & 0.817 & 0.832 & 0.937 & BIRCH 0.867 (t=0.33) \\
+all-mpnet-base-v2 & 109.5 & 0.190 & 0.799 ± 0.040 & 0.200 & 0.877 ± 0.016 & 0.833 & 0.837 & 0.934 & BIRCH 0.874 (t=0.30) \\
+\bottomrule
+\end{tabular}
+\end{table}

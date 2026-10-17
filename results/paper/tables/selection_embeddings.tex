@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Stage B of model selection: pre-trained encoders with Agglomerative clustering on the catalogue; throughput measured on the catalogue sentences.}
+\label{tab:selection_embeddings}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Encoder (pre-trained) & Params (M) & Dim & Peak GA & Best threshold & Mean GA over grid & Encoding (sentences/s) \\
+\midrule
+all-MiniLM-L6-v2 & 22.7 & 384 & 0.469 & 0.150 & 0.192 & 18,910 \\
+all-MiniLM-L12-v2 & 33.4 & 384 & 0.465 & 0.150 & 0.185 & 13,982 \\
+all-distilroberta-v1 & 82.1 & 768 & 0.492 & 0.250 & 0.207 & 12,685 \\
+all-mpnet-base-v2 & 109.5 & 768 & 0.460 & 0.250 & 0.190 & 7,545 \\
+\bottomrule
+\end{tabular}
+\end{table}

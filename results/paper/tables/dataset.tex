@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Datasets. The catalogue uses the manual DroPTC sentence split; FPV logs are segmented automatically (';' then PySBD).}
+\label{tab:dataset}
+\small
+\begin{tabular}{lrr}
+\toprule
+ & Catalogue & FPV \\
+\midrule
+Source & DroPTC catalogue (training) & DJI FPV flights (held-out test) \\
+Messages / log cells & 585 & 658 \\
+Atomic app messages & -- & 1466 \\
+Sentence occurrences & 1035 & 2158 \\
+Unique sentences & 783 & 78 \\
+  of which event sentences & 553 & 63 \\
+Event groups (gold) & 318 & 40 \\
+  singleton event groups & 209 & 34 \\
+Non-event groups (instruction/mitigation/possible/info) & 111 & 10 \\
+Expert key events & -- & 35 \\
+Flights & -- & 7 \\
+\bottomrule
+\end{tabular}
+\end{table}

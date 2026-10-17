@@ -1,0 +1,29 @@
+{
+  "drain3": {
+    "sim_th": 0.8,
+    "depth": 3,
+    "catalogue_ga": 0.3895274584929757
+  },
+  "pretrained": {
+    "sentence-transformers/all-MiniLM-L6-v2": {
+      "threshold": 0.15,
+      "algorithm": "agglomerative",
+      "catalogue_ga": 0.46871008939974457
+    },
+    "sentence-transformers/all-MiniLM-L12-v2": {
+      "threshold": 0.14,
+      "algorithm": "agglomerative",
+      "catalogue_ga": 0.46871008939974457
+    },
+    "sentence-transformers/all-mpnet-base-v2": {
+      "threshold": 0.18,
+      "algorithm": "agglomerative",
+      "catalogue_ga": 0.4623243933588761
+    },
+    "sentence-transformers/all-distilroberta-v1": {
+      "threshold": 0.25,
+      "algorithm": "agglomerative",
+      "catalogue_ga": 0.49169859514687103
+    }
+  }
+}

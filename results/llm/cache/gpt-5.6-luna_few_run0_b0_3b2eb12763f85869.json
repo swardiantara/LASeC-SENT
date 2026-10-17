@@ -1,0 +1,364 @@
+{
+ "system": "You are assisting a digital forensic investigator who triages drone flight logs.\nEach input line is one sentence taken from the human-readable messages (tips and warnings) that a\ndrone app records during a flight. Group the sentences into EVENTS so that the investigator can\nreview one representative per event.\n\nTwo sentences belong to the same group if and only if they describe the same underlying EVENT\n(a state change, an action of the system, or a condition). Apply these rules:\n1. Instructions, recommended remedies, hedged/possible consequences (\"may\", \"will be affected\") and static\n   information are not events. Never group them with event sentences; group them only with sentences that\n   request the same action or state the same information.\n2. If a sentence contains an event and a non-event part, group it by its event part\n   (\"Aircraft is in Attitude mode and hovering may be unstable.\" = \"Aircraft in Attitude mode.\").\n   If it contains two or more events, it forms its own group, apart from each single-event sentence.\n3. Merge sentences with the same underlying event regardless of wording, word order, parameter values\n   (numbers, durations, indices), severity wording (\"nearby\" / \"too close\"), or the sensor/direction reporting\n   an environmental condition (\"forward/downward ambient light too low\").\n4. Keep apart different components, axes, links or functions; opposite or different states (on/off, weak/lost,\n   lost/restored, approaching/reached); a different trigger, variant or phase of a function (\"Failsafe RTH\",\n   \"RTH ascending\"); and flight-mode-change notifications (\"Flight mode changed to X\") vs reports of the activity.\n5. When unsure, keep the sentences apart.\n\nReturn every sentence ID exactly once.",
+ "user": "Here is a solved example of the task.\n\nExample sentences:\n0: Aircraft flight control obtained by remote controller B\n1: Aircraft flight control obtained by remote controller UNKNOWN\n2: Aircraft flight control obtained by remote controller A\n3: Command Timeout\n4: Ambient Light too Weak, Backward obstacle sensing is unavailable.\n5: Charge battery\n6: Aircraft will not enter S-mode if powered on with the remote controller set to S-mode.\n7: Contact DJI Support if this persists.\n8: AI Spot-Check failed.\n9: Aircraft is close to Home Point.\n10: Return to home and land promptly.\n11: If the issue persists, contact DJI Support\n12: Aircraft close to Home Point.\n13: Altitude above the takeoff point exceeds nnn.\n14: Aircraft propulsion system error.\n15: Current elevation above nnn.\n16: Camera sensor error.\n17: Camera busy, cannot enter playback\n18: Please contact DJI Support\n19: Land or return to home promptly\n20: Warning: Command Timeout\n21: Flight altitude exceeds nnn.\n22: Return home and land soon.\n23: Aircraft is close to the Home Point.\n24: Recharge promptly\n25: RTK Base Station Data Not Received.\n26: RTK Base Station Data Not Received\n27: Tip: Only the first camera can tap-zoom in dual gimbal control mode\n\nExample answer:\n{\"groups\": [{\"event\": \"FLIGHT_CONTROL_OBTAINED_BY_RC\", \"members\": [0, 1, 2]}, {\"event\": \"COMMAND_TIMEOUT\", \"members\": [3, 20]}, {\"event\": \"AMBIENT_LIGHT_LOW_BACKWARD_SENSING_UNAVAILABLE\", \"members\": [4]}, {\"event\": \"INSTR_CHARGE_BATTERY\", \"members\": [5, 24]}, {\"event\": \"INFO_S_MODE_POWER_ON\", \"members\": [6]}, {\"event\": \"INSTR_CONTACT_SUPPORT\", \"members\": [7, 11, 18]}, {\"event\": \"AI_SPOTCHECK_FAILED\", \"members\": [8]}, {\"event\": \"CLOSE_TO_HOME_POINT\", \"members\": [9, 12, 23]}, {\"event\": \"INSTR_LAND_OR_RTH\", \"members\": [10, 19, 22]}, {\"event\": \"ALTITUDE_LIMIT_EXCEEDED\", \"members\": [13, 15, 21]}, {\"event\": \"PROPULSION_SYSTEM_ERROR\", \"members\": [14]}, {\"event\": \"CAMERA_SENSOR_ERROR\", \"members\": [16]}, {\"event\": \"CAMERA_BUSY_PLAYBACK_UNAVAILABLE\", \"members\": [17]}, {\"event\": \"RTK_BASE_NO_DATA\", \"members\": [25, 26]}, {\"event\": \"INFO_DUAL_GIMBAL_TAP_ZOOM\", \"members\": [27]}]}\n\nGroup these sentences into events. Answer with JSON only, using the schema {\"groups\": [{\"event\": str, \"members\": [int, ...]}]}.\n\nSentences:\n0: Aircraft will follow preset action for lost signal.\n1: Push throttle down to use force landing.\n2: Press the start/stop button to cancel.\n3: Auto RTH in 8 s.\n4: Original route RTH.\n5: Failsafe RTH.\n6: Downlink Restored (after 0m 5.8s).\n7: Gimbal stuck.\n8: Flight mode changed to P-GPS.\n9: Auto RTH canceled.\n10: Fly with caution.\n11: Downlink Restored (after 0m 1.2s).\n12: Returning to home.\n13: No image transmission.\n14: Aircraft returning.\n15: RC signal lost.\n16: Flight mode changed to Manual Takeoff.\n17: Avoid blocking antennas and adjust antenna orientation.\n18: Check whether gimbal lock is removed and make sure gimbal can rotate freely.\n19: Home point updated.\n20: Data Recorder File Index is 88.\n21: Flight mode changed to Go Home.\n22: Controller triggered aircraft to fly backward.\n23: Downlink Restored (after 0m 5.4s).\n24: Auto RTH in 2 s.\n25: Low battery RTH.\n26: Aircraft braking.\n27: RTH.\n28: Press brake button to cancel landing.\n29: Set maximum flight altitude to 500 m (1640 ft).\n30: Auto RTH in 5 s.\n31: Auto RTH in 3 s.\n32: Auto RTH in 9 s.\n33: Remaining battery only enough for RTH.\n34: Data Recorder File Index is 89.\n35: Downlink Restored (after 0m 6.2s).\n36: Auto landing in progress.\n37: Flight mode changed to P-GPS (Brake).\n38: Aircraft returning to home.\n39: Aircraft and remote controller disconnected.\n40: Gimbal pitch axis endpoint reached.\n41: Data Recorder File Index is 80.\n42: Compass error.\n43: Adjust antennas and make sure they are perpendicular to flight direction of aircraft.\n44: Ambient light too low.\n45: Controller triggered aircraft to descend.\n46: Data Recorder File Index is 84.\n47: Downlink Restored (after 0m 7.4s).\n48: RC signal weak.\n49: Obstacle avoidance unavailable.\n50: Set Return to Home (RTH) altitude to 100 m (328 ft).\n51: Image transmission signal lost.\n52: Make sure the area under the aircraft is safe for landing.\n53: Flight mode changed to Auto Landing.\n54: Auto RTH in 4 s.\n55: Auto RTH in 7 s.\n56: Gimbal auto check failed.\n57: Downlink Restored (after 0m 22.8s).\n58: Set maximum flight altitude to 30 m (98 ft).\n59: Data Recorder File Index is 83.\n60: Flight mode changed to Starting Motors.\n61: Motors starting.\n62: Auto RTH in 6 s.\n63: Auto RTH in 1 s.\n64: Downward ambient light too low.\n65: RTH in progress.\n66: Downlink Restored (after 0m 16s).\n67: RTH ascending.\n68: Forward ambient light too low.\n69: Area under aircraft unsuitable for landing.\n70: Press Brake button to cancel RTH.\n71: RTH altitude adjusted to 100m.\n72: Move to safe environment and try again.\n73: Image transmission signal weak.\n74: Downlink Lost.\n75: Flight mode changed to Confirm Landing.\n76: Low battery.\n77: Downlink Restored (after 0m 5.2s).",
+ "parsed": {
+  "groups": [
+   {
+    "event": "INFO_PRESET_LOST_SIGNAL_ACTION",
+    "members": [
+     0
+    ]
+   },
+   {
+    "event": "INSTR_FORCE_LANDING",
+    "members": [
+     1
+    ]
+   },
+   {
+    "event": "INSTR_CANCEL_LANDING",
+    "members": [
+     2,
+     28
+    ]
+   },
+   {
+    "event": "AUTO_RTH_COUNTDOWN",
+    "members": [
+     3,
+     24,
+     30,
+     31,
+     32,
+     54,
+     55,
+     62,
+     63
+    ]
+   },
+   {
+    "event": "ORIGINAL_ROUTE_RTH",
+    "members": [
+     4
+    ]
+   },
+   {
+    "event": "FAILSAFE_RTH",
+    "members": [
+     5
+    ]
+   },
+   {
+    "event": "DOWNLINK_RESTORED",
+    "members": [
+     6,
+     11,
+     23,
+     35,
+     47,
+     57,
+     66,
+     77
+    ]
+   },
+   {
+    "event": "GIMBAL_STUCK",
+    "members": [
+     7
+    ]
+   },
+   {
+    "event": "FLIGHT_MODE_CHANGED_P_GPS",
+    "members": [
+     8
+    ]
+   },
+   {
+    "event": "AUTO_RTH_CANCELED",
+    "members": [
+     9
+    ]
+   },
+   {
+    "event": "INSTR_FLY_WITH_CAUTION",
+    "members": [
+     10
+    ]
+   },
+   {
+    "event": "RETURNING_TO_HOME",
+    "members": [
+     12,
+     14,
+     27,
+     38,
+     65
+    ]
+   },
+   {
+    "event": "IMAGE_TRANSMISSION_LOST",
+    "members": [
+     13,
+     51
+    ]
+   },
+   {
+    "event": "RC_SIGNAL_LOST",
+    "members": [
+     15
+    ]
+   },
+   {
+    "event": "FLIGHT_MODE_CHANGED_MANUAL_TAKEOFF",
+    "members": [
+     16
+    ]
+   },
+   {
+    "event": "INSTR_ADJUST_ANTENNAS",
+    "members": [
+     17,
+     43
+    ]
+   },
+   {
+    "event": "INSTR_CHECK_GIMBAL",
+    "members": [
+     18
+    ]
+   },
+   {
+    "event": "HOME_POINT_UPDATED",
+    "members": [
+     19
+    ]
+   },
+   {
+    "event": "DATA_RECORDER_FILE_INDEX",
+    "members": [
+     20,
+     34,
+     41,
+     46,
+     59
+    ]
+   },
+   {
+    "event": "FLIGHT_MODE_CHANGED_GO_HOME",
+    "members": [
+     21
+    ]
+   },
+   {
+    "event": "AIRCRAFT_TRIGGERED_BACKWARD",
+    "members": [
+     22
+    ]
+   },
+   {
+    "event": "LOW_BATTERY_RTH",
+    "members": [
+     25
+    ]
+   },
+   {
+    "event": "AIRCRAFT_BRAKING",
+    "members": [
+     26
+    ]
+   },
+   {
+    "event": "INSTR_SET_MAX_FLIGHT_ALTITUDE",
+    "members": [
+     29,
+     58
+    ]
+   },
+   {
+    "event": "BATTERY_ONLY_ENOUGH_FOR_RTH",
+    "members": [
+     33
+    ]
+   },
+   {
+    "event": "AUTO_LANDING_IN_PROGRESS",
+    "members": [
+     36
+    ]
+   },
+   {
+    "event": "FLIGHT_MODE_CHANGED_P_GPS_BRAKE",
+    "members": [
+     37
+    ]
+   },
+   {
+    "event": "AIRCRAFT_RC_DISCONNECTED",
+    "members": [
+     39
+    ]
+   },
+   {
+    "event": "GIMBAL_PITCH_ENDPOINT_REACHED",
+    "members": [
+     40
+    ]
+   },
+   {
+    "event": "COMPASS_ERROR",
+    "members": [
+     42
+    ]
+   },
+   {
+    "event": "AMBIENT_LIGHT_LOW",
+    "members": [
+     44,
+     64,
+     68
+    ]
+   },
+   {
+    "event": "AIRCRAFT_TRIGGERED_DESCENT",
+    "members": [
+     45
+    ]
+   },
+   {
+    "event": "RC_SIGNAL_WEAK",
+    "members": [
+     48
+    ]
+   },
+   {
+    "event": "OBSTACLE_AVOIDANCE_UNAVAILABLE",
+    "members": [
+     49
+    ]
+   },
+   {
+    "event": "INSTR_SET_RTH_ALTITUDE",
+    "members": [
+     50
+    ]
+   },
+   {
+    "event": "INSTR_SAFE_LANDING_AREA",
+    "members": [
+     52
+    ]
+   },
+   {
+    "event": "FLIGHT_MODE_CHANGED_AUTO_LANDING",
+    "members": [
+     53
+    ]
+   },
+   {
+    "event": "GIMBAL_AUTO_CHECK_FAILED",
+    "members": [
+     56
+    ]
+   },
+   {
+    "event": "FLIGHT_MODE_CHANGED_STARTING_MOTORS",
+    "members": [
+     60
+    ]
+   },
+   {
+    "event": "MOTORS_STARTING",
+    "members": [
+     61
+    ]
+   },
+   {
+    "event": "RTH_ASCENDING",
+    "members": [
+     67
+    ]
+   },
+   {
+    "event": "LANDING_AREA_UNSUITABLE",
+    "members": [
+     69
+    ]
+   },
+   {
+    "event": "INSTR_CANCEL_RTH",
+    "members": [
+     70
+    ]
+   },
+   {
+    "event": "RTH_ALTITUDE_ADJUSTED",
+    "members": [
+     71
+    ]
+   },
+   {
+    "event": "INSTR_MOVE_TO_SAFE_ENVIRONMENT",
+    "members": [
+     72
+    ]
+   },
+   {
+    "event": "IMAGE_TRANSMISSION_WEAK",
+    "members": [
+     73
+    ]
+   },
+   {
+    "event": "DOWNLINK_LOST",
+    "members": [
+     74
+    ]
+   },
+   {
+    "event": "FLIGHT_MODE_CHANGED_CONFIRM_LANDING",
+    "members": [
+     75
+    ]
+   },
+   {
+    "event": "LOW_BATTERY",
+    "members": [
+     76
+    ]
+   }
+  ]
+ },
+ "raw": "{\"groups\":[{\"event\":\"INFO_PRESET_LOST_SIGNAL_ACTION\",\"members\":[0]},{\"event\":\"INSTR_FORCE_LANDING\",\"members\":[1]},{\"event\":\"INSTR_CANCEL_LANDING\",\"members\":[2,28]},{\"event\":\"AUTO_RTH_COUNTDOWN\",\"members\":[3,24,30,31,32,54,55,62,63]},{\"event\":\"ORIGINAL_ROUTE_RTH\",\"members\":[4]},{\"event\":\"FAILSAFE_RTH\",\"members\":[5]},{\"event\":\"DOWNLINK_RESTORED\",\"members\":[6,11,23,35,47,57,66,77]},{\"event\":\"GIMBAL_STUCK\",\"members\":[7]},{\"event\":\"FLIGHT_MODE_CHANGED_P_GPS\",\"members\":[8]},{\"event\":\"AUTO_RTH_CANCELED\",\"members\":[9]},{\"event\":\"INSTR_FLY_WITH_CAUTION\",\"members\":[10]},{\"event\":\"RETURNING_TO_HOME\",\"members\":[12,14,27,38,65]},{\"event\":\"IMAGE_TRANSMISSION_LOST\",\"members\":[13,51]},{\"event\":\"RC_SIGNAL_LOST\",\"members\":[15]},{\"event\":\"FLIGHT_MODE_CHANGED_MANUAL_TAKEOFF\",\"members\":[16]},{\"event\":\"INSTR_ADJUST_ANTENNAS\",\"members\":[17,43]},{\"event\":\"INSTR_CHECK_GIMBAL\",\"members\":[18]},{\"event\":\"HOME_POINT_UPDATED\",\"members\":[19]},{\"event\":\"DATA_RECORDER_FILE_INDEX\",\"members\":[20,34,41,46,59]},{\"event\":\"FLIGHT_MODE_CHANGED_GO_HOME\",\"members\":[21]},{\"event\":\"AIRCRAFT_TRIGGERED_BACKWARD\",\"members\":[22]},{\"event\":\"LOW_BATTERY_RTH\",\"members\":[25]},{\"event\":\"AIRCRAFT_BRAKING\",\"members\":[26]},{\"event\":\"INSTR_SET_MAX_FLIGHT_ALTITUDE\",\"members\":[29,58]},{\"event\":\"BATTERY_ONLY_ENOUGH_FOR_RTH\",\"members\":[33]},{\"event\":\"AUTO_LANDING_IN_PROGRESS\",\"members\":[36]},{\"event\":\"FLIGHT_MODE_CHANGED_P_GPS_BRAKE\",\"members\":[37]},{\"event\":\"AIRCRAFT_RC_DISCONNECTED\",\"members\":[39]},{\"event\":\"GIMBAL_PITCH_ENDPOINT_REACHED\",\"members\":[40]},{\"event\":\"COMPASS_ERROR\",\"members\":[42]},{\"event\":\"AMBIENT_LIGHT_LOW\",\"members\":[44,64,68]},{\"event\":\"AIRCRAFT_TRIGGERED_DESCENT\",\"members\":[45]},{\"event\":\"RC_SIGNAL_WEAK\",\"members\":[48]},{\"event\":\"OBSTACLE_AVOIDANCE_UNAVAILABLE\",\"members\":[49]},{\"event\":\"INSTR_SET_RTH_ALTITUDE\",\"members\":[50]},{\"event\":\"INSTR_SAFE_LANDING_AREA\",\"members\":[52]},{\"event\":\"FLIGHT_MODE_CHANGED_AUTO_LANDING\",\"members\":[53]},{\"event\":\"GIMBAL_AUTO_CHECK_FAILED\",\"members\":[56]},{\"event\":\"FLIGHT_MODE_CHANGED_STARTING_MOTORS\",\"members\":[60]},{\"event\":\"MOTORS_STARTING\",\"members\":[61]},{\"event\":\"RTH_ASCENDING\",\"members\":[67]},{\"event\":\"LANDING_AREA_UNSUITABLE\",\"members\":[69]},{\"event\":\"INSTR_CANCEL_RTH\",\"members\":[70]},{\"event\":\"RTH_ALTITUDE_ADJUSTED\",\"members\":[71]},{\"event\":\"INSTR_MOVE_TO_SAFE_ENVIRONMENT\",\"members\":[72]},{\"event\":\"IMAGE_TRANSMISSION_WEAK\",\"members\":[73]},{\"event\":\"DOWNLINK_LOST\",\"members\":[74]},{\"event\":\"FLIGHT_MODE_CHANGED_CONFIRM_LANDING\",\"members\":[75]},{\"event\":\"LOW_BATTERY\",\"members\":[76]}]}",
+ "served_by": "openai/gpt-5.6-luna",
+ "usage": {
+  "completion_tokens": 8009,
+  "prompt_tokens": 1816,
+  "total_tokens": 9825,
+  "completion_tokens_details": {
+   "accepted_prediction_tokens": null,
+   "audio_tokens": 0,
+   "reasoning_tokens": 7250,
+   "rejected_prediction_tokens": null,
+   "text_tokens": null,
+   "image_tokens": 0
+  },
+  "prompt_tokens_details": {
+   "audio_tokens": 0,
+   "cache_write_tokens": 1813,
+   "cached_tokens": 0,
+   "image_tokens": null,
+   "text_tokens": null,
+   "video_tokens": 0
+  },
+  "cost": 0.01006465,
+  "is_byok": false,
+  "cost_details": {
+   "upstream_inference_cost": 0.01006465,
+   "upstream_inference_prompt_cost": 0.00045385,
+   "upstream_inference_completions_cost": 0.0096108
+  }
+ },
+ "request_id": "gen-1792248506-rrb51fL0HKoPTFSMKJMM",
+ "finish_reason": "stop",
+ "latency_s": 60.45531896315515
+}

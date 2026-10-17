@@ -1,0 +1,5 @@
+Subset,Clustering,Threshold (CV),Groups,GA,95% CI,GA weighted,Over-merged,Time (s)
+all sentences,Agglomerative,0.230,46,0.808,"[0.72, 0.88]",0.798,4,0.01
+event sentences,Agglomerative,0.230,38,0.810,"[0.71, 0.90]",0.828,3,0.01
+all sentences,BIRCH,0.340,47,0.821,"[0.73, 0.90]",0.804,4,0.02
+event sentences,BIRCH,0.340,38,0.810,"[0.71, 0.90]",0.828,3,0.02

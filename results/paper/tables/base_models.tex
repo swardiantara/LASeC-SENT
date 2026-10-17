@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Effect of the base sentence encoder on FPV (each pre-trained model with the threshold tuned on the catalogue; each LASeC model with the CV-selected threshold).}
+\label{tab:base_models}
+\small
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Subset & Base model & Params (M) & GA pre-trained & GA LASeC & Δ fine-tuning & GA weighted & Over-merged & Time (s) \\
+\midrule
+all sentences & all-MiniLM-L6-v2 & 22.7 & 0.782 & 0.808 & +0.026 & 0.798 & 4 & 0.01 \\
+all sentences & all-MiniLM-L12-v2 & 33.4 & 0.808 & 0.821 & +0.013 & 0.728 & 3 & 0.01 \\
+all sentences & all-distilroberta-v1 & 82.1 & 0.718 & 0.859 & +0.141 & 0.811 & 3 & 0.01 \\
+all sentences & all-mpnet-base-v2 & 109.5 & 0.808 & 0.833 & +0.026 & 0.807 & 4 & 0.02 \\
+event sentences & all-MiniLM-L6-v2 & 22.7 & 0.762 & 0.810 & +0.048 & 0.828 & 3 & 0.01 \\
+event sentences & all-MiniLM-L12-v2 & 33.4 & 0.794 & 0.810 & +0.016 & 0.737 & 2 & 0.01 \\
+event sentences & all-distilroberta-v1 & 82.1 & 0.651 & 0.857 & +0.206 & 0.837 & 2 & 0.01 \\
+event sentences & all-mpnet-base-v2 & 109.5 & 0.794 & 0.825 & +0.032 & 0.832 & 3 & 0.02 \\
+\bottomrule
+\end{tabular}
+\end{table}

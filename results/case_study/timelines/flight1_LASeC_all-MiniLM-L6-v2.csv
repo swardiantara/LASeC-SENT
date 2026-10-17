@@ -1,0 +1,46 @@
+time,kind,message,sentence,triage_event,representative,gold_event,expert_key_event,sentence_type
+3:09:29.82 AM,tip,Motors starting.,Motors starting.,12,Motors starting.,MOTORS_STARTING,False,event
+3:09:29.82 AM,tip,Flight mode changed to P-GPS.,Flight mode changed to P-GPS.,9,Flight mode changed to P-GPS.,MODE_PGPS,False,event
+3:09:30.02 AM,tip,Data Recorder File Index is 80.,Data Recorder File Index is 80.,5,Data Recorder File Index is 80.,DATA_RECORDER_INDEX,False,info
+3:09:30.02 AM,tip,Set Return to Home (RTH) altitude to 100 m (328 ft).,Set Return to Home (RTH) altitude to 100 m (328 ft).,7,Set Return to Home (RTH) altitude to 100 m (328 ft).,RTH_ALT_SET,False,event
+3:09:30.02 AM,tip,Set maximum flight altitude to 500 m (1640 ft).,Set maximum flight altitude to 500 m (1640 ft).,16,Set maximum flight altitude to 500 m (1640 ft).,MAX_ALT_SET,False,event
+3:09:30.02 AM,tip,Flight mode changed to Starting Motors.,Flight mode changed to Starting Motors.,40,Flight mode changed to Starting Motors.,MODE_STARTING_MOTORS,False,event
+3:09:31.42 AM,tip,Flight mode changed to Manual Takeoff.,Flight mode changed to Manual Takeoff.,2,Flight mode changed to Manual Takeoff.,MODE_MANUAL_TAKEOFF,False,event
+3:09:35.42 AM,tip,Flight mode changed to P-GPS.,Flight mode changed to P-GPS.,9,Flight mode changed to P-GPS.,MODE_PGPS,False,event
+3:09:36.02 AM,tip,Home point updated.,Home point updated.,36,Home point updated.,HOME_POINT_UPDATED,False,event
+3:09:48.82 AM,tip,Gimbal pitch axis endpoint reached.,Gimbal pitch axis endpoint reached.,22,Gimbal pitch axis endpoint reached.,GIMBAL_PITCH_LIMIT,True,event
+3:09:51.62 AM,tip,Gimbal pitch axis endpoint reached.,Gimbal pitch axis endpoint reached.,22,Gimbal pitch axis endpoint reached.,GIMBAL_PITCH_LIMIT,True,event
+3:10:21.02 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:21.02 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,4,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:10:27.82 AM,tip,Image transmission signal weak.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:27.82 AM,tip,Aircraft braking.,Aircraft braking.,43,Aircraft braking.,BRAKING,False,event
+3:10:27.82 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:27.82 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,4,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:10:30.82 AM,tip,Image transmission signal weak.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:30.82 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:30.82 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,4,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:10:38.62 AM,tip,Image transmission signal weak.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:38.62 AM,tip,Aircraft braking.,Aircraft braking.,43,Aircraft braking.,BRAKING,False,event
+3:10:38.62 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:38.62 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,4,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:10:38.82 AM,tip,RC signal lost.,RC signal lost.,18,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:10:40.62 AM,tip,RC signal lost.,RC signal lost.,18,RC signal lost.,RC_SIGNAL_LOST,True,event
+3:10:40.62 AM,tip,Aircraft braking.,Aircraft braking.,43,Aircraft braking.,BRAKING,False,event
+3:10:40.62 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:40.62 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,4,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:10:53.82 AM,tip,Image transmission signal weak.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:57.02 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:10:57.02 AM,tip,Image transmission signal weak. Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,4,Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,INSTR_ADJUST_ANTENNA,False,mitigation
+3:11:01.82 AM,tip,Image transmission signal weak.,Image transmission signal weak.,41,Image transmission signal weak.,IMGTX_SIGNAL_WEAK,True,event
+3:13:12.42 AM,tip,Aircraft braking.,Aircraft braking.,43,Aircraft braking.,BRAKING,False,event
+3:13:12.82 AM,tip,Aircraft braking.,Aircraft braking.,43,Aircraft braking.,BRAKING,False,event
+3:13:14.22 AM,tip,Aircraft braking.,Aircraft braking.,43,Aircraft braking.,BRAKING,False,event
+3:13:14.22 AM,tip,Auto landing in progress.,Auto landing in progress.,33,Auto landing in progress.,AUTO_LANDING_IN_PROGRESS,False,event
+3:13:14.22 AM,tip,Flight mode changed to Auto Landing.,Flight mode changed to Auto Landing.,2,Flight mode changed to Manual Takeoff.,MODE_AUTO_LANDING,False,event
+3:13:15.82 AM,tip,Auto landing in progress.,Auto landing in progress.,33,Auto landing in progress.,AUTO_LANDING_IN_PROGRESS,False,event
+3:13:15.82 AM,tip,Make sure the area under the aircraft is safe for landing. Push throttle down to use force landing.,Make sure the area under the aircraft is safe for landing.,34,Make sure the area under the aircraft is safe for landing.,INSTR_LANDING_AREA_SAFE,False,instruction
+3:13:15.82 AM,tip,Make sure the area under the aircraft is safe for landing. Push throttle down to use force landing.,Push throttle down to use force landing.,17,Push throttle down to use force landing.,INSTR_FORCE_LANDING,False,instruction
+3:13:41.82 AM,tip,Auto landing in progress.,Auto landing in progress.,33,Auto landing in progress.,AUTO_LANDING_IN_PROGRESS,False,event
+3:13:41.82 AM,tip,Make sure the area under the aircraft is safe for landing. Push throttle down to use force landing.,Make sure the area under the aircraft is safe for landing.,34,Make sure the area under the aircraft is safe for landing.,INSTR_LANDING_AREA_SAFE,False,instruction
+3:13:41.82 AM,tip,Make sure the area under the aircraft is safe for landing. Push throttle down to use force landing.,Push throttle down to use force landing.,17,Push throttle down to use force landing.,INSTR_FORCE_LANDING,False,instruction
+3:13:52.92 AM,tip,Flight mode changed to P-GPS.,Flight mode changed to P-GPS.,9,Flight mode changed to P-GPS.,MODE_PGPS,False,event

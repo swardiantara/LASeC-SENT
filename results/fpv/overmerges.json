@@ -1,0 +1,1644 @@
+{
+  "Exact dedup|all": [],
+  "Exact dedup|events": [],
+  "Regex-masked dedup|all": [],
+  "Regex-masked dedup|events": [],
+  "Drain3|all": [
+    {
+      "cluster": 22,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    }
+  ],
+  "Drain3|events": [
+    {
+      "cluster": 22,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    }
+  ],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|all": [
+    {
+      "cluster": 0,
+      "events": [
+        "RC_TRIGGER_BACKWARD",
+        "RC_TRIGGER_DESCEND"
+      ],
+      "sentences": [
+        "Controller triggered aircraft to descend.",
+        "Controller triggered aircraft to fly backward."
+      ],
+      "occurrences": 61
+    },
+    {
+      "cluster": 4,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    },
+    {
+      "cluster": 9,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    }
+  ],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|events": [
+    {
+      "cluster": 0,
+      "events": [
+        "RC_TRIGGER_BACKWARD",
+        "RC_TRIGGER_DESCEND"
+      ],
+      "sentences": [
+        "Controller triggered aircraft to descend.",
+        "Controller triggered aircraft to fly backward."
+      ],
+      "occurrences": 61
+    },
+    {
+      "cluster": 4,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    },
+    {
+      "cluster": 9,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    }
+  ],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|all": [
+    {
+      "cluster": 0,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    },
+    {
+      "cluster": 1,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    }
+  ],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|events": [
+    {
+      "cluster": 0,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    },
+    {
+      "cluster": 1,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    }
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|all": [
+    {
+      "cluster": 2,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_MANUAL_TAKEOFF"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Manual Takeoff."
+      ],
+      "occurrences": 11
+    },
+    {
+      "cluster": 8,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 6,
+      "events": [
+        "BATTERY_ONLY_FOR_RTH",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Remaining battery only enough for RTH."
+      ],
+      "occurrences": 11
+    },
+    {
+      "cluster": 0,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_FORCE_LANDING"
+      ],
+      "sentences": [
+        "Press brake button to cancel landing.",
+        "Push throttle down to use force landing."
+      ],
+      "occurrences": 9
+    }
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|events": [
+    {
+      "cluster": 2,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_MANUAL_TAKEOFF"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Manual Takeoff."
+      ],
+      "occurrences": 11
+    },
+    {
+      "cluster": 8,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 6,
+      "events": [
+        "BATTERY_ONLY_FOR_RTH",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Remaining battery only enough for RTH."
+      ],
+      "occurrences": 11
+    }
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|all": [
+    {
+      "cluster": 2,
+      "events": [
+        "RC_TRIGGER_BACKWARD",
+        "RC_TRIGGER_DESCEND"
+      ],
+      "sentences": [
+        "Controller triggered aircraft to descend.",
+        "Controller triggered aircraft to fly backward."
+      ],
+      "occurrences": 61
+    },
+    {
+      "cluster": 0,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING",
+        "MODE_GO_HOME",
+        "MODE_MANUAL_TAKEOFF"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing.",
+        "Flight mode changed to Go Home.",
+        "Flight mode changed to Manual Takeoff."
+      ],
+      "occurrences": 41
+    },
+    {
+      "cluster": 9,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 6,
+      "events": [
+        "IMGTX_LOST",
+        "IMGTX_SIGNAL_WEAK"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "Image transmission signal weak."
+      ],
+      "occurrences": 108
+    },
+    {
+      "cluster": 8,
+      "events": [
+        "BATTERY_ONLY_FOR_RTH",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Remaining battery only enough for RTH."
+      ],
+      "occurrences": 11
+    },
+    {
+      "cluster": 5,
+      "events": [
+        "RC_SIGNAL_LOST",
+        "RC_SIGNAL_WEAK"
+      ],
+      "sentences": [
+        "RC signal lost.",
+        "RC signal weak."
+      ],
+      "occurrences": 340
+    },
+    {
+      "cluster": 3,
+      "events": [
+        "RTH_ACTIVE",
+        "RTH_ASCENDING"
+      ],
+      "sentences": [
+        "RTH ascending.",
+        "RTH in progress.",
+        "RTH."
+      ],
+      "occurrences": 174
+    }
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|events": [
+    {
+      "cluster": 2,
+      "events": [
+        "RC_TRIGGER_BACKWARD",
+        "RC_TRIGGER_DESCEND"
+      ],
+      "sentences": [
+        "Controller triggered aircraft to descend.",
+        "Controller triggered aircraft to fly backward."
+      ],
+      "occurrences": 61
+    },
+    {
+      "cluster": 0,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING",
+        "MODE_GO_HOME",
+        "MODE_MANUAL_TAKEOFF"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing.",
+        "Flight mode changed to Go Home.",
+        "Flight mode changed to Manual Takeoff."
+      ],
+      "occurrences": 41
+    },
+    {
+      "cluster": 9,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 6,
+      "events": [
+        "IMGTX_LOST",
+        "IMGTX_SIGNAL_WEAK"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "Image transmission signal weak."
+      ],
+      "occurrences": 108
+    },
+    {
+      "cluster": 8,
+      "events": [
+        "BATTERY_ONLY_FOR_RTH",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Remaining battery only enough for RTH."
+      ],
+      "occurrences": 11
+    },
+    {
+      "cluster": 5,
+      "events": [
+        "RC_SIGNAL_LOST",
+        "RC_SIGNAL_WEAK"
+      ],
+      "sentences": [
+        "RC signal lost.",
+        "RC signal weak."
+      ],
+      "occurrences": 340
+    },
+    {
+      "cluster": 3,
+      "events": [
+        "RTH_ACTIVE",
+        "RTH_ASCENDING"
+      ],
+      "sentences": [
+        "RTH ascending.",
+        "RTH in progress.",
+        "RTH."
+      ],
+      "occurrences": 174
+    }
+  ],
+  "LASeC (all-MiniLM-L12-v2)|all": [
+    {
+      "cluster": 7,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 4,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    },
+    {
+      "cluster": 2,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_BRAKE_CANCEL_RTH"
+      ],
+      "sentences": [
+        "Press Brake button to cancel RTH.",
+        "Press brake button to cancel landing."
+      ],
+      "occurrences": 113
+    }
+  ],
+  "LASeC (all-MiniLM-L12-v2)|events": [
+    {
+      "cluster": 7,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 4,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    }
+  ],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|all": [
+    {
+      "cluster": 22,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 32,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    },
+    {
+      "cluster": 39,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_BRAKE_CANCEL_RTH"
+      ],
+      "sentences": [
+        "Press Brake button to cancel RTH.",
+        "Press brake button to cancel landing."
+      ],
+      "occurrences": 113
+    }
+  ],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|events": [
+    {
+      "cluster": 22,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 32,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    }
+  ],
+  "LASeC (all-MiniLM-L6-v2)|all": [
+    {
+      "cluster": 2,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING",
+        "MODE_MANUAL_TAKEOFF"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing.",
+        "Flight mode changed to Manual Takeoff."
+      ],
+      "occurrences": 15
+    },
+    {
+      "cluster": 9,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 6,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    },
+    {
+      "cluster": 0,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_BRAKE_CANCEL_RTH",
+        "INSTR_STARTSTOP_CANCEL"
+      ],
+      "sentences": [
+        "Press Brake button to cancel RTH.",
+        "Press brake button to cancel landing.",
+        "Press the start/stop button to cancel."
+      ],
+      "occurrences": 127
+    }
+  ],
+  "LASeC (all-MiniLM-L6-v2)|events": [
+    {
+      "cluster": 2,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING",
+        "MODE_MANUAL_TAKEOFF"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing.",
+        "Flight mode changed to Manual Takeoff."
+      ],
+      "occurrences": 15
+    },
+    {
+      "cluster": 9,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 6,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    }
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|all": [
+    {
+      "cluster": 18,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING",
+        "MODE_MANUAL_TAKEOFF"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing.",
+        "Flight mode changed to Manual Takeoff."
+      ],
+      "occurrences": 15
+    },
+    {
+      "cluster": 20,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 29,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    },
+    {
+      "cluster": 36,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_BRAKE_CANCEL_RTH"
+      ],
+      "sentences": [
+        "Press Brake button to cancel RTH.",
+        "Press brake button to cancel landing."
+      ],
+      "occurrences": 113
+    }
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|events": [
+    {
+      "cluster": 18,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING",
+        "MODE_MANUAL_TAKEOFF"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing.",
+        "Flight mode changed to Manual Takeoff."
+      ],
+      "occurrences": 15
+    },
+    {
+      "cluster": 20,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 29,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    }
+  ],
+  "LASeC (all-distilroberta-v1)|all": [
+    {
+      "cluster": 10,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 5,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    },
+    {
+      "cluster": 0,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_BRAKE_CANCEL_RTH"
+      ],
+      "sentences": [
+        "Press Brake button to cancel RTH.",
+        "Press brake button to cancel landing."
+      ],
+      "occurrences": 113
+    }
+  ],
+  "LASeC (all-distilroberta-v1)|events": [
+    {
+      "cluster": 10,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 5,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    }
+  ],
+  "LASeC (all-distilroberta-v1) + BIRCH|all": [
+    {
+      "cluster": 22,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 31,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    },
+    {
+      "cluster": 38,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_BRAKE_CANCEL_RTH"
+      ],
+      "sentences": [
+        "Press Brake button to cancel RTH.",
+        "Press brake button to cancel landing."
+      ],
+      "occurrences": 113
+    }
+  ],
+  "LASeC (all-distilroberta-v1) + BIRCH|events": [
+    {
+      "cluster": 22,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 31,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    }
+  ],
+  "LASeC (all-mpnet-base-v2)|all": [
+    {
+      "cluster": 2,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    },
+    {
+      "cluster": 7,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 0,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    },
+    {
+      "cluster": 3,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_BRAKE_CANCEL_RTH"
+      ],
+      "sentences": [
+        "Press Brake button to cancel RTH.",
+        "Press brake button to cancel landing."
+      ],
+      "occurrences": 113
+    }
+  ],
+  "LASeC (all-mpnet-base-v2)|events": [
+    {
+      "cluster": 2,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    },
+    {
+      "cluster": 7,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 0,
+      "events": [
+        "LOW_BATTERY",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Low battery."
+      ],
+      "occurrences": 20
+    }
+  ],
+  "LASeC (all-mpnet-base-v2) + BIRCH|all": [
+    {
+      "cluster": 18,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    },
+    {
+      "cluster": 21,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    },
+    {
+      "cluster": 38,
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_BRAKE_CANCEL_RTH"
+      ],
+      "sentences": [
+        "Press Brake button to cancel RTH.",
+        "Press brake button to cancel landing."
+      ],
+      "occurrences": 113
+    }
+  ],
+  "LASeC (all-mpnet-base-v2) + BIRCH|events": [
+    {
+      "cluster": 18,
+      "events": [
+        "MODE_AUTO_LANDING",
+        "MODE_CONFIRM_LANDING"
+      ],
+      "sentences": [
+        "Flight mode changed to Auto Landing.",
+        "Flight mode changed to Confirm Landing."
+      ],
+      "occurrences": 9
+    },
+    {
+      "cluster": 21,
+      "events": [
+        "MODE_PGPS",
+        "MODE_PGPS_BRAKE"
+      ],
+      "sentences": [
+        "Flight mode changed to P-GPS (Brake).",
+        "Flight mode changed to P-GPS."
+      ],
+      "occurrences": 38
+    }
+  ],
+  "LLM claude-opus-5.5_few run0|all": [],
+  "LLM claude-opus-5.5_few run0|events": [],
+  "LLM claude-opus-5.5_few run1|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM claude-opus-5.5_few run1|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM claude-opus-5.5_few run2|all": [],
+  "LLM claude-opus-5.5_few run2|events": [],
+  "LLM claude-opus-5.5_zero run0|all": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM claude-opus-5.5_zero run0|events": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM claude-opus-5.5_zero run1|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM claude-opus-5.5_zero run1|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM claude-opus-5.5_zero run2|all": [],
+  "LLM claude-opus-5.5_zero run2|events": [],
+  "LLM gemini-3.8-flash_few run0|all": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_few run0|events": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_few run1|all": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_few run1|events": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_few run2|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_few run2|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_zero run0|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_SIGNAL_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_zero run0|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_SIGNAL_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_zero run1|all": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_SIGNAL_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_zero run1|events": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_SIGNAL_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_zero run2|all": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_SIGNAL_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gemini-3.8-flash_zero run2|events": [
+    {
+      "cluster": "RC_SIGNAL_LOST",
+      "events": [
+        "RC_DISCONNECTED",
+        "RC_SIGNAL_LOST"
+      ],
+      "sentences": [
+        "Aircraft and remote controller disconnected.",
+        "RC signal lost."
+      ],
+      "occurrences": 217
+    },
+    {
+      "cluster": "IMAGE_TRANSMISSION_SIGNAL_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gpt-5.6-luna_few run0|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    },
+    {
+      "cluster": "INSTR_CANCEL_LANDING",
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_STARTSTOP_CANCEL"
+      ],
+      "sentences": [
+        "Press brake button to cancel landing.",
+        "Press the start/stop button to cancel."
+      ],
+      "occurrences": 19
+    }
+  ],
+  "LLM gpt-5.6-luna_few run0|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gpt-5.6-luna_few run1|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    },
+    {
+      "cluster": "BATTERY_ONLY_ENOUGH_FOR_RTH",
+      "events": [
+        "BATTERY_ONLY_FOR_RTH",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Remaining battery only enough for RTH."
+      ],
+      "occurrences": 11
+    },
+    {
+      "cluster": "INSTR_CANCEL_LANDING",
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_STARTSTOP_CANCEL"
+      ],
+      "sentences": [
+        "Press brake button to cancel landing.",
+        "Press the start/stop button to cancel."
+      ],
+      "occurrences": 19
+    }
+  ],
+  "LLM gpt-5.6-luna_few run1|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    },
+    {
+      "cluster": "BATTERY_ONLY_ENOUGH_FOR_RTH",
+      "events": [
+        "BATTERY_ONLY_FOR_RTH",
+        "LOW_BATTERY_RTH"
+      ],
+      "sentences": [
+        "Low battery RTH.",
+        "Remaining battery only enough for RTH."
+      ],
+      "occurrences": 11
+    }
+  ],
+  "LLM gpt-5.6-luna_few run2|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    },
+    {
+      "cluster": "INSTR_CANCEL_LANDING",
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_STARTSTOP_CANCEL"
+      ],
+      "sentences": [
+        "Press brake button to cancel landing.",
+        "Press the start/stop button to cancel."
+      ],
+      "occurrences": 19
+    }
+  ],
+  "LLM gpt-5.6-luna_few run2|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gpt-5.6-luna_zero run0|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gpt-5.6-luna_zero run0|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gpt-5.6-luna_zero run1|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    },
+    {
+      "cluster": "CANCEL_LANDING_INSTRUCTION",
+      "events": [
+        "INSTR_BRAKE_CANCEL_LANDING",
+        "INSTR_STARTSTOP_CANCEL"
+      ],
+      "sentences": [
+        "Press brake button to cancel landing.",
+        "Press the start/stop button to cancel."
+      ],
+      "occurrences": 19
+    }
+  ],
+  "LLM gpt-5.6-luna_zero run1|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gpt-5.6-luna_zero run2|all": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ],
+  "LLM gpt-5.6-luna_zero run2|events": [
+    {
+      "cluster": "IMAGE_TRANSMISSION_LOST",
+      "events": [
+        "IMGTX_LOST",
+        "NO_IMGTX"
+      ],
+      "sentences": [
+        "Image transmission signal lost.",
+        "No image transmission."
+      ],
+      "occurrences": 55
+    }
+  ]
+}

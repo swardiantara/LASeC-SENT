@@ -1,0 +1,32 @@
+{
+  "stage_a": {
+    "embedding": "sentence-transformers/all-mpnet-base-v2",
+    "best_algorithm": "agglomerative",
+    "configured_algorithm": "agglomerative",
+    "consistent": true
+  },
+  "stage_b": {
+    "algorithm": "agglomerative",
+    "most_accurate": "all-distilroberta-v1",
+    "efficient_within_tolerance": "all-distilroberta-v1",
+    "tolerance": 0.02,
+    "configured_embedding": "all-MiniLM-L6-v2",
+    "consistent": false
+  },
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.5.1",
+    "scikit-learn": "1.7.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "pysbd": "0.3.4",
+    "drain3": "0.9.11",
+    "anthropic": null,
+    "openai": null,
+    "cuda": true,
+    "device_name": "NVIDIA GeForce RTX 4080"
+  }
+}

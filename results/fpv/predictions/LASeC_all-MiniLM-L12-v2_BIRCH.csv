@@ -1,0 +1,79 @@
+sentence,occurrences,gold,pred,sentence_type,correct
+Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,52,INSTR_ADJUST_ANTENNA,0,mitigation,1.0
+Aircraft and remote controller disconnected.,2,RC_DISCONNECTED,1,event,1.0
+Aircraft braking.,80,BRAKING,2,event,1.0
+Aircraft returning to home.,27,RTH_ACTIVE,3,event,0.0
+Aircraft returning.,5,RTH_ACTIVE,3,event,0.0
+Aircraft will follow preset action for lost signal.,36,FAILSAFE_PRESET_ACTION,4,event,1.0
+Ambient light too low.,121,AMBIENT_LIGHT_LOW,5,event,0.0
+Area under aircraft unsuitable for landing.,3,LANDING_AREA_UNSUITABLE,6,event,1.0
+Auto RTH canceled.,61,AUTO_RTH_CANCELED,7,event,1.0
+Auto RTH in 1 s.,4,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto RTH in 2 s.,1,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto RTH in 3 s.,1,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto RTH in 4 s.,1,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto RTH in 5 s.,1,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto RTH in 6 s.,1,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto RTH in 7 s.,1,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto RTH in 8 s.,2,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto RTH in 9 s.,2,AUTO_RTH_COUNTDOWN,8,event,1.0
+Auto landing in progress.,18,AUTO_LANDING_IN_PROGRESS,9,event,1.0
+Avoid blocking antennas and adjust antenna orientation.,84,INSTR_ADJUST_ANTENNA,0,mitigation,1.0
+Check whether gimbal lock is removed and make sure gimbal can rotate freely.,15,INSTR_CHECK_GIMBAL_LOCK,10,mitigation,1.0
+Compass error.,6,COMPASS_ERROR,11,event,1.0
+Controller triggered aircraft to descend.,46,RC_TRIGGER_DESCEND,12,event,1.0
+Controller triggered aircraft to fly backward.,15,RC_TRIGGER_BACKWARD,13,event,1.0
+Data Recorder File Index is 80.,1,DATA_RECORDER_INDEX,14,info,1.0
+Data Recorder File Index is 83.,1,DATA_RECORDER_INDEX,14,info,1.0
+Data Recorder File Index is 84.,1,DATA_RECORDER_INDEX,14,info,1.0
+Data Recorder File Index is 88.,3,DATA_RECORDER_INDEX,14,info,1.0
+Data Recorder File Index is 89.,1,DATA_RECORDER_INDEX,14,info,1.0
+Downlink Lost.,8,DOWNLINK_LOST,15,event,1.0
+Downlink Restored (after 0m 1.2s).,1,DOWNLINK_RESTORED,16,event,1.0
+Downlink Restored (after 0m 16s).,1,DOWNLINK_RESTORED,16,event,1.0
+Downlink Restored (after 0m 22.8s).,1,DOWNLINK_RESTORED,16,event,1.0
+Downlink Restored (after 0m 5.2s).,1,DOWNLINK_RESTORED,16,event,1.0
+Downlink Restored (after 0m 5.4s).,1,DOWNLINK_RESTORED,16,event,1.0
+Downlink Restored (after 0m 5.8s).,1,DOWNLINK_RESTORED,16,event,1.0
+Downlink Restored (after 0m 6.2s).,1,DOWNLINK_RESTORED,16,event,1.0
+Downlink Restored (after 0m 7.4s).,1,DOWNLINK_RESTORED,16,event,1.0
+Downward ambient light too low.,38,AMBIENT_LIGHT_LOW,5,event,0.0
+Failsafe RTH.,126,FAILSAFE_RTH,17,event,1.0
+Flight mode changed to Auto Landing.,5,MODE_AUTO_LANDING,18,event,1.0
+Flight mode changed to Confirm Landing.,4,MODE_CONFIRM_LANDING,19,event,1.0
+Flight mode changed to Go Home.,26,MODE_GO_HOME,20,event,1.0
+Flight mode changed to Manual Takeoff.,6,MODE_MANUAL_TAKEOFF,21,event,1.0
+Flight mode changed to P-GPS (Brake).,14,MODE_PGPS_BRAKE,22,event,0.0
+Flight mode changed to P-GPS.,24,MODE_PGPS,22,event,0.0
+Flight mode changed to Starting Motors.,6,MODE_STARTING_MOTORS,23,event,1.0
+Fly with caution.,61,INSTR_FLY_CAUTION,24,instruction,1.0
+Forward ambient light too low.,21,AMBIENT_LIGHT_LOW,25,event,0.0
+Gimbal auto check failed.,14,GIMBAL_AUTOCHECK_FAILED,26,event,1.0
+Gimbal pitch axis endpoint reached.,5,GIMBAL_PITCH_LIMIT,27,event,1.0
+Gimbal stuck.,15,GIMBAL_STUCK,28,event,1.0
+Home point updated.,13,HOME_POINT_UPDATED,29,event,1.0
+Image transmission signal lost.,1,IMGTX_LOST,30,event,1.0
+Image transmission signal weak.,107,IMGTX_SIGNAL_WEAK,31,event,1.0
+Low battery RTH.,6,LOW_BATTERY_RTH,32,event,0.0
+Low battery.,14,LOW_BATTERY,32,event,0.0
+Make sure the area under the aircraft is safe for landing.,4,INSTR_LANDING_AREA_SAFE,33,instruction,1.0
+Motors starting.,8,MOTORS_STARTING,34,event,1.0
+Move to safe environment and try again.,3,INSTR_MOVE_SAFE_ENV,35,mitigation,1.0
+No image transmission.,54,NO_IMGTX,36,event,1.0
+Obstacle avoidance unavailable.,180,OA_UNAVAILABLE,37,event,1.0
+Original route RTH.,21,RTH_ORIGINAL_ROUTE,38,event,1.0
+Press Brake button to cancel RTH.,108,INSTR_BRAKE_CANCEL_RTH,39,instruction,0.0
+Press brake button to cancel landing.,5,INSTR_BRAKE_CANCEL_LANDING,39,instruction,0.0
+Press the start/stop button to cancel.,14,INSTR_STARTSTOP_CANCEL,40,instruction,1.0
+Push throttle down to use force landing.,4,INSTR_FORCE_LANDING,41,instruction,1.0
+RC signal lost.,215,RC_SIGNAL_LOST,42,event,1.0
+RC signal weak.,125,RC_SIGNAL_WEAK,43,event,1.0
+RTH altitude adjusted to 100m.,11,RTH_ALT_SET,44,event,1.0
+RTH ascending.,68,RTH_ASCENDING,45,event,1.0
+RTH in progress.,79,RTH_ACTIVE,46,event,0.0
+RTH.,27,RTH_ACTIVE,47,event,0.0
+Remaining battery only enough for RTH.,5,BATTERY_ONLY_FOR_RTH,48,event,1.0
+Returning to home.,98,RTH_ACTIVE,3,event,0.0
+Set Return to Home (RTH) altitude to 100 m (328 ft).,7,RTH_ALT_SET,44,event,1.0
+Set maximum flight altitude to 30 m (98 ft).,1,MAX_ALT_SET,49,event,1.0
+Set maximum flight altitude to 500 m (1640 ft).,7,MAX_ALT_SET,49,event,1.0

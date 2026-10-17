@@ -1,0 +1,9 @@
+Model,Input orders,GA mean ± sd,GA range,Groups range
+LASeC (all-MiniLM-L12-v2),20,0.821 ± 0.000,0.821–0.821,50–50
+LASeC (all-MiniLM-L12-v2) + BIRCH,20,0.802 ± 0.046,0.679–0.821,50–52
+LASeC (all-MiniLM-L6-v2),20,0.808 ± 0.000,0.808–0.808,46–46
+LASeC (all-MiniLM-L6-v2) + BIRCH,20,0.731 ± 0.050,0.692–0.833,45–48
+LASeC (all-distilroberta-v1),20,0.859 ± 0.000,0.859–0.859,48–48
+LASeC (all-distilroberta-v1) + BIRCH,20,0.847 ± 0.036,0.744–0.859,47–48
+LASeC (all-mpnet-base-v2),20,0.833 ± 0.000,0.833–0.833,48–48
+LASeC (all-mpnet-base-v2) + BIRCH,20,0.859 ± 0.000,0.859–0.859,49–49

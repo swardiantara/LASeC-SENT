@@ -1,0 +1,28 @@
+{
+  "model": {
+    "name": "gemini-4-argon",
+    "model": "google/gemini-4-argon",
+    "enabled": true
+  },
+  "defaults": {
+    "reasoning_effort": "high",
+    "temperature": null,
+    "max_tokens": 32000
+  },
+  "mode": "zero",
+  "demonstration": null,
+  "runs": [
+    {
+      "run": 0,
+      "error": "ModuleNotFoundError: No module named 'openai'"
+    },
+    {
+      "run": 1,
+      "error": "ModuleNotFoundError: No module named 'openai'"
+    },
+    {
+      "run": 2,
+      "error": "ModuleNotFoundError: No module named 'openai'"
+    }
+  ]
+}

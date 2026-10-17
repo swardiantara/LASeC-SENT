@@ -1,0 +1,115 @@
+{
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_folds": 5,
+  "smoke": false,
+  "training": {
+    "epochs": 3,
+    "lr": 2e-05,
+    "batch_size": 64,
+    "margin": 0.5,
+    "warmup_ratio": 0.1,
+    "negatives": "all",
+    "neg_per_pos": 5
+  },
+  "algorithm": "agglomerative",
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.5.1",
+    "scikit-learn": "1.7.2",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "pysbd": "0.3.4",
+    "drain3": "0.9.11",
+    "anthropic": null,
+    "openai": null,
+    "cuda": true,
+    "device_name": "NVIDIA GeForce RTX 4080"
+  },
+  "lasec_by_algorithm": {
+    "agglomerative": {
+      "algorithm": "agglomerative",
+      "selected_threshold": 0.23,
+      "ga_mean": 0.8722276661767108,
+      "ga_sd": 0.026730981392106796,
+      "pair_f1_mean": 0.8280557741954505,
+      "ari_mean": 0.8275472474986746
+    },
+    "birch": {
+      "algorithm": "birch",
+      "selected_threshold": 0.34,
+      "ga_mean": 0.8531193859219337,
+      "ga_sd": 0.03695415243093411,
+      "pair_f1_mean": 0.8054281840777284,
+      "ari_mean": 0.8048235310091233
+    }
+  },
+  "lasec": {
+    "algorithm": "agglomerative",
+    "selected_threshold": 0.23,
+    "ga_mean": 0.8722276661767108,
+    "ga_sd": 0.026730981392106796,
+    "pair_f1_mean": 0.8280557741954505,
+    "ari_mean": 0.8275472474986746,
+    "ga_seen_event": 0.8414160033935755,
+    "ga_novel_event": 0.9157566312966032,
+    "novel_event_share": 0.39718275355218036
+  },
+  "pretrained": {
+    "algorithm": "agglomerative",
+    "selected_threshold": 0.17,
+    "ga_mean": 0.8044912624530459,
+    "ga_sd": 0.04313402327181371,
+    "pair_f1_mean": 0.6305131887215178,
+    "ari_mean": 0.6296572876100655
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "n_train": 626,
+      "n_test": 157,
+      "test_novel_event_share": 0.39490445859872614,
+      "train_n_pos": 637,
+      "train_n_neg": 194988,
+      "train_n_train_pairs": 195625
+    },
+    {
+      "fold": 1,
+      "n_train": 626,
+      "n_test": 157,
+      "test_novel_event_share": 0.3821656050955414,
+      "train_n_pos": 706,
+      "train_n_neg": 194919,
+      "train_n_train_pairs": 195625
+    },
+    {
+      "fold": 2,
+      "n_train": 626,
+      "n_test": 157,
+      "test_novel_event_share": 0.42038216560509556,
+      "train_n_pos": 602,
+      "train_n_neg": 195023,
+      "train_n_train_pairs": 195625
+    },
+    {
+      "fold": 3,
+      "n_train": 627,
+      "n_test": 156,
+      "test_novel_event_share": 0.34615384615384615,
+      "train_n_pos": 645,
+      "train_n_neg": 195606,
+      "train_n_train_pairs": 196251
+    },
+    {
+      "fold": 4,
+      "n_train": 627,
+      "n_test": 156,
+      "test_novel_event_share": 0.4423076923076923,
+      "train_n_pos": 635,
+      "train_n_neg": 195616,
+      "train_n_train_pairs": 196251
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Algorithm,Peak GA,Best threshold,Mean GA over grid,Pair F1 at peak,Groups at peak
+Agglomerative,0.460,0.250,0.190,0.693,477
+DBSCAN,0.453,0.200,0.146,0.647,490
+BIRCH,0.439,0.300,0.233,0.618,590
+OPTICS,0.415,0.150,0.349,0.353,597
+HDBSCAN,0.331,0.050,0.111,0.583,390

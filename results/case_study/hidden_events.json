@@ -1,0 +1,767 @@
+{
+  "Exact dedup|all|1": [],
+  "Exact dedup|events|1": [],
+  "Exact dedup|all|2": [],
+  "Exact dedup|events|2": [],
+  "Exact dedup|all|3": [],
+  "Exact dedup|events|3": [],
+  "Exact dedup|all|4": [],
+  "Exact dedup|events|4": [],
+  "Exact dedup|all|5": [],
+  "Exact dedup|events|5": [],
+  "Exact dedup|all|6": [],
+  "Exact dedup|events|6": [],
+  "Exact dedup|all|7": [],
+  "Exact dedup|events|7": [],
+  "Regex-masked dedup|all|1": [],
+  "Regex-masked dedup|events|1": [],
+  "Regex-masked dedup|all|2": [],
+  "Regex-masked dedup|events|2": [],
+  "Regex-masked dedup|all|3": [],
+  "Regex-masked dedup|events|3": [],
+  "Regex-masked dedup|all|4": [],
+  "Regex-masked dedup|events|4": [],
+  "Regex-masked dedup|all|5": [],
+  "Regex-masked dedup|events|5": [],
+  "Regex-masked dedup|all|6": [],
+  "Regex-masked dedup|events|6": [],
+  "Regex-masked dedup|all|7": [],
+  "Regex-masked dedup|events|7": [],
+  "Drain3|all|1": [],
+  "Drain3|events|1": [],
+  "Drain3|all|2": [],
+  "Drain3|events|2": [],
+  "Drain3|all|3": [
+    "MODE_CONFIRM_LANDING"
+  ],
+  "Drain3|events|3": [
+    "MODE_CONFIRM_LANDING"
+  ],
+  "Drain3|all|4": [],
+  "Drain3|events|4": [],
+  "Drain3|all|5": [],
+  "Drain3|events|5": [],
+  "Drain3|all|6": [],
+  "Drain3|events|6": [],
+  "Drain3|all|7": [],
+  "Drain3|events|7": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|all|1": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|events|1": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|all|2": [
+    "RC_TRIGGER_DESCEND"
+  ],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|events|2": [
+    "RC_TRIGGER_DESCEND"
+  ],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|all|3": [
+    "MODE_CONFIRM_LANDING",
+    "RC_TRIGGER_BACKWARD"
+  ],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|events|3": [
+    "MODE_CONFIRM_LANDING",
+    "RC_TRIGGER_BACKWARD"
+  ],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|all|4": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|events|4": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|all|5": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|events|5": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|all|6": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|events|6": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|all|7": [],
+  "Pre-trained all-MiniLM-L6-v2 + Agglomerative|events|7": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|all|1": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|events|1": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|all|2": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|events|2": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|all|3": [
+    "MODE_CONFIRM_LANDING"
+  ],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|events|3": [
+    "MODE_CONFIRM_LANDING"
+  ],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|all|4": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|events|4": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|all|5": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|events|5": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|all|6": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|events|6": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|all|7": [],
+  "Pre-trained all-MiniLM-L12-v2 + Agglomerative|events|7": [],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|all|1": [
+    "MODE_AUTO_LANDING"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|events|1": [
+    "MODE_AUTO_LANDING"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|all|2": [
+    "MODE_AUTO_LANDING"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|events|2": [
+    "MODE_AUTO_LANDING"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|all|3": [
+    "INSTR_FORCE_LANDING"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|events|3": [],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|all|4": [
+    "MODE_AUTO_LANDING"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|events|4": [
+    "MODE_AUTO_LANDING"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|all|5": [],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|events|5": [],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|all|6": [
+    "BATTERY_ONLY_FOR_RTH"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|events|6": [
+    "BATTERY_ONLY_FOR_RTH"
+  ],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|all|7": [],
+  "Pre-trained all-mpnet-base-v2 + Agglomerative|events|7": [],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|all|1": [
+    "MODE_AUTO_LANDING"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|events|1": [
+    "MODE_AUTO_LANDING"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|all|2": [
+    "MODE_AUTO_LANDING",
+    "MODE_MANUAL_TAKEOFF",
+    "RC_SIGNAL_LOST",
+    "RC_TRIGGER_DESCEND",
+    "RTH_ASCENDING"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|events|2": [
+    "MODE_AUTO_LANDING",
+    "MODE_MANUAL_TAKEOFF",
+    "RC_SIGNAL_LOST",
+    "RC_TRIGGER_DESCEND",
+    "RTH_ASCENDING"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|all|3": [
+    "MODE_AUTO_LANDING",
+    "MODE_CONFIRM_LANDING",
+    "RC_SIGNAL_WEAK",
+    "RC_TRIGGER_BACKWARD",
+    "RTH_ASCENDING"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|events|3": [
+    "MODE_AUTO_LANDING",
+    "MODE_CONFIRM_LANDING",
+    "RC_SIGNAL_WEAK",
+    "RC_TRIGGER_BACKWARD",
+    "RTH_ASCENDING"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|all|4": [
+    "MODE_AUTO_LANDING",
+    "MODE_MANUAL_TAKEOFF",
+    "RC_SIGNAL_WEAK",
+    "RTH_ASCENDING"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|events|4": [
+    "MODE_AUTO_LANDING",
+    "MODE_MANUAL_TAKEOFF",
+    "RC_SIGNAL_WEAK",
+    "RTH_ASCENDING"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|all|5": [
+    "MODE_GO_HOME",
+    "MODE_MANUAL_TAKEOFF",
+    "RC_SIGNAL_WEAK"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|events|5": [
+    "MODE_GO_HOME",
+    "MODE_MANUAL_TAKEOFF",
+    "RC_SIGNAL_WEAK"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|all|6": [
+    "BATTERY_ONLY_FOR_RTH",
+    "MODE_GO_HOME",
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|events|6": [
+    "BATTERY_ONLY_FOR_RTH",
+    "MODE_GO_HOME",
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|all|7": [
+    "IMGTX_LOST",
+    "MODE_CONFIRM_LANDING",
+    "MODE_MANUAL_TAKEOFF",
+    "RC_SIGNAL_WEAK"
+  ],
+  "Pre-trained all-distilroberta-v1 + Agglomerative|events|7": [
+    "IMGTX_LOST",
+    "MODE_CONFIRM_LANDING",
+    "MODE_MANUAL_TAKEOFF",
+    "RC_SIGNAL_WEAK"
+  ],
+  "LASeC (all-MiniLM-L12-v2)|all|1": [],
+  "LASeC (all-MiniLM-L12-v2)|events|1": [],
+  "LASeC (all-MiniLM-L12-v2)|all|2": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-MiniLM-L12-v2)|events|2": [],
+  "LASeC (all-MiniLM-L12-v2)|all|3": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-MiniLM-L12-v2)|events|3": [],
+  "LASeC (all-MiniLM-L12-v2)|all|4": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-MiniLM-L12-v2)|events|4": [],
+  "LASeC (all-MiniLM-L12-v2)|all|5": [],
+  "LASeC (all-MiniLM-L12-v2)|events|5": [],
+  "LASeC (all-MiniLM-L12-v2)|all|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-MiniLM-L12-v2)|events|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-MiniLM-L12-v2)|all|7": [],
+  "LASeC (all-MiniLM-L12-v2)|events|7": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|all|1": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|events|1": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|all|2": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|events|2": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|all|3": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|events|3": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|all|4": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|events|4": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|all|5": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|events|5": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|all|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|events|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|all|7": [],
+  "LASeC (all-MiniLM-L12-v2) + BIRCH|events|7": [],
+  "LASeC (all-MiniLM-L6-v2)|all|1": [
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|events|1": [
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|all|2": [
+    "INSTR_BRAKE_CANCEL_LANDING",
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|events|2": [
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|all|3": [
+    "INSTR_BRAKE_CANCEL_LANDING",
+    "MODE_CONFIRM_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|events|3": [
+    "MODE_CONFIRM_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|all|4": [
+    "INSTR_BRAKE_CANCEL_LANDING",
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|events|4": [
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|all|5": [
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|events|5": [
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|all|6": [
+    "INSTR_BRAKE_CANCEL_RTH",
+    "LOW_BATTERY_RTH",
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|events|6": [
+    "LOW_BATTERY_RTH",
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|all|7": [
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2)|events|7": [
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|all|1": [
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|events|1": [
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|all|2": [
+    "INSTR_BRAKE_CANCEL_LANDING",
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|events|2": [
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|all|3": [
+    "INSTR_BRAKE_CANCEL_LANDING",
+    "MODE_CONFIRM_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|events|3": [
+    "MODE_CONFIRM_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|all|4": [
+    "INSTR_BRAKE_CANCEL_LANDING",
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|events|4": [
+    "MODE_AUTO_LANDING"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|all|5": [
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|events|5": [
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|all|6": [
+    "LOW_BATTERY_RTH",
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|events|6": [
+    "LOW_BATTERY_RTH",
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|all|7": [
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-MiniLM-L6-v2) + BIRCH|events|7": [
+    "MODE_MANUAL_TAKEOFF"
+  ],
+  "LASeC (all-distilroberta-v1)|all|1": [],
+  "LASeC (all-distilroberta-v1)|events|1": [],
+  "LASeC (all-distilroberta-v1)|all|2": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-distilroberta-v1)|events|2": [],
+  "LASeC (all-distilroberta-v1)|all|3": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-distilroberta-v1)|events|3": [],
+  "LASeC (all-distilroberta-v1)|all|4": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-distilroberta-v1)|events|4": [],
+  "LASeC (all-distilroberta-v1)|all|5": [],
+  "LASeC (all-distilroberta-v1)|events|5": [],
+  "LASeC (all-distilroberta-v1)|all|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-distilroberta-v1)|events|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-distilroberta-v1)|all|7": [],
+  "LASeC (all-distilroberta-v1)|events|7": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|all|1": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|events|1": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|all|2": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-distilroberta-v1) + BIRCH|events|2": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|all|3": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-distilroberta-v1) + BIRCH|events|3": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|all|4": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-distilroberta-v1) + BIRCH|events|4": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|all|5": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|events|5": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|all|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-distilroberta-v1) + BIRCH|events|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-distilroberta-v1) + BIRCH|all|7": [],
+  "LASeC (all-distilroberta-v1) + BIRCH|events|7": [],
+  "LASeC (all-mpnet-base-v2)|all|1": [],
+  "LASeC (all-mpnet-base-v2)|events|1": [],
+  "LASeC (all-mpnet-base-v2)|all|2": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-mpnet-base-v2)|events|2": [],
+  "LASeC (all-mpnet-base-v2)|all|3": [
+    "INSTR_BRAKE_CANCEL_LANDING",
+    "MODE_CONFIRM_LANDING"
+  ],
+  "LASeC (all-mpnet-base-v2)|events|3": [
+    "MODE_CONFIRM_LANDING"
+  ],
+  "LASeC (all-mpnet-base-v2)|all|4": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-mpnet-base-v2)|events|4": [],
+  "LASeC (all-mpnet-base-v2)|all|5": [],
+  "LASeC (all-mpnet-base-v2)|events|5": [],
+  "LASeC (all-mpnet-base-v2)|all|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-mpnet-base-v2)|events|6": [
+    "LOW_BATTERY_RTH"
+  ],
+  "LASeC (all-mpnet-base-v2)|all|7": [],
+  "LASeC (all-mpnet-base-v2)|events|7": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|all|1": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|events|1": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|all|2": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-mpnet-base-v2) + BIRCH|events|2": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|all|3": [
+    "INSTR_BRAKE_CANCEL_LANDING",
+    "MODE_CONFIRM_LANDING"
+  ],
+  "LASeC (all-mpnet-base-v2) + BIRCH|events|3": [
+    "MODE_CONFIRM_LANDING"
+  ],
+  "LASeC (all-mpnet-base-v2) + BIRCH|all|4": [
+    "INSTR_BRAKE_CANCEL_LANDING"
+  ],
+  "LASeC (all-mpnet-base-v2) + BIRCH|events|4": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|all|5": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|events|5": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|all|6": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|events|6": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|all|7": [],
+  "LASeC (all-mpnet-base-v2) + BIRCH|events|7": [],
+  "LLM claude-opus-5.5_few run0|all|1": [],
+  "LLM claude-opus-5.5_few run0|events|1": [],
+  "LLM claude-opus-5.5_few run0|all|2": [],
+  "LLM claude-opus-5.5_few run0|events|2": [],
+  "LLM claude-opus-5.5_few run0|all|3": [],
+  "LLM claude-opus-5.5_few run0|events|3": [],
+  "LLM claude-opus-5.5_few run0|all|4": [],
+  "LLM claude-opus-5.5_few run0|events|4": [],
+  "LLM claude-opus-5.5_few run0|all|5": [],
+  "LLM claude-opus-5.5_few run0|events|5": [],
+  "LLM claude-opus-5.5_few run0|all|6": [],
+  "LLM claude-opus-5.5_few run0|events|6": [],
+  "LLM claude-opus-5.5_few run0|all|7": [],
+  "LLM claude-opus-5.5_few run0|events|7": [],
+  "LLM claude-opus-5.5_few run1|all|1": [],
+  "LLM claude-opus-5.5_few run1|events|1": [],
+  "LLM claude-opus-5.5_few run1|all|2": [],
+  "LLM claude-opus-5.5_few run1|events|2": [],
+  "LLM claude-opus-5.5_few run1|all|3": [],
+  "LLM claude-opus-5.5_few run1|events|3": [],
+  "LLM claude-opus-5.5_few run1|all|4": [],
+  "LLM claude-opus-5.5_few run1|events|4": [],
+  "LLM claude-opus-5.5_few run1|all|5": [],
+  "LLM claude-opus-5.5_few run1|events|5": [],
+  "LLM claude-opus-5.5_few run1|all|6": [],
+  "LLM claude-opus-5.5_few run1|events|6": [],
+  "LLM claude-opus-5.5_few run1|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM claude-opus-5.5_few run1|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM claude-opus-5.5_few run2|all|1": [],
+  "LLM claude-opus-5.5_few run2|events|1": [],
+  "LLM claude-opus-5.5_few run2|all|2": [],
+  "LLM claude-opus-5.5_few run2|events|2": [],
+  "LLM claude-opus-5.5_few run2|all|3": [],
+  "LLM claude-opus-5.5_few run2|events|3": [],
+  "LLM claude-opus-5.5_few run2|all|4": [],
+  "LLM claude-opus-5.5_few run2|events|4": [],
+  "LLM claude-opus-5.5_few run2|all|5": [],
+  "LLM claude-opus-5.5_few run2|events|5": [],
+  "LLM claude-opus-5.5_few run2|all|6": [],
+  "LLM claude-opus-5.5_few run2|events|6": [],
+  "LLM claude-opus-5.5_few run2|all|7": [],
+  "LLM claude-opus-5.5_few run2|events|7": [],
+  "LLM claude-opus-5.5_zero run0|all|1": [],
+  "LLM claude-opus-5.5_zero run0|events|1": [],
+  "LLM claude-opus-5.5_zero run0|all|2": [],
+  "LLM claude-opus-5.5_zero run0|events|2": [],
+  "LLM claude-opus-5.5_zero run0|all|3": [],
+  "LLM claude-opus-5.5_zero run0|events|3": [],
+  "LLM claude-opus-5.5_zero run0|all|4": [],
+  "LLM claude-opus-5.5_zero run0|events|4": [],
+  "LLM claude-opus-5.5_zero run0|all|5": [],
+  "LLM claude-opus-5.5_zero run0|events|5": [],
+  "LLM claude-opus-5.5_zero run0|all|6": [],
+  "LLM claude-opus-5.5_zero run0|events|6": [],
+  "LLM claude-opus-5.5_zero run0|all|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM claude-opus-5.5_zero run0|events|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM claude-opus-5.5_zero run1|all|1": [],
+  "LLM claude-opus-5.5_zero run1|events|1": [],
+  "LLM claude-opus-5.5_zero run1|all|2": [],
+  "LLM claude-opus-5.5_zero run1|events|2": [],
+  "LLM claude-opus-5.5_zero run1|all|3": [],
+  "LLM claude-opus-5.5_zero run1|events|3": [],
+  "LLM claude-opus-5.5_zero run1|all|4": [],
+  "LLM claude-opus-5.5_zero run1|events|4": [],
+  "LLM claude-opus-5.5_zero run1|all|5": [],
+  "LLM claude-opus-5.5_zero run1|events|5": [],
+  "LLM claude-opus-5.5_zero run1|all|6": [],
+  "LLM claude-opus-5.5_zero run1|events|6": [],
+  "LLM claude-opus-5.5_zero run1|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM claude-opus-5.5_zero run1|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM claude-opus-5.5_zero run2|all|1": [],
+  "LLM claude-opus-5.5_zero run2|events|1": [],
+  "LLM claude-opus-5.5_zero run2|all|2": [],
+  "LLM claude-opus-5.5_zero run2|events|2": [],
+  "LLM claude-opus-5.5_zero run2|all|3": [],
+  "LLM claude-opus-5.5_zero run2|events|3": [],
+  "LLM claude-opus-5.5_zero run2|all|4": [],
+  "LLM claude-opus-5.5_zero run2|events|4": [],
+  "LLM claude-opus-5.5_zero run2|all|5": [],
+  "LLM claude-opus-5.5_zero run2|events|5": [],
+  "LLM claude-opus-5.5_zero run2|all|6": [],
+  "LLM claude-opus-5.5_zero run2|events|6": [],
+  "LLM claude-opus-5.5_zero run2|all|7": [],
+  "LLM claude-opus-5.5_zero run2|events|7": [],
+  "LLM gemini-3.8-flash_few run0|all|1": [],
+  "LLM gemini-3.8-flash_few run0|events|1": [],
+  "LLM gemini-3.8-flash_few run0|all|2": [],
+  "LLM gemini-3.8-flash_few run0|events|2": [],
+  "LLM gemini-3.8-flash_few run0|all|3": [],
+  "LLM gemini-3.8-flash_few run0|events|3": [],
+  "LLM gemini-3.8-flash_few run0|all|4": [],
+  "LLM gemini-3.8-flash_few run0|events|4": [],
+  "LLM gemini-3.8-flash_few run0|all|5": [],
+  "LLM gemini-3.8-flash_few run0|events|5": [],
+  "LLM gemini-3.8-flash_few run0|all|6": [],
+  "LLM gemini-3.8-flash_few run0|events|6": [],
+  "LLM gemini-3.8-flash_few run0|all|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM gemini-3.8-flash_few run0|events|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM gemini-3.8-flash_few run1|all|1": [],
+  "LLM gemini-3.8-flash_few run1|events|1": [],
+  "LLM gemini-3.8-flash_few run1|all|2": [],
+  "LLM gemini-3.8-flash_few run1|events|2": [],
+  "LLM gemini-3.8-flash_few run1|all|3": [],
+  "LLM gemini-3.8-flash_few run1|events|3": [],
+  "LLM gemini-3.8-flash_few run1|all|4": [],
+  "LLM gemini-3.8-flash_few run1|events|4": [],
+  "LLM gemini-3.8-flash_few run1|all|5": [],
+  "LLM gemini-3.8-flash_few run1|events|5": [],
+  "LLM gemini-3.8-flash_few run1|all|6": [],
+  "LLM gemini-3.8-flash_few run1|events|6": [],
+  "LLM gemini-3.8-flash_few run1|all|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM gemini-3.8-flash_few run1|events|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM gemini-3.8-flash_few run2|all|1": [],
+  "LLM gemini-3.8-flash_few run2|events|1": [],
+  "LLM gemini-3.8-flash_few run2|all|2": [],
+  "LLM gemini-3.8-flash_few run2|events|2": [],
+  "LLM gemini-3.8-flash_few run2|all|3": [],
+  "LLM gemini-3.8-flash_few run2|events|3": [],
+  "LLM gemini-3.8-flash_few run2|all|4": [],
+  "LLM gemini-3.8-flash_few run2|events|4": [],
+  "LLM gemini-3.8-flash_few run2|all|5": [],
+  "LLM gemini-3.8-flash_few run2|events|5": [],
+  "LLM gemini-3.8-flash_few run2|all|6": [],
+  "LLM gemini-3.8-flash_few run2|events|6": [],
+  "LLM gemini-3.8-flash_few run2|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gemini-3.8-flash_few run2|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gemini-3.8-flash_zero run0|all|1": [],
+  "LLM gemini-3.8-flash_zero run0|events|1": [],
+  "LLM gemini-3.8-flash_zero run0|all|2": [],
+  "LLM gemini-3.8-flash_zero run0|events|2": [],
+  "LLM gemini-3.8-flash_zero run0|all|3": [],
+  "LLM gemini-3.8-flash_zero run0|events|3": [],
+  "LLM gemini-3.8-flash_zero run0|all|4": [],
+  "LLM gemini-3.8-flash_zero run0|events|4": [],
+  "LLM gemini-3.8-flash_zero run0|all|5": [],
+  "LLM gemini-3.8-flash_zero run0|events|5": [],
+  "LLM gemini-3.8-flash_zero run0|all|6": [],
+  "LLM gemini-3.8-flash_zero run0|events|6": [],
+  "LLM gemini-3.8-flash_zero run0|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gemini-3.8-flash_zero run0|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gemini-3.8-flash_zero run1|all|1": [],
+  "LLM gemini-3.8-flash_zero run1|events|1": [],
+  "LLM gemini-3.8-flash_zero run1|all|2": [],
+  "LLM gemini-3.8-flash_zero run1|events|2": [],
+  "LLM gemini-3.8-flash_zero run1|all|3": [],
+  "LLM gemini-3.8-flash_zero run1|events|3": [],
+  "LLM gemini-3.8-flash_zero run1|all|4": [],
+  "LLM gemini-3.8-flash_zero run1|events|4": [],
+  "LLM gemini-3.8-flash_zero run1|all|5": [],
+  "LLM gemini-3.8-flash_zero run1|events|5": [],
+  "LLM gemini-3.8-flash_zero run1|all|6": [],
+  "LLM gemini-3.8-flash_zero run1|events|6": [],
+  "LLM gemini-3.8-flash_zero run1|all|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM gemini-3.8-flash_zero run1|events|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM gemini-3.8-flash_zero run2|all|1": [],
+  "LLM gemini-3.8-flash_zero run2|events|1": [],
+  "LLM gemini-3.8-flash_zero run2|all|2": [],
+  "LLM gemini-3.8-flash_zero run2|events|2": [],
+  "LLM gemini-3.8-flash_zero run2|all|3": [],
+  "LLM gemini-3.8-flash_zero run2|events|3": [],
+  "LLM gemini-3.8-flash_zero run2|all|4": [],
+  "LLM gemini-3.8-flash_zero run2|events|4": [],
+  "LLM gemini-3.8-flash_zero run2|all|5": [],
+  "LLM gemini-3.8-flash_zero run2|events|5": [],
+  "LLM gemini-3.8-flash_zero run2|all|6": [],
+  "LLM gemini-3.8-flash_zero run2|events|6": [],
+  "LLM gemini-3.8-flash_zero run2|all|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM gemini-3.8-flash_zero run2|events|7": [
+    "IMGTX_LOST",
+    "RC_DISCONNECTED"
+  ],
+  "LLM gpt-5.6-luna_few run0|all|1": [],
+  "LLM gpt-5.6-luna_few run0|events|1": [],
+  "LLM gpt-5.6-luna_few run0|all|2": [],
+  "LLM gpt-5.6-luna_few run0|events|2": [],
+  "LLM gpt-5.6-luna_few run0|all|3": [],
+  "LLM gpt-5.6-luna_few run0|events|3": [],
+  "LLM gpt-5.6-luna_few run0|all|4": [],
+  "LLM gpt-5.6-luna_few run0|events|4": [],
+  "LLM gpt-5.6-luna_few run0|all|5": [],
+  "LLM gpt-5.6-luna_few run0|events|5": [],
+  "LLM gpt-5.6-luna_few run0|all|6": [],
+  "LLM gpt-5.6-luna_few run0|events|6": [],
+  "LLM gpt-5.6-luna_few run0|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_few run0|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_few run1|all|1": [],
+  "LLM gpt-5.6-luna_few run1|events|1": [],
+  "LLM gpt-5.6-luna_few run1|all|2": [],
+  "LLM gpt-5.6-luna_few run1|events|2": [],
+  "LLM gpt-5.6-luna_few run1|all|3": [],
+  "LLM gpt-5.6-luna_few run1|events|3": [],
+  "LLM gpt-5.6-luna_few run1|all|4": [],
+  "LLM gpt-5.6-luna_few run1|events|4": [],
+  "LLM gpt-5.6-luna_few run1|all|5": [],
+  "LLM gpt-5.6-luna_few run1|events|5": [],
+  "LLM gpt-5.6-luna_few run1|all|6": [
+    "BATTERY_ONLY_FOR_RTH"
+  ],
+  "LLM gpt-5.6-luna_few run1|events|6": [
+    "BATTERY_ONLY_FOR_RTH"
+  ],
+  "LLM gpt-5.6-luna_few run1|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_few run1|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_few run2|all|1": [],
+  "LLM gpt-5.6-luna_few run2|events|1": [],
+  "LLM gpt-5.6-luna_few run2|all|2": [],
+  "LLM gpt-5.6-luna_few run2|events|2": [],
+  "LLM gpt-5.6-luna_few run2|all|3": [],
+  "LLM gpt-5.6-luna_few run2|events|3": [],
+  "LLM gpt-5.6-luna_few run2|all|4": [],
+  "LLM gpt-5.6-luna_few run2|events|4": [],
+  "LLM gpt-5.6-luna_few run2|all|5": [],
+  "LLM gpt-5.6-luna_few run2|events|5": [],
+  "LLM gpt-5.6-luna_few run2|all|6": [],
+  "LLM gpt-5.6-luna_few run2|events|6": [],
+  "LLM gpt-5.6-luna_few run2|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_few run2|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_zero run0|all|1": [],
+  "LLM gpt-5.6-luna_zero run0|events|1": [],
+  "LLM gpt-5.6-luna_zero run0|all|2": [],
+  "LLM gpt-5.6-luna_zero run0|events|2": [],
+  "LLM gpt-5.6-luna_zero run0|all|3": [],
+  "LLM gpt-5.6-luna_zero run0|events|3": [],
+  "LLM gpt-5.6-luna_zero run0|all|4": [],
+  "LLM gpt-5.6-luna_zero run0|events|4": [],
+  "LLM gpt-5.6-luna_zero run0|all|5": [],
+  "LLM gpt-5.6-luna_zero run0|events|5": [],
+  "LLM gpt-5.6-luna_zero run0|all|6": [],
+  "LLM gpt-5.6-luna_zero run0|events|6": [],
+  "LLM gpt-5.6-luna_zero run0|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_zero run0|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_zero run1|all|1": [],
+  "LLM gpt-5.6-luna_zero run1|events|1": [],
+  "LLM gpt-5.6-luna_zero run1|all|2": [],
+  "LLM gpt-5.6-luna_zero run1|events|2": [],
+  "LLM gpt-5.6-luna_zero run1|all|3": [],
+  "LLM gpt-5.6-luna_zero run1|events|3": [],
+  "LLM gpt-5.6-luna_zero run1|all|4": [],
+  "LLM gpt-5.6-luna_zero run1|events|4": [],
+  "LLM gpt-5.6-luna_zero run1|all|5": [],
+  "LLM gpt-5.6-luna_zero run1|events|5": [],
+  "LLM gpt-5.6-luna_zero run1|all|6": [],
+  "LLM gpt-5.6-luna_zero run1|events|6": [],
+  "LLM gpt-5.6-luna_zero run1|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_zero run1|events|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_zero run2|all|1": [],
+  "LLM gpt-5.6-luna_zero run2|events|1": [],
+  "LLM gpt-5.6-luna_zero run2|all|2": [],
+  "LLM gpt-5.6-luna_zero run2|events|2": [],
+  "LLM gpt-5.6-luna_zero run2|all|3": [],
+  "LLM gpt-5.6-luna_zero run2|events|3": [],
+  "LLM gpt-5.6-luna_zero run2|all|4": [],
+  "LLM gpt-5.6-luna_zero run2|events|4": [],
+  "LLM gpt-5.6-luna_zero run2|all|5": [],
+  "LLM gpt-5.6-luna_zero run2|events|5": [],
+  "LLM gpt-5.6-luna_zero run2|all|6": [],
+  "LLM gpt-5.6-luna_zero run2|events|6": [],
+  "LLM gpt-5.6-luna_zero run2|all|7": [
+    "IMGTX_LOST"
+  ],
+  "LLM gpt-5.6-luna_zero run2|events|7": [
+    "IMGTX_LOST"
+  ]
+}

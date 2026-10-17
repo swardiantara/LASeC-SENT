@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Paired comparison of LASeC (all-MiniLM-L6-v2) with each baseline on FPV (event sentences). LLM baselines: pre-specified first run (run 0). Holm correction within the family of comparisons.}
+\label{tab:significance_events}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Baseline & ΔGA (LASeC − baseline) & 95\% CI & LASeC-only / baseline-only correct & p (McNemar, Holm) & p (bootstrap, Holm) & p (weighted bootstrap, Holm) \\
+\midrule
+Exact dedup & +0.270 & [0.11, 0.43] & 24 / 7 & 0.043 & <0.001 & 1.000 \\
+Regex-masked dedup & -0.032 & [-0.14, 0.08] & 5 / 7 & 1.000 & 1.000 & 1.000 \\
+Drain3 & +0.000 & [-0.10, 0.10] & 5 / 5 & 1.000 & 1.000 & 1.000 \\
+Pre-trained all-MiniLM-L6-v2 + Agglomerative & +0.048 & [-0.05, 0.14] & 6 / 3 & 1.000 & 1.000 & 1.000 \\
+Pre-trained all-MiniLM-L12-v2 + Agglomerative & +0.016 & [-0.06, 0.10] & 4 / 3 & 1.000 & 1.000 & 1.000 \\
+Pre-trained all-mpnet-base-v2 + Agglomerative & +0.016 & [-0.05, 0.08] & 3 / 2 & 1.000 & 1.000 & 1.000 \\
+Pre-trained all-distilroberta-v1 + Agglomerative & +0.159 & [0.06, 0.27] & 11 / 1 & 0.076 & 0.048 & <0.001 \\
+LLM claude-opus-5.5\_few run0 & -0.159 & [-0.27, -0.05] & 2 / 12 & 0.142 & 0.055 & 0.036 \\
+LLM claude-opus-5.5\_zero run0 & -0.095 & [-0.22, 0.05] & 6 / 12 & 1.000 & 1.000 & 1.000 \\
+LLM gemini-3.8-flash\_few run0 & -0.127 & [-0.25, 0.00] & 4 / 12 & 0.768 & 0.420 & 1.000 \\
+LLM gemini-3.8-flash\_zero run0 & -0.127 & [-0.24, -0.02] & 4 / 12 & 0.768 & 0.420 & 0.836 \\
+LLM gpt-5.6-luna\_few run0 & -0.127 & [-0.24, -0.02] & 4 / 12 & 0.768 & 0.420 & 0.836 \\
+LLM gpt-5.6-luna\_zero run0 & -0.127 & [-0.24, -0.02] & 4 / 12 & 0.768 & 0.420 & 0.836 \\
+\bottomrule
+\end{tabular}
+\end{table}

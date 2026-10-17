@@ -1,0 +1,7 @@
+Model (mode),Runs,GA,Groups,Latency (s),Cost (USD/run)
+claude-opus-5.5 (few-shot),3,0.940 ± 0.015,51.7,30.1,0.0653
+claude-opus-5.5 (zero-shot),3,0.902 ± 0.045,51.3,29.3,0.0577
+gemini-3.8-flash (few-shot),3,0.957 ± 0.015,48.3,146.0,0.1012
+gemini-3.8-flash (zero-shot),3,0.949 ± 0.000,48.7,131.6,0.0914
+gpt-5.6-luna (few-shot),3,0.915 ± 0.015,48.7,46.1,0.0078
+gpt-5.6-luna (zero-shot),3,0.940 ± 0.015,49.7,46.8,0.0076

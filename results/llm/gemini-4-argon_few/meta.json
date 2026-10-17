@@ -1,0 +1,166 @@
+{
+  "model": {
+    "name": "gemini-4-argon",
+    "model": "google/gemini-4-argon",
+    "enabled": true
+  },
+  "defaults": {
+    "reasoning_effort": "high",
+    "temperature": null,
+    "max_tokens": 32000
+  },
+  "mode": "few",
+  "demonstration": [
+    [
+      "Aircraft flight control obtained by remote controller B",
+      "Aircraft flight control obtained by remote controller UNKNOWN",
+      "Aircraft flight control obtained by remote controller A",
+      "Command Timeout",
+      "Ambient Light too Weak, Backward obstacle sensing is unavailable.",
+      "Charge battery",
+      "Aircraft will not enter S-mode if powered on with the remote controller set to S-mode.",
+      "Contact DJI Support if this persists.",
+      "AI Spot-Check failed.",
+      "Aircraft is close to Home Point.",
+      "Return to home and land promptly.",
+      "If the issue persists, contact DJI Support",
+      "Aircraft close to Home Point.",
+      "Altitude above the takeoff point exceeds nnn.",
+      "Aircraft propulsion system error.",
+      "Current elevation above nnn.",
+      "Camera sensor error.",
+      "Camera busy, cannot enter playback",
+      "Please contact DJI Support",
+      "Land or return to home promptly",
+      "Warning: Command Timeout",
+      "Flight altitude exceeds nnn.",
+      "Return home and land soon.",
+      "Aircraft is close to the Home Point.",
+      "Recharge promptly",
+      "RTK Base Station Data Not Received.",
+      "RTK Base Station Data Not Received",
+      "Tip: Only the first camera can tap-zoom in dual gimbal control mode"
+    ],
+    {
+      "groups": [
+        {
+          "event": "FLIGHT_CONTROL_OBTAINED_BY_RC",
+          "members": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "event": "COMMAND_TIMEOUT",
+          "members": [
+            3,
+            20
+          ]
+        },
+        {
+          "event": "AMBIENT_LIGHT_LOW_BACKWARD_SENSING_UNAVAILABLE",
+          "members": [
+            4
+          ]
+        },
+        {
+          "event": "INSTR_CHARGE_BATTERY",
+          "members": [
+            5,
+            24
+          ]
+        },
+        {
+          "event": "INFO_S_MODE_POWER_ON",
+          "members": [
+            6
+          ]
+        },
+        {
+          "event": "INSTR_CONTACT_SUPPORT",
+          "members": [
+            7,
+            11,
+            18
+          ]
+        },
+        {
+          "event": "AI_SPOTCHECK_FAILED",
+          "members": [
+            8
+          ]
+        },
+        {
+          "event": "CLOSE_TO_HOME_POINT",
+          "members": [
+            9,
+            12,
+            23
+          ]
+        },
+        {
+          "event": "INSTR_LAND_OR_RTH",
+          "members": [
+            10,
+            19,
+            22
+          ]
+        },
+        {
+          "event": "ALTITUDE_LIMIT_EXCEEDED",
+          "members": [
+            13,
+            15,
+            21
+          ]
+        },
+        {
+          "event": "PROPULSION_SYSTEM_ERROR",
+          "members": [
+            14
+          ]
+        },
+        {
+          "event": "CAMERA_SENSOR_ERROR",
+          "members": [
+            16
+          ]
+        },
+        {
+          "event": "CAMERA_BUSY_PLAYBACK_UNAVAILABLE",
+          "members": [
+            17
+          ]
+        },
+        {
+          "event": "RTK_BASE_NO_DATA",
+          "members": [
+            25,
+            26
+          ]
+        },
+        {
+          "event": "INFO_DUAL_GIMBAL_TAP_ZOOM",
+          "members": [
+            27
+          ]
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "run": 0,
+      "error": "ModuleNotFoundError: No module named 'openai'"
+    },
+    {
+      "run": 1,
+      "error": "ModuleNotFoundError: No module named 'openai'"
+    },
+    {
+      "run": 2,
+      "error": "ModuleNotFoundError: No module named 'openai'"
+    }
+  ]
+}
