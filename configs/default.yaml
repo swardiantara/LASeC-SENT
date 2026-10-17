@@ -82,11 +82,11 @@ llm:
     temperature: null                     # not supported by the OpenAI/Anthropic reasoning models
     max_tokens: 32000
   models:
-    - {name: gpt-6.1-sol, model: openai/gpt-6.1-sol, enabled: true}
-    - {name: gpt-6-luna, model: openai/gpt-6-luna, enabled: true}
+    # - {name: gpt-6.1-sol, model: openai/gpt-6.1-sol, enabled: true}
+    - {name: gpt-5.6-luna, model: openai/gpt-5.6-luna, enabled: true}
     - {name: claude-opus-5.5, model: anthropic/claude-opus-5.5, enabled: true}
-    - {name: claude-haiku-5.5, model: anthropic/claude-haiku-5.5, enabled: true}
-    - {name: gemini-4-argon, model: google/gemini-4-argon, enabled: true}
+    # - {name: claude-haiku-5.5, model: anthropic/claude-haiku-5.5, enabled: true}
+    # - {name: gemini-4-argon, model: google/gemini-4-argon, enabled: true}
     - {name: gemini-3.8-flash, model: google/gemini-3.8-flash, enabled: true}
 
 stats:
