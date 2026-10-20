@@ -53,3 +53,43 @@ def holm(pvalues: dict) -> dict:
         running = max(running, min(1.0, (m - i) * p))
         adj[k] = running
     return adj
+
+
+# ----------------------------------------------------------------------------- group-level (cluster) inference
+# GA indicators of sentences in the same true event are dependent (they succeed or fail together), so the true
+# event group is the resampling / randomisation unit: a cluster bootstrap and a group-level sign-flip test.
+def _group_index(groups):
+    keys, inv = np.unique(np.asarray(groups, dtype=str), return_inverse=True)
+    return [np.where(inv == k)[0] for k in range(len(keys))]
+
+
+def group_bootstrap_ci(correct, groups, weights=None, B=10000, alpha=0.05, seed=0):
+    """Percentile CI of (weighted) accuracy, resampling whole true groups with replacement."""
+    c = np.asarray(correct, float)
+    w = np.ones_like(c) if weights is None else np.asarray(weights, float)
+    idx = _group_index(groups)
+    num = np.array([(c[i] * w[i]).sum() for i in idx])
+    den = np.array([w[i].sum() for i in idx])
+    rng = np.random.default_rng(seed)
+    pick = rng.integers(0, len(idx), size=(B, len(idx)))
+    stats = num[pick].sum(1) / den[pick].sum(1)
+    return float(np.quantile(stats, alpha / 2)), float(np.quantile(stats, 1 - alpha / 2))
+
+
+def group_paired_test(correct_a, correct_b, groups, weights=None, B=10000, seed=0):
+    """Difference in (weighted) accuracy a - b with a group-bootstrap CI and a two-sided group-level
+    sign-flip permutation p-value (under H0 the two methods' results are exchangeable within each true group)."""
+    a, b = np.asarray(correct_a, float), np.asarray(correct_b, float)
+    w = np.ones_like(a) if weights is None else np.asarray(weights, float)
+    idx = _group_index(groups)
+    gd = np.array([((a[i] - b[i]) * w[i]).sum() for i in idx])
+    den = np.array([w[i].sum() for i in idx])
+    obs = gd.sum() / den.sum()
+    rng = np.random.default_rng(seed)
+    pick = rng.integers(0, len(idx), size=(B, len(idx)))
+    boot = gd[pick].sum(1) / den[pick].sum(1)
+    flips = rng.choice([-1.0, 1.0], size=(B, len(idx)))
+    perm = (flips * gd).sum(1) / den.sum()
+    p = float(((np.abs(perm) >= abs(obs) - 1e-12).sum() + 1) / (B + 1))
+    return dict(diff=float(obs), ci=(float(np.quantile(boot, .025)), float(np.quantile(boot, .975))), p=min(1.0, p),
+                groups_differing=int((gd != 0).sum()))

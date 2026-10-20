@@ -40,9 +40,30 @@ def throughput(encoder, sentences, cfg, repeats=3):
     return len(sentences) / best
 
 
+def full_grid(cfg, s, e, grid, out):
+    """Every clustering algorithm with every pre-trained encoder (checks the encoder x algorithm interaction)."""
+    sel = cfg["selection"]
+    curves, summ = [], []
+    for m in cfg["embedding"]["base_model_variants"]:
+        X = embed(load_encoder(m), s, cfg["embedding"]["batch_size"], cfg["embedding"]["normalize"])
+        for alg in sel["algorithms"]:
+            c = threshold_curve(X, s, e, cfg, algorithm=alg, grid=grid)
+            c.insert(0, "algorithm", alg)
+            c.insert(0, "embedding", slug(m))
+            curves.append(c)
+            row = summarise(c, "algorithm", alg)
+            row["embedding"] = slug(m)
+            summ.append(row)
+            print(f"  {slug(m):24s} {alg:14s} peak GA {row['peak_ga']:.3f} at t={row['best_threshold']}")
+    pd.concat(curves).to_csv(out / "full_grid.csv", index=False)
+    pd.DataFrame(summ).to_csv(out / "full_grid_summary.csv", index=False)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default=None)
+    ap.add_argument("--full-grid", action="store_true",
+                    help="only run every algorithm x every pre-trained encoder (interaction check) -> full_grid*.csv")
     a = ap.parse_args()
     cfg = load_config(a.config) if a.config else load_config()
     set_seed(cfg["seed"])
@@ -52,6 +73,8 @@ def main():
     grid = threshold_grid(sel["threshold_grid"])
     out = path(cfg, "results") / "selection"
     out.mkdir(parents=True, exist_ok=True)
+    if a.full_grid:
+        return full_grid(cfg, s, e, grid, out)
 
     # ---------------- Stage A: clustering algorithms with pre-trained SBERT
     print(f"Stage A: {sel['embedding']} x {sel['algorithms']}")

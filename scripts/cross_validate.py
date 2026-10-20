@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from lasec.cluster import embed, load_encoder
 from lasec.experiment import cluster_kwargs, load_catalogue, select_threshold, slug, subset_ga, threshold_curve
 from lasec.cluster import cluster_sentences
+from lasec.metrics import ga_correct
 from lasec.train import finetune
 from lasec.utils import environment_info, load_config, path, set_seed, write_json
 
@@ -92,12 +93,17 @@ def main():
         summary["lasec_by_algorithm"][alg] = pick("lasec", alg)
     # seen-event vs novel-event GA of the fine-tuned model at the selected threshold
     t = summary["lasec"]["selected_threshold"]
-    seen, novel = [], []
+    seen, novel, fold_rows = [], [], []
     for f in folds:
         pred = cluster_sentences(f["te_s"], f["X"], t, **cluster_kwargs(cfg))
         p = [pred[s] for s in f["te_s"]]
         seen.append(subset_ga(f["te_e"], p, ~f["novel"]))
         novel.append(subset_ga(f["te_e"], p, f["novel"]))
+        size = pd.Series(f["te_e"]).map(pd.Series(f["te_e"]).value_counts()).to_numpy()
+        fold_rows.append(pd.DataFrame({"fold": f["fold"], "sentence": f["te_s"], "event": f["te_e"], "pred": p,
+                                       "novel_event": f["novel"], "group_size_in_fold": size,
+                                       "correct": ga_correct(f["te_e"], p)}))
+    pd.concat(fold_rows).to_csv(out / "fold_predictions.csv", index=False)  # per-sentence CV results at t
     summary["lasec"].update(ga_seen_event=float(np.nanmean(seen)), ga_novel_event=float(np.nanmean(novel)),
                             novel_event_share=float(np.mean([f["test_novel_event_share"] for f in folds])))
     summary["folds"] = [{k: v for k, v in f.items() if k not in ("X", "te_s", "te_e", "novel")} for f in folds]
