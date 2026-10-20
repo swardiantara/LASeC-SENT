@@ -1,0 +1,79 @@
+sentence,pred
+Adjust antennas and make sure they are perpendicular to flight direction of aircraft.,ADJUST_ANTENNAS_INSTRUCTION
+Aircraft and remote controller disconnected.,AIRCRAFT_REMOTE_CONTROLLER_DISCONNECTED
+Aircraft braking.,AIRCRAFT_BRAKING
+Aircraft returning to home.,RTH_IN_PROGRESS
+Aircraft returning.,RTH_IN_PROGRESS
+Aircraft will follow preset action for lost signal.,LOST_SIGNAL_PRESET_ACTION
+Ambient light too low.,AMBIENT_LIGHT_TOO_LOW
+Area under aircraft unsuitable for landing.,LANDING_AREA_UNSUITABLE
+Auto RTH canceled.,AUTO_RTH_CANCELED
+Auto RTH in 1 s.,AUTO_RTH_COUNTDOWN
+Auto RTH in 2 s.,AUTO_RTH_COUNTDOWN
+Auto RTH in 3 s.,AUTO_RTH_COUNTDOWN
+Auto RTH in 4 s.,AUTO_RTH_COUNTDOWN
+Auto RTH in 5 s.,AUTO_RTH_COUNTDOWN
+Auto RTH in 6 s.,AUTO_RTH_COUNTDOWN
+Auto RTH in 7 s.,AUTO_RTH_COUNTDOWN
+Auto RTH in 8 s.,AUTO_RTH_COUNTDOWN
+Auto RTH in 9 s.,AUTO_RTH_COUNTDOWN
+Auto landing in progress.,AUTO_LANDING_IN_PROGRESS
+Avoid blocking antennas and adjust antenna orientation.,ADJUST_ANTENNAS_INSTRUCTION
+Check whether gimbal lock is removed and make sure gimbal can rotate freely.,CHECK_GIMBAL_LOCK_INSTRUCTION
+Compass error.,COMPASS_ERROR
+Controller triggered aircraft to descend.,CONTROLLER_TRIGGERED_DESCEND
+Controller triggered aircraft to fly backward.,CONTROLLER_TRIGGERED_FLY_BACKWARD
+Data Recorder File Index is 80.,DATA_RECORDER_FILE_INDEX
+Data Recorder File Index is 83.,DATA_RECORDER_FILE_INDEX
+Data Recorder File Index is 84.,DATA_RECORDER_FILE_INDEX
+Data Recorder File Index is 88.,DATA_RECORDER_FILE_INDEX
+Data Recorder File Index is 89.,DATA_RECORDER_FILE_INDEX
+Downlink Lost.,DOWNLINK_LOST
+Downlink Restored (after 0m 1.2s).,DOWNLINK_RESTORED
+Downlink Restored (after 0m 16s).,DOWNLINK_RESTORED
+Downlink Restored (after 0m 22.8s).,DOWNLINK_RESTORED
+Downlink Restored (after 0m 5.2s).,DOWNLINK_RESTORED
+Downlink Restored (after 0m 5.4s).,DOWNLINK_RESTORED
+Downlink Restored (after 0m 5.8s).,DOWNLINK_RESTORED
+Downlink Restored (after 0m 6.2s).,DOWNLINK_RESTORED
+Downlink Restored (after 0m 7.4s).,DOWNLINK_RESTORED
+Downward ambient light too low.,AMBIENT_LIGHT_TOO_LOW
+Failsafe RTH.,FAILSAFE_RTH
+Flight mode changed to Auto Landing.,FLIGHT_MODE_AUTO_LANDING
+Flight mode changed to Confirm Landing.,FLIGHT_MODE_CONFIRM_LANDING
+Flight mode changed to Go Home.,FLIGHT_MODE_GO_HOME
+Flight mode changed to Manual Takeoff.,FLIGHT_MODE_MANUAL_TAKEOFF
+Flight mode changed to P-GPS (Brake).,FLIGHT_MODE_P_GPS_BRAKE
+Flight mode changed to P-GPS.,FLIGHT_MODE_P_GPS
+Flight mode changed to Starting Motors.,FLIGHT_MODE_STARTING_MOTORS
+Fly with caution.,FLY_WITH_CAUTION_INSTRUCTION
+Forward ambient light too low.,AMBIENT_LIGHT_TOO_LOW
+Gimbal auto check failed.,GIMBAL_AUTO_CHECK_FAILED
+Gimbal pitch axis endpoint reached.,GIMBAL_PITCH_AXIS_ENDPOINT_REACHED
+Gimbal stuck.,GIMBAL_STUCK
+Home point updated.,HOME_POINT_UPDATED
+Image transmission signal lost.,IMAGE_TRANSMISSION_SIGNAL_LOST
+Image transmission signal weak.,IMAGE_TRANSMISSION_SIGNAL_WEAK
+Low battery RTH.,LOW_BATTERY_RTH
+Low battery.,LOW_BATTERY
+Make sure the area under the aircraft is safe for landing.,CHECK_SAFE_LANDING_AREA_INSTRUCTION
+Motors starting.,MOTORS_STARTING
+Move to safe environment and try again.,MOVE_TO_SAFE_ENVIRONMENT_INSTRUCTION
+No image transmission.,IMAGE_TRANSMISSION_SIGNAL_LOST
+Obstacle avoidance unavailable.,OBSTACLE_AVOIDANCE_UNAVAILABLE
+Original route RTH.,ORIGINAL_ROUTE_RTH
+Press Brake button to cancel RTH.,CANCEL_RTH_INSTRUCTION
+Press brake button to cancel landing.,CANCEL_LANDING_INSTRUCTION
+Press the start/stop button to cancel.,CANCEL_VIA_START_STOP_BUTTON_INSTRUCTION
+Push throttle down to use force landing.,FORCE_LANDING_INSTRUCTION
+RC signal lost.,RC_SIGNAL_LOST
+RC signal weak.,RC_SIGNAL_WEAK
+RTH altitude adjusted to 100m.,SET_RTH_ALTITUDE
+RTH ascending.,RTH_ASCENDING
+RTH in progress.,RTH_IN_PROGRESS
+RTH.,RTH_IN_PROGRESS
+Remaining battery only enough for RTH.,BATTERY_REMAINING_FOR_RTH
+Returning to home.,RTH_IN_PROGRESS
+Set Return to Home (RTH) altitude to 100 m (328 ft).,SET_RTH_ALTITUDE
+Set maximum flight altitude to 30 m (98 ft).,SET_MAX_FLIGHT_ALTITUDE
+Set maximum flight altitude to 500 m (1640 ft).,SET_MAX_FLIGHT_ALTITUDE

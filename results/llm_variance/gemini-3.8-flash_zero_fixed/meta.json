@@ -1,0 +1,53 @@
+{
+  "model": {
+    "name": "gemini-3.8-flash",
+    "model": "google/gemini-3.8-flash",
+    "enabled": true
+  },
+  "defaults": {
+    "reasoning_effort": "high",
+    "temperature": null,
+    "max_tokens": 32000
+  },
+  "mode": "zero",
+  "fixed_order": true,
+  "demonstration": null,
+  "runs": [
+    {
+      "run_id": "gemini-3.8-flash_zero_fixed_run0",
+      "seed": 0,
+      "batches": [
+        {
+          "file": "gemini-3.8-flash_zero_fixed_run0_b0_7270a7e4bdbb0709.json",
+          "n": 78,
+          "problems": [],
+          "served_by": "google/gemini-3.8-flash"
+        }
+      ]
+    },
+    {
+      "run_id": "gemini-3.8-flash_zero_fixed_run1",
+      "seed": 0,
+      "batches": [
+        {
+          "file": "gemini-3.8-flash_zero_fixed_run1_b0_7270a7e4bdbb0709.json",
+          "n": 78,
+          "problems": [],
+          "served_by": "google/gemini-3.8-flash"
+        }
+      ]
+    },
+    {
+      "run_id": "gemini-3.8-flash_zero_fixed_run2",
+      "seed": 0,
+      "batches": [
+        {
+          "file": "gemini-3.8-flash_zero_fixed_run2_b0_7270a7e4bdbb0709.json",
+          "n": 78,
+          "problems": [],
+          "served_by": "google/gemini-3.8-flash"
+        }
+      ]
+    }
+  ]
+}

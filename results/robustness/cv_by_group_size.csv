@@ -1,0 +1,5 @@
+base_model,event_status,group,n,ga
+all-distilroberta-v1,novel,multi-sentence,42,0.6428571428571429
+all-distilroberta-v1,novel,singleton,269,0.9851301115241635
+all-distilroberta-v1,seen,multi-sentence,189,0.6137566137566137
+all-distilroberta-v1,seen,singleton,283,0.9787985865724381

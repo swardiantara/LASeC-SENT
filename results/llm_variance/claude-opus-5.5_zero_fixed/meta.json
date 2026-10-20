@@ -1,0 +1,53 @@
+{
+  "model": {
+    "name": "claude-opus-5.5",
+    "model": "anthropic/claude-opus-5.5",
+    "enabled": true
+  },
+  "defaults": {
+    "reasoning_effort": "high",
+    "temperature": null,
+    "max_tokens": 32000
+  },
+  "mode": "zero",
+  "fixed_order": true,
+  "demonstration": null,
+  "runs": [
+    {
+      "run_id": "claude-opus-5.5_zero_fixed_run0",
+      "seed": 0,
+      "batches": [
+        {
+          "file": "claude-opus-5.5_zero_fixed_run0_b0_7270a7e4bdbb0709.json",
+          "n": 78,
+          "problems": [],
+          "served_by": "anthropic/claude-opus-5.5"
+        }
+      ]
+    },
+    {
+      "run_id": "claude-opus-5.5_zero_fixed_run1",
+      "seed": 0,
+      "batches": [
+        {
+          "file": "claude-opus-5.5_zero_fixed_run1_b0_7270a7e4bdbb0709.json",
+          "n": 78,
+          "problems": [],
+          "served_by": "anthropic/claude-opus-5.5"
+        }
+      ]
+    },
+    {
+      "run_id": "claude-opus-5.5_zero_fixed_run2",
+      "seed": 0,
+      "batches": [
+        {
+          "file": "claude-opus-5.5_zero_fixed_run2_b0_7270a7e4bdbb0709.json",
+          "n": 78,
+          "problems": [],
+          "served_by": "anthropic/claude-opus-5.5"
+        }
+      ]
+    }
+  ]
+}

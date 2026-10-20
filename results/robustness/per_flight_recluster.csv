@@ -1,0 +1,43 @@
+method,mode,flight,n_unique,ga,n_correct,pair_precision,pair_recall,n_events,key_recovered,key_events,hidden
+LASeC (all-distilroberta-v1),per-flight,1,17,1.0,17,1.0,1.0,17,3,3,
+LASeC (all-distilroberta-v1),pooled,1,17,1.0,17,1.0,1.0,17,3,3,
+LASeC (all-distilroberta-v1),per-flight,2,35,0.8285714285714286,29,0.8,0.5,30,5,5,
+LASeC (all-distilroberta-v1),pooled,2,35,0.8285714285714286,29,0.8,0.5,30,5,5,
+LASeC (all-distilroberta-v1),per-flight,3,37,0.8378378378378378,31,0.875,0.6363636363636364,30,5,5,
+LASeC (all-distilroberta-v1),pooled,3,37,0.8378378378378378,31,0.875,0.6363636363636364,30,5,5,
+LASeC (all-distilroberta-v1),per-flight,4,32,0.875,28,0.6666666666666666,0.6666666666666666,29,6,6,
+LASeC (all-distilroberta-v1),pooled,4,32,0.875,28,0.6666666666666666,0.6666666666666666,29,6,6,
+LASeC (all-distilroberta-v1),per-flight,5,30,0.9333333333333333,28,1.0,0.6666666666666666,28,5,5,
+LASeC (all-distilroberta-v1),pooled,5,30,0.9333333333333333,28,1.0,0.6666666666666666,28,5,5,
+LASeC (all-distilroberta-v1),per-flight,6,36,0.9444444444444444,34,0.975609756097561,1.0,24,4,5,LOW_BATTERY_RTH
+LASeC (all-distilroberta-v1),pooled,6,36,0.9444444444444444,34,0.975609756097561,1.0,24,4,5,LOW_BATTERY_RTH
+LASeC (all-distilroberta-v1),per-flight,7,39,0.9230769230769231,36,1.0,0.7777777777777778,33,6,6,
+LASeC (all-distilroberta-v1),pooled,7,39,0.9230769230769231,36,1.0,0.7777777777777778,33,6,6,
+LASeC (all-MiniLM-L6-v2),per-flight,1,17,0.8823529411764706,15,0.0,1.0,16,3,3,
+LASeC (all-MiniLM-L6-v2),pooled,1,17,0.8823529411764706,15,0.0,1.0,16,3,3,
+LASeC (all-MiniLM-L6-v2),per-flight,2,35,0.7714285714285715,27,0.6,0.375,30,5,5,
+LASeC (all-MiniLM-L6-v2),pooled,2,35,0.7714285714285715,27,0.6,0.375,30,5,5,
+LASeC (all-MiniLM-L6-v2),per-flight,3,37,0.7837837837837838,29,0.75,0.5454545454545454,30,5,5,
+LASeC (all-MiniLM-L6-v2),pooled,3,37,0.7837837837837838,29,0.75,0.5454545454545454,30,5,5,
+LASeC (all-MiniLM-L6-v2),per-flight,4,32,0.8125,26,0.5,0.6666666666666666,28,6,6,
+LASeC (all-MiniLM-L6-v2),pooled,4,32,0.8125,26,0.5,0.6666666666666666,28,6,6,
+LASeC (all-MiniLM-L6-v2),per-flight,5,30,0.9333333333333333,28,1.0,0.6666666666666666,28,5,5,
+LASeC (all-MiniLM-L6-v2),pooled,5,30,0.8666666666666667,26,0.6666666666666666,0.6666666666666666,27,5,5,
+LASeC (all-MiniLM-L6-v2),per-flight,6,36,0.8888888888888888,32,0.9523809523809523,1.0,23,4,5,LOW_BATTERY_RTH
+LASeC (all-MiniLM-L6-v2),pooled,6,36,0.8333333333333334,30,0.9302325581395349,1.0,22,4,5,LOW_BATTERY_RTH
+LASeC (all-MiniLM-L6-v2),per-flight,7,39,0.9230769230769231,36,1.0,0.7777777777777778,33,6,6,
+LASeC (all-MiniLM-L6-v2),pooled,7,39,0.8717948717948718,34,0.875,0.7777777777777778,32,6,6,
+Pre-trained all-distilroberta-v1 + Agglomerative,per-flight,1,17,0.8235294117647058,14,0.0,1.0,15,3,3,
+Pre-trained all-distilroberta-v1 + Agglomerative,pooled,1,17,0.8823529411764706,15,0.0,1.0,16,3,3,
+Pre-trained all-distilroberta-v1 + Agglomerative,per-flight,2,35,0.6571428571428571,23,0.3,0.375,27,4,5,RC_SIGNAL_LOST
+Pre-trained all-distilroberta-v1 + Agglomerative,pooled,2,35,0.6571428571428571,23,0.3,0.375,27,4,5,RC_SIGNAL_LOST
+Pre-trained all-distilroberta-v1 + Agglomerative,per-flight,3,37,0.6756756756756757,25,0.46153846153846156,0.5454545454545454,27,4,5,RC_SIGNAL_WEAK
+Pre-trained all-distilroberta-v1 + Agglomerative,pooled,3,37,0.6756756756756757,25,0.46153846153846156,0.5454545454545454,27,4,5,RC_SIGNAL_WEAK
+Pre-trained all-distilroberta-v1 + Agglomerative,per-flight,4,32,0.6875,22,0.16666666666666666,0.3333333333333333,27,5,6,RC_SIGNAL_WEAK
+Pre-trained all-distilroberta-v1 + Agglomerative,pooled,4,32,0.6875,22,0.16666666666666666,0.3333333333333333,27,5,6,RC_SIGNAL_WEAK
+Pre-trained all-distilroberta-v1 + Agglomerative,per-flight,5,30,0.7,21,0.25,0.3333333333333333,26,4,5,RC_SIGNAL_WEAK
+Pre-trained all-distilroberta-v1 + Agglomerative,pooled,5,30,0.6666666666666666,20,0.16666666666666666,0.3333333333333333,25,4,5,RC_SIGNAL_WEAK
+Pre-trained all-distilroberta-v1 + Agglomerative,per-flight,6,36,0.8333333333333334,30,0.9512195121951219,0.975,24,4,5,BATTERY_ONLY_FOR_RTH
+Pre-trained all-distilroberta-v1 + Agglomerative,pooled,6,36,0.8055555555555556,29,0.9069767441860465,0.975,23,4,5,BATTERY_ONLY_FOR_RTH
+Pre-trained all-distilroberta-v1 + Agglomerative,per-flight,7,39,0.6923076923076923,27,0.5555555555555556,0.5555555555555556,31,4,6,IMGTX_LOST;RC_SIGNAL_WEAK
+Pre-trained all-distilroberta-v1 + Agglomerative,pooled,7,39,0.6666666666666666,26,0.45454545454545453,0.5555555555555556,30,4,6,IMGTX_LOST;RC_SIGNAL_WEAK

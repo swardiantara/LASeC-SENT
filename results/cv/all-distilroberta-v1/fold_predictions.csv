@@ -1,0 +1,784 @@
+fold,sentence,event,pred,novel_event,group_size_in_fold,correct
+0,A passenger aircraft is nearby.,MANNED_AIRCRAFT_NEARBY,2,False,3,0.0
+0,API Automatic Takeoff,API_TAKEOFF,95,True,1,1.0
+0,Account not logged in.,ACCOUNT_NOT_LOGGED_IN,77,True,1,1.0
+0,Advanced RTH Image Transmission Recovered.,IMGTX_RESTORED,81,False,1,1.0
+0,Aircraft Core Board Overheated,CORE_BOARD_OVERHEATED,125,True,1,1.0
+0,Aircraft Entering Restricted Area,IN_RESTRICTED_ZONE,92,False,1,1.0
+0,Aircraft GPS interference.,GPS_INTERFERENCE,107,True,1,1.0
+0,Aircraft Landing,AUTO_LANDING_IN_PROGRESS,1,False,4,1.0
+0,Aircraft close to Home Point.,CLOSE_TO_HOME_POINT,12,False,2,1.0
+0,Aircraft in Authorization Zone.,IN_AUTHORIZATION_ZONE,121,True,1,1.0
+0,Aircraft is close to Home Point.,CLOSE_TO_HOME_POINT,12,False,2,1.0
+0,Aircraft is landing,AUTO_LANDING_IN_PROGRESS,1,False,4,1.0
+0,Aircraft is now following you.,FOLLOW_ME_ACTIVE,116,True,1,1.0
+0,Aircraft is returning home,RTH_ACTIVE,9,False,5,1.0
+0,Aircraft is returning home.,RTH_ACTIVE,9,False,5,1.0
+0,Aircraft landing automatically,AUTO_LANDING_IN_PROGRESS,1,False,4,1.0
+0,Aircraft not linked to phone number.,PHONE_NUMBER_NOT_LINKED,74,True,1,1.0
+0,Aircraft out of Range,AIRCRAFT_TOO_FAR,108,False,1,1.0
+0,Aircraft performance decreased to ensure flight safety.,PERFORMANCE_DECREASED,80,False,1,1.0
+0,Aircraft pitch angle too large.,AIRCRAFT_NOT_LEVEL,88,False,1,1.0
+0,Aircraft processor chip overheated.,PROCESSOR_OVERHEATED,122,False,1,1.0
+0,Aircraft returning to Home Point,RTH_ACTIVE,9,False,5,1.0
+0,Aircraft returning to home automatically,RTH_ACTIVE,9,False,5,1.0
+0,Aircraft will automatically descend in nnn,AUTO_LANDING_COUNTDOWN,78,False,1,1.0
+0,Aircraft will land,AUTO_LANDING_IN_PROGRESS,1,False,4,1.0
+0,Ambient Light is too weak.,AMBIENT_LIGHT_LOW,100,False,1,1.0
+0,Approaching NFZ or pre-set distance limit of (nnn).,APPROACHING_NFZ_OR_DISTANCE_LIMIT,96,True,1,1.0
+0,Arrived at End Point,ARRIVED_AT_END_POINT,70,False,1,1.0
+0,Backward Obstacle Sensing is not functioning.,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,87,False,1,1.0
+0,Battery cells undervoltage,BATTERY_CELL_UNDERVOLTAGE,82,True,1,1.0
+0,Battery overheating.,BATTERY_OVERHEATING,76,True,1,1.0
+0,Braking now.,BRAKING,93,False,1,1.0
+0,Camera RCAM not connected.,CAMERA_NOT_CONNECTED,115,True,1,1.0
+0,Camera sensor error.,CAMERA_SENSOR_ERROR,73,True,1,1.0
+0,Cannot enter ActiveTrack.,ACTIVETRACK_UNAVAILABLE,119,True,1,1.0
+0,Cannot enter the selected flight mode.,FLIGHT_MODE_CHANGE_REJECTED,129,False,2,0.0
+0,Cannot fly in that direction,DIRECTION_BLOCKED,68,True,1,1.0
+0,Cannot switch flight mode.,FLIGHT_MODE_CHANGE_REJECTED,99,False,2,0.0
+0,Capture Failed.,CAPTURE_FAILED,102,True,1,1.0
+0,Change card,INSTR_CHANGE_SD_CARD,3,False,1,0.0
+0,Change card or delete files,INSTR_FREE_STORAGE,3,False,1,0.0
+0,Check Battery Status,INSTR_CHECK_BATTERY,120,False,1,1.0
+0,Check and log in,INSTR_LOG_IN,91,True,1,1.0
+0,Check battery connection.,INSTR_REINSTALL_BATTERY,0,False,2,1.0
+0,Check for objects blocking motor or contact DJI Support for assistance,INSTR_CHECK_MOTOR_PROPELLERS,4,False,1,0.0
+0,Check whether the propellers are attached to the correct motors based on their markings.,INSTR_CHECK_PROPELLER_INSTALLATION,105,False,2,0.0
+0,Command Failed,COMMAND_FAILED,17,True,2,1.0
+0,Command Timeout,COMMAND_TIMEOUT,126,False,1,1.0
+0,Compass disconnected,COMPASS_DISCONNECTED,90,True,1,1.0
+0,Compass initialization failed.,COMPASS_INIT_FAILED,69,True,1,1.0
+0,Critical Low Battery,CRITICAL_LOW_BATTERY,8,False,3,1.0
+0,Critical low battery voltage,CRITICAL_LOW_BATTERY,8,False,3,1.0
+0,Critically low power.,CRITICAL_LOW_BATTERY,8,False,3,1.0
+0,CrystalSky is too hot.,MONITOR_OVERHEATED,86,True,1,1.0
+0,Data Recorder File Index is 18.,DATA_RECORDER_INDEX,14,False,3,1.0
+0,Data Recorder File Index is 30.,DATA_RECORDER_INDEX,14,False,3,1.0
+0,Data Recorder File Index is 57.,DATA_RECORDER_INDEX,14,False,3,1.0
+0,Decrease altitude and fly with caution.,INSTR_DECREASE_ALTITUDE,57,True,1,1.0
+0,Descend as soon as possible,INSTR_DESCEND,40,True,1,1.0
+0,Descending.,DESCENDING,111,True,1,1.0
+0,Detecting subject,SEARCHING_SUBJECT,89,True,2,0.0
+0,Distance limit enabled.,DISTANCE_LIMIT_ENABLED,97,True,1,1.0
+0,Downlink Restored (after 0m 1.1s).,DOWNLINK_RESTORED,26,False,4,1.0
+0,Downlink Restored (after 0m 1.4s).,DOWNLINK_RESTORED,26,False,4,1.0
+0,Downlink Restored (after 0m 2.2s).,DOWNLINK_RESTORED,26,False,4,1.0
+0,Downlink Restored (after 0m 2.9s).,DOWNLINK_RESTORED,26,False,4,1.0
+0,"During Smart Track, you can control lens zoom within a certain limit",INFO_SMART_TRACK_ZOOM,71,True,1,1.0
+0,Enable Multiple Flight Modes in Settings menu to change.,INSTR_ENABLE_MULTIPLE_FLIGHT_MODES,128,False,2,0.0
+0,Ensure the aircraft battery is properly connected,INSTR_REINSTALL_BATTERY,0,False,2,1.0
+0,Ensure the aircraft remains within your line of sight and fly with caution.,INSTR_MAINTAIN_VLOS,104,False,1,1.0
+0,Ensure there are no magnets or metal objects near the aircraft.,INSTR_REMOVE_MAGNETIC_OBJECTS,114,False,1,1.0
+0,Ensure there are no metal and magnetic objects near the aircraft and calibrate compass,INSTR_REMOVE_MAGNETIC_OBJECTS_AND_CALIBRATE,43,False,1,1.0
+0,Entered Cruise Control mode.,CRUISE_CONTROL_ENTERED,132,True,1,1.0
+0,Exit Downward Sensing system,DOWNWARD_OBSTACLE_SENSING_UNAVAILABLE,67,False,1,1.0
+0,Exit this mode and try again,INSTR_EXIT_MODE,112,False,1,1.0
+0,Exited Cruise Control mode,CRUISE_CONTROL_EXITED,124,True,1,1.0
+0,Exited Hyperlapse mode,HYPERLAPSE_EXITED,47,True,1,1.0
+0,Exposure time is too long,EXPOSURE_TOO_LONG,44,True,1,1.0
+0,Failed to cancel landing,CANCEL_LANDING_FAILED,94,False,1,1.0
+0,Failed to take off.,TAKEOFF_UNAVAILABLE,85,False,1,1.0
+0,Flight altitude and distance restricted to nnn and nnn.,MAX_ALT_AND_DISTANCE_SET,75,False,1,1.0
+0,Fly safely,INSTR_FLY_CAUTION,133,False,3,0.0
+0,Fly with caution.,INSTR_FLY_CAUTION,6,False,3,0.0
+0,GPS signal weak.,GPS_SIGNAL_WEAK,46,False,1,1.0
+0,Gimbal Tilt too Large,GIMBAL_TILT_TOO_LARGE,37,True,1,1.0
+0,Gimbal Yaw Limit Reached,GIMBAL_YAW_LIMIT,117,False,1,1.0
+0,Gimbal nnn roll axis endpoint reached,GIMBAL_ROLL_LIMIT,53,False,1,1.0
+0,Home Point not updated,HOME_POINT_NOT_UPDATED,79,True,1,1.0
+0,If needed,INFO_FRAGMENT,106,True,1,1.0
+0,In Flight.,IN_FLIGHT,59,True,1,1.0
+0,Incorrect installation will cause the aircraft to roll over during takeoff,POSS_ROLLOVER_ON_TAKEOFF,21,True,1,1.0
+0,Insert card,INSTR_INSERT_SD_CARD,98,True,1,1.0
+0,Landing Gear Lowering.,LANDING_GEAR_LOWERED,113,False,1,1.0
+0,Landing gear function restored,LANDING_GEAR_RESTORED,110,True,1,1.0
+0,Large Wind Velocity.,HIGH_WIND,38,False,1,1.0
+0,Lightly press to adjust.,INSTR_PRESS_DIAL_TO_ADJUST,42,False,1,1.0
+0,Manned aircraft approaching.,MANNED_AIRCRAFT_NEARBY,2,False,3,0.0
+0,Manned aircraft too close.,MANNED_AIRCRAFT_NEARBY,130,False,3,0.0
+0,Manually adjust flight route or return to home,INSTR_ADJUST_ROUTE_OR_RTH,109,False,1,1.0
+0,Max Flight Distance Reached.,MAX_DISTANCE_REACHED,52,False,1,1.0
+0,Metering disabled,METERING_DISABLED,60,True,1,1.0
+0,Motor nnn stalled.,MOTOR_STALLED,127,True,1,1.0
+0,Motor or propeller error.,MOTOR_ERROR,123,False,1,1.0
+0,Motor speed error.,MOTOR_SPEED_ERROR,101,False,1,1.0
+0,Motor stuck.,MOTOR_BLOCKED,118,False,1,1.0
+0,Move away from sources of interference before attempting flight.,INSTR_MOVE_AWAY_FROM_INTERFERENCE,50,False,1,1.0
+0,Move to an open area for takeoff or turn off RTK,INSTR_MOVE_TO_OPEN_AREA,62,False,1,1.0
+0,No GPS signal.,NO_GPS_SIGNAL,66,False,1,1.0
+0,Not suitable for shooting a 4K video.,POSS_4K_RECORDING_UNSUITABLE,39,True,1,1.0
+0,Object too far for laser rangefinder,LASER_RANGEFINDER_TOO_FAR,49,True,1,1.0
+0,PalmControl in Process,PALM_CONTROL_ACTIVE,131,True,1,1.0
+0,Please check the Compass installation and interference,INSTR_CHECK_COMPASS,55,True,1,1.0
+0,Please contact DJI Support.,INSTR_CONTACT_SUPPORT,4,False,1,0.0
+0,Please ensure the propellers are installed on the correct motors,INSTR_CHECK_PROPELLER_INSTALLATION,45,False,2,0.0
+0,"Please switch to Normal mode, then back to S-mode to enable it",INSTR_TOGGLE_MODE_SWITCH,22,False,1,1.0
+0,Press C1 or C2 to exit,INSTR_PRESS_BUTTON_TO_EXIT,63,False,1,1.0
+0,Propeller Fell Off.,PROPELLER_DETACHED,83,False,1,1.0
+0,Propeller guard or extra payload detected.,PROPELLER_GUARD_OR_PAYLOAD_DETECTED,34,True,1,1.0
+0,Propulsion output has been limited to ensure battery health.,PROPULSION_LIMITED,5,True,2,1.0
+0,Propulsion output is limited to ensure the health of the battery,PROPULSION_LIMITED,5,True,2,1.0
+0,RTH : Heading alignment.,RTH_HEADING_ALIGNMENT,56,True,1,1.0
+0,RTH Altitude : 30m.,RTH_ALT_SET,7,False,2,1.0
+0,RTH may be affected.,POSS_RTH_AFFECTED,24,True,1,1.0
+0,Rectifying aircraft position,PRECISION_LANDING_CORRECTING,19,False,1,1.0
+0,Related performance will be affected.,POSS_PERFORMANCE_AFFECTED,18,False,1,1.0
+0,Remote ID functionality normal,REMOTE_ID_NORMAL,103,True,1,1.0
+0,Remote controller signal weak.,RC_SIGNAL_WEAK,29,True,1,1.0
+0,Restart aircraft to take off,INSTR_RESTART,27,False,1,1.0
+0,Return home now.,INSTR_RETURN_HOME,58,False,1,1.0
+0,Return the aircraft to home manually,INSTR_MANUAL_RTH,61,False,1,1.0
+0,Return-to-Home Altitude : 98FT.,RTH_ALT_SET,7,False,2,1.0
+0,Returning to the Home Point,RTH_ACTIVE,9,False,5,1.0
+0,Right Dial Locked.,RC_DIAL_LOCKED,28,False,1,1.0
+0,Searching …,SEARCHING_SUBJECT,84,True,2,0.0
+0,Strong Interference Detected.,STRONG_INTERFERENCE,36,False,1,1.0
+0,Strong Remote Controller Interference,RC_INTERFERENCE,64,False,1,1.0
+0,Switched to gimbal free mode.,GIMBAL_FREE_MODE,72,True,1,1.0
+0,Tap the screen to focus.,INSTR_TAP_TO_FOCUS,54,False,1,1.0
+0,The aircraft is flying back to the start point,RETURN_TO_START_POINT,35,False,1,1.0
+0,The aircraft is moving.,AIRCRAFT_MOVING,48,True,1,1.0
+0,The flight attitude angle is larger in Sport mode.,INFO_SPORT_MODE_ATTITUDE,10,True,1,1.0
+0,Throttle up to reduce the speed of descent and use sticks to avoid obstacles,INSTR_MANUAL_DESCENT_CONTROL,13,False,1,1.0
+0,Tip: Only the first camera can tap-zoom in dual gimbal control mode,INFO_DUAL_GIMBAL_TAP_ZOOM,41,True,1,1.0
+0,"Turn on ""Multiple Flight Modes"" to enable Atti and Sport Modes.",INSTR_ENABLE_MULTIPLE_FLIGHT_MODES,51,False,2,0.0
+0,Unable to display nearby manned aircraft and anti-collision warnings.,AIRSENSE_WARNINGS_UNAVAILABLE,31,True,1,1.0
+0,Upward Obstacle Detected,UPWARD_OBSTACLE_DETECTED,25,True,1,1.0
+0,Vision System unavailable.,VISION_SYSTEM_UNAVAILABLE,65,True,1,1.0
+0,Vision systems and obstacle avoidance disabled,VISION_AND_OA_UNAVAILABLE,20,False,1,1.0
+0,Warm up the battery temperature to above 25 degree Celsius to ensure a safe flight.,INSTR_WARM_BATTERY,23,False,1,1.0
+0,Warning: Aircraft is less than nnn (minimum) away from the object below,TOO_CLOSE_TO_OBJECT_BELOW,30,True,1,1.0
+0,Warning: Command Failed,COMMAND_FAILED,17,True,2,1.0
+0,"When exceeding nnn, Obstacle Avoidance is not available",INFO_OA_SPEED_LIMIT,32,True,1,1.0
+0,Your aircraft has entered a Warning Zone (Class D).,IN_WARNING_ZONE,15,False,1,1.0
+0,Your palm is too close to the aircraft.,PALM_TOO_CLOSE,11,True,1,1.0
+0,forward obstacle avoidance has stopped working,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,33,False,1,1.0
+0,go home shifts to landing.,RTH_SWITCHED_TO_AUTO_LANDING,16,False,1,1.0
+0,please pay attention to flight safety,INSTR_FLY_CAUTION,6,False,3,0.0
+1,API Automatic Return Home,API_RTH,130,True,1,1.0
+1,ActiveTrack Flight Ended,ACTIVETRACK_ENDED,75,False,1,1.0
+1,Adjust altitude in MC Settings if required.,INSTR_ADJUST_LIMIT_IN_SETTINGS,13,False,2,1.0
+1,Adjust distance in MC Settings if required.,INSTR_ADJUST_LIMIT_IN_SETTINGS,13,False,2,1.0
+1,"After powering off the aircraft, replace the propeller on the beeping ESC.",INSTR_REPLACE_PROPELLER,105,False,1,1.0
+1,Aircraft ActiveTrack max speed of nnn.,AIRCRAFT_ACTIVETRACK_MAX_SPEED_NNN,87,False,1,1.0
+1,Aircraft exceeded distance limit and has exited Hyperlapse mode,DISTANCE_LIMIT_EXCEEDED_HYPERLAPSE_EXITED,76,True,1,1.0
+1,Aircraft flight control locked,FLIGHT_CONTROL_LOCKED,119,True,1,1.0
+1,Aircraft flight control obtained by remote controller A,FLIGHT_CONTROL_OBTAINED_BY_RC,28,False,2,1.0
+1,Aircraft flight control obtained by remote controller B,FLIGHT_CONTROL_OBTAINED_BY_RC,28,False,2,1.0
+1,Aircraft in Restricted Zone.,IN_RESTRICTED_ZONE,121,False,2,0.0
+1,Aircraft is close to the Home Point.,CLOSE_TO_HOME_POINT,82,False,1,1.0
+1,Aircraft is entering a restricted area,IN_RESTRICTED_ZONE,91,False,2,0.0
+1,Aircraft is in QuickShot Mode.,QUICKSHOT_MODE,72,True,1,1.0
+1,Aircraft is in Sport Mode.,SPORT_MODE,73,True,1,1.0
+1,Aircraft is returning to the starting point,RETURN_TO_START_POINT,115,False,1,1.0
+1,"Aircraft is tilted, please keep the aircraft stationary and level before flight",AIRCRAFT_NOT_LEVEL,88,False,1,1.0
+1,Aircraft max power load reached.,MAX_POWER_LOAD_REACHED,117,True,1,1.0
+1,Aircraft may be in violation of local laws and regulations.,POSS_REGULATION_VIOLATION,139,True,3,0.0
+1,Aircraft processor overheated.,PROCESSOR_OVERHEATED,133,False,1,1.0
+1,Aircraft propulsion system error.,PROPULSION_SYSTEM_ERROR,92,True,1,1.0
+1,Aircraft switched to ATTI mode,MODE_ATTITUDE,98,False,1,1.0
+1,Aircraft takeoff altitude error.,TAKEOFF_ALTITUDE_ERROR,101,True,1,1.0
+1,Aircraft unable to auto hover and takeoff restricted.,UNABLE_HOVER_TAKEOFF_RESTRICTED,134,True,1,1.0
+1,Altitude Zone nnn,IN_ALTITUDE_ZONE,129,False,1,1.0
+1,Ambient Light is too weak,AMBIENT_LIGHT_LOW,5,False,3,1.0
+1,Ambient Light too Weak,AMBIENT_LIGHT_LOW,5,False,3,1.0
+1,Ambient light too low.,AMBIENT_LIGHT_LOW,5,False,3,1.0
+1,Auxiliary Bottom Light turned off,AUX_BOTTOM_LIGHT_OFF,4,True,1,0.0
+1,Auxiliary Bottom Light turned on,AUX_BOTTOM_LIGHT_ON,4,True,1,0.0
+1,Avoid blocking the antennas and keep the antennas parallel to and facing toward the aircraft during flight.,INSTR_ADJUST_ANTENNA,103,False,1,1.0
+1,Away and Follow in progress.,AWAY_AND_FOLLOW_ACTIVE,95,True,1,1.0
+1,Backward Obstacle Sensing is not functioning,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,136,False,3,0.0
+1,Backward obstacle avoidance unavailable.,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,6,False,3,0.0
+1,Backward obstacle sensing is unavailable,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,6,False,3,0.0
+1,Battery Signal Error.,BATTERY_COMM_ERROR,107,False,1,1.0
+1,Battery power restricted.,BATTERY_POWER_RESTRICTED,109,True,1,1.0
+1,Battery: Low Voltage Protection,BATTERY_LOW_VOLTAGE_PROTECTION,135,True,1,1.0
+1,Battery: Overcurrent During Discharge,BATTERY_OVERCURRENT,106,True,1,1.0
+1,Be careful when flying long distances.,INSTR_FLY_CAUTION,85,False,2,0.0
+1,Braking now! Return sticks to midpoints first.,BRAKING,126,False,1,1.0
+1,Camera Settings Adjusted,CAMERA_SETTINGS_ADJUSTED,137,False,2,0.0
+1,Camera Settings Adjusted to ActiveTrack,CAMERA_SETTINGS_ADJUSTED,74,False,2,0.0
+1,"Camera busy, cannot enter playback",CAMERA_BUSY_PLAYBACK_UNAVAILABLE,125,True,1,1.0
+1,Camera storage full,STORAGE_FULL,71,False,1,1.0
+1,Cannot enter Follow Me Mode,FOLLOW_ME_UNAVAILABLE,86,False,1,1.0
+1,Cannot find subject,SUBJECT_NOT_FOUND,96,False,1,1.0
+1,Change SD card,INSTR_CHANGE_SD_CARD,111,False,1,1.0
+1,Charge battery,INSTR_CHARGE_BATTERY,62,True,2,0.0
+1,Check propellers and fly with caution,INSTR_CHECK_MOTOR_PROPELLERS,131,False,1,1.0
+1,Check whether gimbal lock is removed and ensure gimbal can rotate freely,INSTR_CHECK_GIMBAL_LOCK,123,False,1,1.0
+1,Compass Redundancy Switch,COMPASS_REDUNDANCY_SWITCH,102,True,1,1.0
+1,Compass interference.,COMPASS_INTERFERENCE,90,False,1,1.0
+1,Contact DJI Support for assistance,INSTR_CONTACT_SUPPORT,31,False,3,1.0
+1,Contact DJI support,INSTR_CONTACT_SUPPORT,31,False,3,1.0
+1,Cool down the monitor to prevent overheating,INSTR_COOL_DOWN_MONITOR,81,True,1,1.0
+1,Correcting Landing Position,PRECISION_LANDING_CORRECTING,110,False,1,1.0
+1,Critically Low Voltage.,CRITICAL_LOW_BATTERY,97,False,1,1.0
+1,Downlink Restored (after 0m 0.9s).,DOWNLINK_RESTORED,14,False,2,1.0
+1,Downlink Restored (after 0m 11.3s).,DOWNLINK_RESTORED,14,False,2,1.0
+1,Downlink data connection lost for nnn seconds,DOWNLINK_LOST,122,False,1,1.0
+1,Downward sensor error.,DOWNWARD_SENSOR_ERROR,118,True,1,1.0
+1,Enable this option in Main Controller Settings if needed.,INSTR_ENABLE_IN_SETTINGS,3,True,2,1.0
+1,Ensure aircraft is level before taking off,INSTR_ENSURE_LEVEL,54,False,1,1.0
+1,Ensure there are no metal or magnetic objects near the aircraft and calibrate it before use,INSTR_REMOVE_MAGNETIC_OBJECTS_AND_CALIBRATE,79,False,1,1.0
+1,Ensure you have obtained proper airspace authorization,INSTR_OBTAIN_AUTHORIZATION,112,False,1,1.0
+1,Excessive attitude angle detected,ATTITUDE_ANGLE_TOO_LARGE,69,False,1,1.0
+1,Executing waypoint mission,WAYPOINT_MISSION_ACTIVE,108,False,1,1.0
+1,Exit P-GPS Mode,PGPS_MODE_EXITED,89,False,1,1.0
+1,Extended flight distance detected.,EXTENDED_FLIGHT_DISTANCE,127,True,1,1.0
+1,Failed to lower or pack up landing gear.,LANDING_GEAR_FAILED,113,True,1,1.0
+1,File system error.,FILE_SYSTEM_ERROR,114,True,1,1.0
+1,Flight control mode error,FLIGHT_CONTROL_MODE_ERROR,138,True,1,1.0
+1,Fly with caution,INSTR_FLY_CAUTION,120,False,2,0.0
+1,Flying without broadcasting required remote ID messages may violate local regulations,POSS_REGULATION_VIOLATION,94,True,3,0.0
+1,Forward obstacle sensing is unavailable,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,42,False,1,1.0
+1,GPS Position Mismatch.,GPS_POSITION_MISMATCH,124,True,1,1.0
+1,GPS module error.,GPS_MODULE_ERROR,116,True,1,1.0
+1,GPS signal low.,GPS_SIGNAL_WEAK,55,False,1,1.0
+1,Get Closer and retry,INSTR_GET_CLOSER_RETRY,40,True,1,1.0
+1,Gimbal nnn pan axis endpoint reached,GIMBAL_YAW_LIMIT,104,False,1,1.0
+1,High-altitude flight,HIGH_ALTITUDE_FLIGHT,53,False,1,1.0
+1,Home Point Updated.,HOME_POINT_UPDATED,15,True,2,1.0
+1,Home Point recorded.,HOME_POINT_RECORDED,99,False,1,1.0
+1,Home Point updated.,HOME_POINT_UPDATED,15,True,2,1.0
+1,IMU attitude restricted.,IMU_ATTITUDE_RESTRICTED,43,True,1,1.0
+1,IMU calibration required.,IMU_CALIBRATION_REQUIRED,36,False,1,1.0
+1,IMU warming up.,IMU_WARMING_UP,45,True,1,1.0
+1,"If needed, enable it in Main Controller Settings",INSTR_ENABLE_IN_SETTINGS,3,True,2,1.0
+1,Image quality affected.,POSS_IMAGE_QUALITY_AFFECTED,128,True,1,1.0
+1,Incompatible firmware version.,FIRMWARE_INCOMPATIBLE,51,True,1,1.0
+1,Initiating Return to Home will now trigger Auto Landing.,RTH_SWITCHED_TO_AUTO_LANDING,84,False,1,1.0
+1,Intelligent Flight Modes have not been enabled.,INTELLIGENT_FLIGHT_MODES_DISABLED,83,True,1,1.0
+1,Land as soon as possible,INSTR_LAND_PROMPTLY,58,False,1,1.0
+1,Land or return to home promptly,INSTR_LAND_OR_RTH,1,False,3,1.0
+1,Landing Gear Lowered.,LANDING_GEAR_LOWERED,44,False,1,1.0
+1,Lens not connected,LENS_NOT_CONNECTED,41,True,1,1.0
+1,Locating Landing Point,PRECISION_LANDING_LOCATING,93,True,1,1.0
+1,Low battery.,LOW_BATTERY,47,False,1,1.0
+1,Lower altitude immediately and manually return to home,INSTR_MANUAL_RTH,77,False,1,1.0
+1,Max altitude set to nnn,MAX_ALT_SET,132,False,1,1.0
+1,Max altitude set to nnn and max distance set to nnn to ensure flight safety,MAX_ALT_AND_DISTANCE_SET,60,False,1,1.0
+1,Maximum Flight Distance Reached.,MAX_DISTANCE_REACHED,48,False,1,1.0
+1,May violate local policies and regulations.,POSS_REGULATION_VIOLATION,68,True,3,0.0
+1,Motor Obstructed.,MOTOR_BLOCKED,65,False,2,0.0
+1,Motor error.,MOTOR_ERROR,61,False,1,1.0
+1,Motor unable to rotate.,MOTOR_BLOCKED,63,False,2,0.0
+1,Move Away and retry,INSTR_MOVE_AWAY_AND_RETRY,52,True,1,1.0
+1,Move to an open area or exit flight tutorial,INSTR_MOVE_TO_OPEN_AREA,26,False,1,1.0
+1,No SD card.,NO_SD_CARD,70,True,1,1.0
+1,No image,TRACKING_NO_IMAGE,100,True,1,1.0
+1,Obstacle Avoidance Disabled.,OA_UNAVAILABLE,0,False,3,1.0
+1,Obstacle Avoidance is not available,OA_UNAVAILABLE,0,False,3,1.0
+1,Obstacle Avoidance will be disabled in landing.,INFO_OA_DISABLED_WHEN_LANDING,66,False,1,1.0
+1,Obstacle avoidance unavailable.,OA_UNAVAILABLE,0,False,3,1.0
+1,Only infrared sensors available.,ONLY_INFRARED_SENSORS_AVAILABLE,67,True,1,1.0
+1,Panorama Captured Successfully,PANORAMA_COMPLETED,56,False,1,1.0
+1,Panorama has stopped,PANORAMA_STOPPED,46,True,1,1.0
+1,Please contact DJI Support for help,INSTR_CONTACT_SUPPORT,31,False,3,1.0
+1,Positioning accuracy may be compromised.,POSS_POSITIONING_ACCURACY_AFFECTED,64,True,1,1.0
+1,Propellers not installed,PROPELLERS_NOT_INSTALLED,37,True,1,1.0
+1,RTH Altitude : 98FT.,RTH_ALT_SET,7,False,4,0.0
+1,RTH altitude adjusted to nnn,RTH_ALT_SET,33,False,4,0.0
+1,RTK Base Station Data Not Received.,RTK_BASE_NO_DATA,35,False,1,1.0
+1,Recalibrate using a subject that is farther away,INSTR_RECALIBRATE_FARTHER_TARGET,23,False,1,1.0
+1,Recharge promptly,INSTR_CHARGE_BATTERY,22,True,2,0.0
+1,Remote controller in high interference environment.,RC_INTERFERENCE,2,False,2,1.0
+1,Remote controller signal lost,RC_SIGNAL_LOST,80,False,1,1.0
+1,Return aircraft to an area nearby the home point promptly and fly in a wind-free environment to ensure flight safety,INSTR_RETURN_NEAR_HOME,21,False,1,1.0
+1,Return home and land soon.,INSTR_LAND_OR_RTH,1,False,3,1.0
+1,"Return sticks to midpoints, then continue flying.",INSTR_CENTER_STICKS,50,False,1,1.0
+1,Return to Home failed.,RTH_UNAVAILABLE,25,False,1,1.0
+1,Return to home and land promptly.,INSTR_LAND_OR_RTH,1,False,3,1.0
+1,Return-to-Home Altitude : 65FT,RTH_ALT_SET,7,False,4,0.0
+1,Running Flight Simulator.,SIMULATOR_RUNNING,39,True,1,1.0
+1,Sensing system is blocked or too close to the obstacle.,SENSOR_BLOCKED_OR_TOO_CLOSE,78,True,1,1.0
+1,Setting new Return-To-Home altitude to nnn,RTH_ALT_SET,19,False,4,0.0
+1,Signal interruption may be more likely.,POSS_SIGNAL_INTERRUPTION,57,False,1,1.0
+1,Strong Interference to Aircraft.,STRONG_AIRCRAFT_INTERFERENCE,34,False,1,1.0
+1,Strong Remote Controller Interference.,RC_INTERFERENCE,2,False,2,1.0
+1,Strong wind.,HIGH_WIND,20,False,1,1.0
+1,Subject too Small,SUBJECT_TOO_SMALL,38,False,1,1.0
+1,Switched to S (Sport)-mode.,MODE_SPORT,49,True,1,1.0
+1,Taking off.,TAKING_OFF,17,False,1,1.0
+1,The gimbal will rotate when the aircraft starts or stops.,INFO_GIMBAL_ROTATES_SPORT_MODE,27,True,1,1.0
+1,Try again later.,INSTR_RETRY,24,False,1,1.0
+1,Unable to hover.,UNABLE_TO_HOVER,18,False,1,1.0
+1,Unlocking takeoff restrictions not recommended,INSTR_DO_NOT_UNLOCK_TAKEOFF_RESTRICTION,30,True,1,1.0
+1,Videos and photos will still be shot in D-Log mode,INFO_DLOG_RECORDING,11,True,1,1.0
+1,View the checklist after landing,INSTR_VIEW_CHECKLIST,16,True,1,1.0
+1,Vision system and obstacle sensing unavailable.,VISION_AND_OA_UNAVAILABLE,8,False,1,1.0
+1,Wait for the GPS satellite signal recovery before ascend,INSTR_WAIT_FOR_GPS,10,True,1,1.0
+1,Warning,INFO_WARNING_FRAGMENT,59,True,1,1.0
+1,Warning: Command Timeout,COMMAND_TIMEOUT,9,False,1,1.0
+1,Weak signal.,SIGNAL_WEAK,32,True,1,1.0
+1,Yaw Error.,YAW_ERROR,29,True,1,1.0
+1,aircraft braking distance is extended,AIRCRAFT_BRAKING_DISTANCE_EXTENDED,12,False,1,1.0
+2,2. Calibrate Compass Before Takeoff,INSTR_CALIBRATE_COMPASS,109,True,1,1.0
+2,Accelerator is Over Range,ACCELEROMETER_OVER_RANGE,113,True,1,1.0
+2,ActiveTrack Flight Paused,ACTIVETRACK_PAUSED,127,True,1,1.0
+2,Adjust antennas,INSTR_ADJUST_ANTENNA,111,False,1,1.0
+2,Adjust in Main Controller Settings if necessary,INSTR_ADJUST_LIMIT_IN_SETTINGS,4,False,2,1.0
+2,Adjust the distance in MC Settings if required.,INSTR_ADJUST_LIMIT_IN_SETTINGS,4,False,2,1.0
+2,AirSense communication error.,AIRSENSE_COMM_ERROR,121,True,1,1.0
+2,Aircraft braking distance increased and flight time decreased.,AIRCRAFT_BRAKING_DISTANCE_EXTENDED,108,False,1,1.0
+2,Aircraft flight control unlocked,FLIGHT_CONTROL_UNLOCKED,81,True,1,1.0
+2,Aircraft is flying back to the start point,RETURN_TO_START_POINT,125,False,1,1.0
+2,"Aircraft is in Attitude mode, so that it will not hover.",AIRCRAFT_ATTITUDE_MODE,93,False,1,1.0
+2,Aircraft is returning to the Home Point.,RTH_ACTIVE,6,False,2,1.0
+2,Aircraft not in flight.,AIRCRAFT_NOT_FLIGHT,79,True,1,1.0
+2,Aircraft stopped.,AIRCRAFT_STOPPED,115,True,1,1.0
+2,Aircraft unable to fly stably.,UNABLE_TO_FLY_STABLY,110,True,1,1.0
+2,Aircraft will decelerate to ensure safety,DECELERATE_FOR_SAFETY,82,True,1,1.0
+2,Always maintain visual line of sight unless otherwise authorized,INSTR_MAINTAIN_VLOS,98,False,1,1.0
+2,"Ambient Light too Weak, Vision Positioning obstacle sensing is unavailable.",AMBIENT_LIGHT_LOW_VISION_POSITIONING_UNAVAILABLE,119,True,1,1.0
+2,"Another aircraft is dangerously close, please descend to a safer altitude",ANOTHER_AIRCRAFT_NEARBY,117,False,2,0.0
+2,Another aircraft is nearby.,ANOTHER_AIRCRAFT_NEARBY,96,False,2,0.0
+2,At least two Waypoints are needed,INSTR_TWO_WAYPOINTS_REQUIRED,90,False,1,1.0
+2,Attitude is too large.,ATTITUDE_ANGLE_TOO_LARGE,73,False,1,1.0
+2,Auto Landing in nnn(s),AUTO_LANDING_COUNTDOWN,122,False,1,1.0
+2,Auto calibration in progress,AUTO_CALIBRATION_IN_PROGRESS,129,True,1,1.0
+2,Backward sensor(s) blocked.,BACKWARD_SENSOR_BLOCKED,105,True,1,1.0
+2,Barometer Dead in Air,BAROMETER_FAILURE,123,True,1,1.0
+2,Battery Alert Battery installation error.,BATTERY_INSTALLATION_ERROR,124,False,2,0.0
+2,Battery communication malfunction.,BATTERY_COMM_ERROR,107,False,1,1.0
+2,Battery nnn requires maintenance,BATTERY_MAINTENANCE_REQUIRED,106,True,1,1.0
+2,Battery not installed properly.,BATTERY_INSTALLATION_ERROR,97,False,2,0.0
+2,Cache Space Full,CACHE_FULL,130,True,1,1.0
+2,Calibration target not far away enough.,CALIBRATION_TARGET_TOO_CLOSE,99,False,1,1.0
+2,Camera Error.,CAMERA_ERROR,8,True,2,1.0
+2,Camera Settings ActiveTrack Optimized,CAMERA_SETTINGS_ADJUSTED,103,False,1,1.0
+2,Camera error.,CAMERA_ERROR,8,True,2,1.0
+2,Cancel Return-to-Home Failed,CANCEL_RTH_FAILED,3,True,2,1.0
+2,Cannot Enter TapFly,TAPFLY_UNAVAILABLE,5,True,2,1.0
+2,Cannot Track Subject.,TRACKING_FAILED,94,False,1,1.0
+2,Cannot enable Follow Me Mode,FOLLOW_ME_UNAVAILABLE,69,False,1,1.0
+2,Cannot enter TapFly Mode,TAPFLY_UNAVAILABLE,5,True,2,1.0
+2,Cannot start Self-Timer.,SELF_TIMER_UNAVAILABLE,101,True,1,1.0
+2,Check map to find Recommended Zones,INSTR_CHECK_MAP_ZONES,92,True,1,1.0
+2,Check motor,INSTR_CHECK_MOTOR_PROPELLERS,114,False,1,1.0
+2,Check whether propeller on beeping ESC is warped or damaged,INSTR_REPLACE_PROPELLER,84,False,1,1.0
+2,Compass Error,COMPASS_ERROR,15,False,3,0.0
+2,Compass Error.,COMPASS_ERROR,15,False,3,0.0
+2,Compass Interference.,COMPASS_INTERFERENCE,46,False,2,0.0
+2,"Compass error, calibration required",COMPASS_ERROR,104,False,3,0.0
+2,Connect to network to obtain mobile device location.,INSTR_CONNECT_NETWORK,91,True,1,1.0
+2,Control Signal Timeout (RC),RC_SIGNAL_LOST,128,False,1,1.0
+2,Critical low battery.,CRITICAL_LOW_BATTERY,7,False,2,1.0
+2,Current elevation above nnn.,ALTITUDE_LIMIT_EXCEEDED,85,False,1,1.0
+2,Data Recorder File Index is 12.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Data Recorder File Index is 13.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Data Recorder File Index is 17.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Data Recorder File Index is 2.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Data Recorder File Index is 21.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Data Recorder File Index is 3.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Data Recorder File Index is 46.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Data Recorder File Index is 65.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Data Recorder File Index is 8.,DATA_RECORDER_INDEX,16,False,9,1.0
+2,Downlink Lost.,DOWNLINK_LOST,102,False,1,1.0
+2,Downlink Restored (after 0m 1.6s).,DOWNLINK_RESTORED,12,False,5,1.0
+2,Downlink Restored (after 0m 1.7s).,DOWNLINK_RESTORED,12,False,5,1.0
+2,Downlink Restored (after 0m 11s).,DOWNLINK_RESTORED,12,False,5,1.0
+2,Downlink Restored (after 0m 2.3s).,DOWNLINK_RESTORED,12,False,5,1.0
+2,Downlink Restored (after 0m 5.6s).,DOWNLINK_RESTORED,12,False,5,1.0
+2,Downward infrared sensor failure.,DOWNWARD_INFRARED_SENSOR_FAILURE,74,True,1,1.0
+2,Downward vision sensor calibration error.,DOWNWARD_VISION_CALIBRATION_ERROR,63,True,1,1.0
+2,Downward vision sensor error.,DOWNWARD_VISION_SENSOR_ERROR,87,True,1,1.0
+2,Drag a box around or tap a target on screen.,INSTR_SELECT_TARGET,88,False,1,1.0
+2,Drone is Vibrating,AIRCRAFT_VIBRATING,54,True,1,1.0
+2,Ensure aircraft is level,INSTR_ENSURE_LEVEL,65,False,1,1.0
+2,Excessive gimbal vibration.,GIMBAL_VIBRATION_EXCESSIVE,76,True,1,1.0
+2,Exit Upward Sensing system,UPWARD_OBSTACLE_SENSING_UNAVAILABLE,116,True,1,1.0
+2,Exited Visual Avoidance System,VISUAL_AVOIDANCE_EXITED,18,True,2,1.0
+2,Exited Visual Avoidance System.,VISUAL_AVOIDANCE_EXITED,18,True,2,1.0
+2,Exiting GPS mode: Unknown Error,GPS_MODE_EXIT_ERROR,71,True,1,1.0
+2,Failed to cancel Return to Home,CANCEL_RTH_FAILED,3,True,2,1.0
+2,Flight altitude restricted to nnn,MAX_ALT_SET,86,False,1,1.0
+2,Flight distance may exceed line-of-sight.,POSS_BEYOND_LINE_OF_SIGHT,89,True,1,1.0
+2,Flight height too low,ALTITUDE_TOO_LOW,72,False,1,1.0
+2,Flight performance will be affected.,POSS_PERFORMANCE_AFFECTED,80,False,1,1.0
+2,Forced landing in progress,FORCED_LANDING,1,False,2,1.0
+2,Forced landing.,FORCED_LANDING,1,False,2,1.0
+2,Forward vision sensor error.,FORWARD_VISION_SENSOR_ERROR,95,True,1,1.0
+2,Gimbal IMU data error.,GIMBAL_IMU_DATA_ERROR,50,True,1,1.0
+2,Gimbal calibration error.,GIMBAL_CALIBRATION_ERROR,40,True,1,1.0
+2,Gimbal motor overloaded.,GIMBAL_MOTOR_OVERLOADED,75,True,1,1.0
+2,Gimbal stuck.,GIMBAL_STUCK,61,True,1,1.0
+2,Hardware malfunction,HARDWARE_MALFUNCTION,100,True,1,1.0
+2,High Wind Velocity: Fly with caution and ensure the aircraft remains within your line of sight,HIGH_WIND,45,False,1,1.0
+2,Home Point Recorded.,HOME_POINT_RECORDED,77,False,1,1.0
+2,IMU not calibrated.,IMU_CALIBRATION_REQUIRED,78,False,1,1.0
+2,"If the issue persists, contact DJI Support",INSTR_CONTACT_SUPPORT,29,False,2,1.0
+2,"If the propellers are installed correctly and the aircraft still cannot takeoff, a motor error may exist.",POSS_MOTOR_ERROR,126,True,1,1.0
+2,Image transmission signal lost,IMGTX_LOST,120,True,1,1.0
+2,Insufficient storage space.,STORAGE_FULL,0,False,2,1.0
+2,Land aircraft immediately,INSTR_LAND_PROMPTLY,62,False,1,1.0
+2,Landing.,AUTO_LANDING_IN_PROGRESS,64,False,1,1.0
+2,Lighting environment too dark.,AMBIENT_LIGHT_LOW,53,False,1,1.0
+2,Low power,LOW_BATTERY,31,False,1,1.0
+2,Magnetic Filed Interference.,COMPASS_INTERFERENCE,47,False,2,0.0
+2,Manually control the aircraft and land in an open area,INSTR_MANUAL_LANDING,42,True,1,1.0
+2,Max altitude set to nnn and max distance set to nnn.,MAX_ALT_AND_DISTANCE_SET,51,False,1,1.0
+2,Min Waypoint Distance: nnn,INFO_MIN_WAYPOINT_DISTANCE,49,True,1,1.0
+2,Motor is idling (lost or missing propeller),MOTOR_IDLE,118,False,1,1.0
+2,Motor nnn propeller detached or installed incorrectly,PROPELLER_DETACHED,24,False,1,1.0
+2,Motors Started.,MOTORS_STARTING,43,True,1,1.0
+2,No GPS.,NO_GPS_SIGNAL,44,False,1,1.0
+2,Not Allowed to change Aircraft Mode.,FLIGHT_MODE_CHANGE_REJECTED,48,False,1,1.0
+2,Object too close to laser rangefinder,LASER_RANGEFINDER_TOO_CLOSE,59,True,1,1.0
+2,Obstacle Avoidance disabled.,OA_UNAVAILABLE,10,False,2,1.0
+2,Obstacle Avoidance has been disabled.,OA_UNAVAILABLE,10,False,2,1.0
+2,Obstacle Sensing will be disabled when aircraft is landing.,INFO_OA_DISABLED_WHEN_LANDING,52,False,1,1.0
+2,Obstacle sensing not available at night.,OA_UNAVAILABLE_AT_NIGHT,22,True,1,1.0
+2,Please step closer.,INSTR_STEP_CLOSER,70,True,1,1.0
+2,Power off aircraft and wait for temperature to return to normal,INSTR_WAIT_TO_COOL_DOWN,83,False,1,1.0
+2,QuickShot has ended,QUICKSHOT_ENDED,2,True,2,1.0
+2,QuickShots stopped,QUICKSHOT_ENDED,2,True,2,1.0
+2,RTH : Ascending to RTH altitude.,RTH_ASCENDING,112,True,1,1.0
+2,RTH : Cruise.,RTH_CRUISE,66,True,1,1.0
+2,Remote ID error.,REMOTE_ID_ERROR,67,True,1,1.0
+2,Remote controller battery level low.,RC_BATTERY_LOW,35,True,1,1.0
+2,Restart aircraft or contact DJI Support if the issue persists,INSTR_CONTACT_SUPPORT,29,False,2,1.0
+2,Return the aircraft to an area nearby the home point promptly to ensure flight safety,INSTR_RETURN_NEAR_HOME,39,False,1,1.0
+2,Return to home immediately.,INSTR_RETURN_HOME,14,False,2,1.0
+2,Return to home promptly,INSTR_RETURN_HOME,14,False,2,1.0
+2,Return-to-Home Mode is now Auto Landing Mode.,RTH_SWITCHED_TO_AUTO_LANDING,68,False,1,1.0
+2,Returning home.,RTH_ACTIVE,6,False,2,1.0
+2,SD card full.,STORAGE_FULL,0,False,2,1.0
+2,SD card write speed is too slow.,SD_CARD_SLOW,56,False,1,1.0
+2,Safe to Land.,LANDING_SURFACE_SAFE,26,False,1,1.0
+2,Set Flight Mode to GPS to fly safe,INSTR_SET_GPS_MODE,41,True,1,1.0
+2,Shooting interrupted,SHOOTING_INTERRUPTED,19,True,1,1.0
+2,Shooting is currently not permitted,SHOOTING_NOT_PERMITTED,33,True,1,1.0
+2,Starting Smart Track,SMART_TRACK_STARTED,36,True,1,1.0
+2,Strong Interference.,STRONG_INTERFERENCE,21,False,2,0.0
+2,Strong wireless interference.,STRONG_INTERFERENCE,20,False,2,0.0
+2,Subject too Large,SUBJECT_TOO_LARGE,57,False,1,1.0
+2,Subject too Small.,SUBJECT_TOO_SMALL,32,False,1,1.0
+2,Switched to P (Positioning)-mode.,MODE_PGPS,58,True,1,1.0
+2,Take off and retry this function.,INSTR_TAKEOFF_AND_RETRY,9,True,1,1.0
+2,The ground or walls may contain metal.,POSS_METAL_NEARBY,23,True,1,1.0
+2,The sky part is filled automatically,PANO_SKY_FILLED,55,True,1,1.0
+2,Unable to take off before unlocking,TAKEOFF_UNAVAILABLE,30,False,2,0.0
+2,Unable to take off.,TAKEOFF_UNAVAILABLE,27,False,2,0.0
+2,Use Normal mode if required for stable shooting,INSTR_USE_NORMAL_MODE,25,True,1,1.0
+2,Use the RC to control aircraft yaw,INSTR_RC_YAW_CONTROL,17,True,1,1.0
+2,Warning: Critically low battery.,CRITICAL_LOW_BATTERY,7,False,2,1.0
+2,Warning: Motor Obstructed,MOTOR_BLOCKED,34,False,1,1.0
+2,WarningThe remaining battery is only enough for RTH.,BATTERY_ONLY_FOR_RTH,37,False,1,1.0
+2,You can reset the RTH Altitude in Remote Controller Settings after cancelling RTH if necessary.,INSTR_RESET_RTH_ALTITUDE,60,False,1,1.0
+2,Your aircraft is at the boundary of an Altitude Zone.,AIRCRAFT_AT_BOUNDARY_ALTITUDE_ZONE,11,True,1,1.0
+2,Your aircraft is flying in an Altitude Zone (nnn).,IN_ALTITUDE_ZONE,28,False,1,1.0
+2,Your palm is too far away from the aircraft.,PALM_TOO_FAR,13,True,1,1.0
+2,please replace the battery,INSTR_REPLACE_BATTERY,38,False,1,1.0
+3,AE Locked.,AE_LOCKED,77,True,1,1.0
+3,APAS has been enabled,APAS_ENABLED,73,True,1,1.0
+3,Abnormal compass function or GPS signal detected.,COMPASS_OR_GPS_ABNORMAL,103,True,1,1.0
+3,Adjust antenna and avoid signal block.,INSTR_ADJUST_ANTENNA,101,False,2,0.0
+3,Aircraft ActiveTrack available at max speed.,AIRCRAFT_ACTIVETRACK_MAX_SPEED_NNN,104,False,1,1.0
+3,Aircraft approaching obstacle sensing blind spot and may be unable to detect obstacles.,OBSTACLE_SENSING_BLIND_SPOT,121,True,1,1.0
+3,Aircraft battery level low.,LOW_BATTERY,6,False,3,0.0
+3,Aircraft flight control obtained by remote controller UNKNOWN,FLIGHT_CONTROL_OBTAINED_BY_RC,119,False,1,1.0
+3,Aircraft in Attitude mode.,AIRCRAFT_ATTITUDE_MODE,136,False,1,1.0
+3,Aircraft in Auto Power Off Protection.,AUTO_POWER_OFF_PROTECTION,95,True,1,1.0
+3,Aircraft in high interference environment.,STRONG_AIRCRAFT_INTERFERENCE,131,False,1,1.0
+3,Aircraft unable to hover.,UNABLE_TO_HOVER,72,False,1,1.0
+3,Aircraft unstable at low altitude.,UNSTABLE_AT_LOW_ALTITUDE,70,True,1,1.0
+3,Altitude Less than nnn.,ALTITUDE_TOO_LOW,100,False,1,1.0
+3,"Ambient Light too Weak, Backward obstacle sensing is unavailable.",AMBIENT_LIGHT_LOW_BACKWARD_SENSING_UNAVAILABLE,78,True,1,1.0
+3,"Ambient Light too Weak, Forward obstacle sensing is unavailable.",AMBIENT_LIGHT_LOW_FORWARD_SENSING_UNAVAILABLE,140,True,1,1.0
+3,Another aircraft is approaching.,ANOTHER_AIRCRAFT_NEARBY,105,False,1,1.0
+3,Approaching a No-Fly Zone.,APPROACHING_NFZ,122,True,1,1.0
+3,Arrived at destination,ARRIVED_AT_END_POINT,109,False,1,1.0
+3,At Least Two Waypoints Required,INSTR_TWO_WAYPOINTS_REQUIRED,123,False,1,1.0
+3,Automatically returning to home,RTH_ACTIVE,82,False,1,1.0
+3,Barometer initialization failed.,BAROMETER_INIT_FAILED,106,True,1,1.0
+3,Battery Voltage Difference too large.,BATTERY_CELL_VOLTAGE_DIFFERENCE,80,True,1,1.0
+3,"Battery cell broken, please replace the battery",BATTERY_CELL_BROKEN,110,True,1,1.0
+3,Battery error.,BATTERY_ERROR,118,False,1,1.0
+3,Battery installed incorrectly.,BATTERY_INSTALLATION_ERROR,114,False,1,1.0
+3,Battery level low.,LOW_BATTERY,6,False,3,0.0
+3,Battery power low.,LOW_BATTERY,128,False,3,0.0
+3,Battery: Connection Error,BATTERY_COMM_ERROR,129,False,1,1.0
+3,Calibration subject is too close.,CALIBRATION_TARGET_TOO_CLOSE,113,False,1,1.0
+3,Camera not calibrated.,CAMERA_NOT_CALIBRATED,99,True,1,1.0
+3,Cancel Landing Failed,CANCEL_LANDING_FAILED,117,False,1,1.0
+3,Cannot Identify Subject,SUBJECT_NOT_FOUND,98,False,1,1.0
+3,Cannot enter Pano mode,PANORAMA_UNAVAILABLE,96,False,1,1.0
+3,Cannot exit ActiveTrack,ACTIVETRACK_EXIT_FAILED,89,True,1,1.0
+3,Cannot start Return to Home due to weak GPS signal,RTH_UNAVAILABLE_WEAK_GPS,120,True,1,1.0
+3,Cannot track subject,TRACKING_FAILED,84,False,1,1.0
+3,Check battery status and charge or warm up battery,INSTR_CHECK_BATTERY,125,False,1,1.0
+3,Check the USB connection with aircraft.,INSTR_CHECK_USB_CONNECTION,102,True,1,1.0
+3,Check the motors and propellers.,INSTR_CHECK_MOTOR_PROPELLERS,124,False,1,1.0
+3,Check whether gimbal can rotate freely,INSTR_CHECK_GIMBAL_LOCK,71,False,1,1.0
+3,Check whether propellers are installed,INSTR_CHECK_PROPELLER_INSTALLATION,60,False,1,1.0
+3,Color display in Liveview is enhanced.,LIVEVIEW_COLOR_ENHANCED,22,True,2,1.0
+3,Color display in the Liveview has been enhanced.,LIVEVIEW_COLOR_ENHANCED,22,True,2,1.0
+3,Compass error.,COMPASS_ERROR,38,False,1,1.0
+3,Contact DJI Support to arrange for repairs,INSTR_CONTACT_SUPPORT,135,False,1,1.0
+3,Correcting Landing Position.,PRECISION_LANDING_CORRECTING,2,False,2,1.0
+3,Critically Low Power.,CRITICAL_LOW_BATTERY,7,False,2,1.0
+3,Critically Low Voltage Warning.,CRITICAL_LOW_BATTERY,7,False,2,1.0
+3,Current RTH route will pass a No-Fly zone.,RTH_ROUTE_THROUGH_NFZ,50,True,1,1.0
+3,Data Recorder File Index is 29.,DATA_RECORDER_INDEX,21,False,4,1.0
+3,Data Recorder File Index is 4.,DATA_RECORDER_INDEX,21,False,4,1.0
+3,Data Recorder File Index is 45.,DATA_RECORDER_INDEX,21,False,4,1.0
+3,Data Recorder File Index is 5.,DATA_RECORDER_INDEX,21,False,4,1.0
+3,Detach battery and reinstall it,INSTR_REINSTALL_BATTERY,137,False,2,0.0
+3,Distance limit exceeded.,DISTANCE_LIMIT_EXCEEDED,51,True,1,1.0
+3,Downlink Restored (after 0m 1.2s).,DOWNLINK_RESTORED,9,False,2,1.0
+3,Downlink Restored (after 0m 1.5s).,DOWNLINK_RESTORED,9,False,2,1.0
+3,Downward altitude sensor data error.,DOWNWARD_ALTITUDE_SENSOR_ERROR,111,True,1,1.0
+3,Downward ambient light too low.,AMBIENT_LIGHT_LOW,52,False,1,1.0
+3,EMMC is full,INTERNAL_STORAGE_FULL,58,True,1,1.0
+3,Exit P-GPS Mode.,PGPS_MODE_EXITED,112,False,1,1.0
+3,Exit Travel Mode.,INSTR_EXIT_MODE,75,False,1,1.0
+3,Extra payload detected.,PAYLOAD_DETECTED,139,True,1,1.0
+3,Flight Mode Set to Attitude,MODE_ATTITUDE,79,False,1,1.0
+3,Fly at a safe altitude,INSTR_FLY_SAFE_ALTITUDE,127,True,1,1.0
+3,Fly in a wind-free environment to ensure flight safety,INSTR_FLY_WIND_FREE,133,True,1,1.0
+3,Fly with Caution.,INSTR_FLY_CAUTION,56,False,1,1.0
+3,Forward Obstacle Sensing is not functioning.,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,3,False,2,1.0
+3,Forward Obstacle Sensing will be automatically switched off,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,3,False,2,1.0
+3,Gimbal Pitch Limit Reached.,GIMBAL_PITCH_LIMIT,69,False,2,0.0
+3,Gimbal Recenter,GIMBAL_RECENTER,59,True,2,0.0
+3,Gimbal Roll Limit Reached.,GIMBAL_ROLL_LIMIT,61,False,1,1.0
+3,Gimbal nnn pitch axis endpoint reached,GIMBAL_PITCH_LIMIT,76,False,2,0.0
+3,Ground Plain.,LANDING_SURFACE_SAFE,35,False,1,1.0
+3,Gyroscope initialization failed.,GYROSCOPE_INIT_FAILED,74,True,1,1.0
+3,High wind velocity.,HIGH_WIND,1,False,2,1.0
+3,Home Point Recorded,HOME_POINT_RECORDED,37,False,1,1.0
+3,"If this issue persists, land immediately",INSTR_LAND_PROMPTLY,134,False,2,0.0
+3,Image Transmission Recovered.,IMGTX_RESTORED,97,False,1,1.0
+3,Impact detected.,IMPACT_DETECTED,39,True,1,1.0
+3,Insufficient SD card space.,STORAGE_FULL,86,False,1,1.0
+3,"Land as soon as possible, otherwise the battery will be damaged",INSTR_LAND_PROMPTLY,66,False,2,0.0
+3,Landing gear lowered.,LANDING_GEAR_LOWERED,130,False,1,1.0
+3,Lightly press it to adjust.,INSTR_PRESS_DIAL_TO_ADJUST,49,False,1,1.0
+3,Loading database failed.,DATABASE_LOAD_FAILED,91,True,1,1.0
+3,Lower altitude immediately and return to home manually,INSTR_MANUAL_RTH,107,False,1,1.0
+3,Make sure the remote controller is facing aircraft and avoid blocking the signal,INSTR_ADJUST_ANTENNA,116,False,2,0.0
+3,Max Altitude Approached.,MAX_ALTITUDE_APPROACHING,138,True,2,0.0
+3,Maximum Flight Altitude Reached.,MAX_ALTITUDE_REACHED,10,False,2,1.0
+3,Minimum RTH Altitude is 98ft.,INFO_MIN_RTH_ALTITUDE,87,False,1,1.0
+3,Mobile device version too old to support HD image transmission and the image transmission mode has been switch to normal mode.,MOBILE_OUTDATED_IMGTX_MODE_SWITCHED,48,True,1,1.0
+3,Motor is Blocked,MOTOR_BLOCKED,64,False,1,1.0
+3,Navigation system error.,NAVIGATION_SYSTEM_ERROR,63,True,1,1.0
+3,Not Enough Force/ESC Error,ESC_ERROR_INSUFFICIENT_FORCE,54,True,1,1.0
+3,Pano successful,PANORAMA_COMPLETED,88,False,1,1.0
+3,Pay attention to the aircraft's position to avoid RTH failure.,INSTR_WATCH_POSITION_AVOID_RTH_FAILURE,108,True,1,1.0
+3,Payload mode enabled.,PAYLOAD_MODE_ENABLED,31,True,1,1.0
+3,Please calibrate using infinity,INSTR_RECALIBRATE_FARTHER_TARGET,53,False,1,1.0
+3,Please step farther away.,INSTR_STEP_FARTHER,93,True,1,1.0
+3,Positioning accuracy affected.,POSITIONING_ACCURACY_AFFECTED,115,True,1,1.0
+3,Press C2 to exit,INSTR_PRESS_BUTTON_TO_EXIT,126,False,1,1.0
+3,Propeller Guard Mounted Propeller Guard mounted.,PROPELLER_GUARD_MOUNTED,83,True,1,1.0
+3,Propeller rotating too fast.,MOTOR_SPEED_ERROR,24,False,1,1.0
+3,RTH : Preascending.,RTH_PREASCENDING,94,True,1,1.0
+3,RTH Altitude is 30m.,RTH_ALT_SET,13,False,3,1.0
+3,RTH Altitude is nnn.,RTH_ALT_SET,13,False,3,1.0
+3,RTK Base Station Data Not Received,RTK_BASE_NO_DATA,90,False,1,1.0
+3,Reaching maximum altitude...,MAX_ALTITUDE_APPROACHING,132,True,2,0.0
+3,Recenter Gimbal Pan,GIMBAL_RECENTER,26,True,2,0.0
+3,Rectifying aircraft position.,PRECISION_LANDING_CORRECTING,2,False,2,1.0
+3,Reinstall battery.,INSTR_REINSTALL_BATTERY,36,False,2,0.0
+3,Remote Controller Right Dial Locked.,RC_DIAL_LOCKED,34,False,1,1.0
+3,Reselect subject,INSTR_SELECT_TARGET,85,False,2,0.0
+3,Restart aircraft,INSTR_RESTART,65,False,3,0.0
+3,Restart aircraft and DJI Fly,INSTR_RESTART,68,False,3,0.0
+3,Restart camera,INSTR_RESTART,47,False,3,0.0
+3,Return to home or land promptly,INSTR_LAND_OR_RTH,67,False,1,1.0
+3,Return-to-Home Altitude : 98FT,RTH_ALT_SET,13,False,3,1.0
+3,Satellite positioning off.,SATELLITE_POSITIONING_OFF,44,True,1,1.0
+3,Setting new Maximum Flight Altitude to nnn,MAX_ALT_SET,29,False,1,1.0
+3,Signal Lost.,RC_SIGNAL_LOST,62,False,1,1.0
+3,Signal interruption maybe more likely.,POSS_SIGNAL_INTERRUPTION,23,False,1,1.0
+3,Solution: Move away from ground magnetic interference,INSTR_MOVE_AWAY_FROM_INTERFERENCE,32,False,1,1.0
+3,Starting Waypoint Mission,WAYPOINT_MISSION_ACTIVE,4,False,2,1.0
+3,Stick movement detected.,STICK_MOVEMENT_DETECTED,33,True,1,1.0
+3,Stop flying and wait for battery temperature to return to normal,INSTR_WAIT_TO_COOL_DOWN,55,False,1,1.0
+3,Strong wind warning.,HIGH_WIND,1,False,2,1.0
+3,Subject too Large.,SUBJECT_TOO_LARGE,43,False,1,1.0
+3,Take off in P-Mode,INSTR_TAKEOFF_IN_P_MODE,30,True,1,1.0
+3,Taking Off.,TAKING_OFF,16,False,1,1.0
+3,Tap Fly Flight Ended Landing Gear Lowered,TAPFLY_ENDED_LANDING_GEAR_LOWERED,81,True,1,1.0
+3,Tap the screen lightly to focus.,INSTR_TAP_TO_FOCUS,40,False,1,1.0
+3,Temp Max Altitude : 98ft,TEMP_MAX_ALT_SET,25,False,1,1.0
+3,The remaining battery is only enough for RTH.,BATTERY_ONLY_FOR_RTH,18,False,1,1.0
+3,Then tap Go.,INSTR_SELECT_TARGET,27,False,2,0.0
+3,Tip: Aircraft reached maximum distance,MAX_DISTANCE_REACHED,17,False,1,1.0
+3,"Tip: When multi-gimbals are controlled together, only the first gimbal spotlight feature is available",INFO_MULTI_GIMBAL_SPOTLIGHT,19,True,1,1.0
+3,"To take off in non-P mode, toggle Flight Mode Switch to another mode and then toggle it back.",INSTR_TOGGLE_MODE_SWITCH,14,False,1,1.0
+3,"Turn on ""Multiple Flight Modes"" to enable Atti and Sport Modes",INSTR_ENABLE_MULTIPLE_FLIGHT_MODES,15,False,1,1.0
+3,Unable to take off,TAKEOFF_UNAVAILABLE,0,False,1,0.0
+3,"Unknown Error, Cannot Takeoff.",TAKEOFF_UNAVAILABLE_UNKNOWN_ERROR,0,True,1,0.0
+3,Vision sensor error.,VISION_SENSOR_ERROR,92,True,1,1.0
+3,Vision system and obstacle sensing unavailable,VISION_AND_OA_UNAVAILABLE,57,False,1,1.0
+3,Visual positioning inaccurate.,VISUAL_POSITIONING_INACCURATE,46,True,1,1.0
+3,Wait before taking off,INSTR_WAIT_BEFORE_TAKEOFF,11,True,1,1.0
+3,Warm battery to above 25°C (77F) before flying,INSTR_WARM_BATTERY,41,False,1,1.0
+3,Warning: Max Flight Altitude Reached.,MAX_ALTITUDE_REACHED,10,False,2,1.0
+3,Warning: Motor Overloaded.,MOTOR_OVERLOADED,28,True,1,1.0
+3,Waypoint Mission Paused,WAYPOINT_MISSION_PAUSED,12,True,1,1.0
+3,Waypoint Mission Resumed,WAYPOINT_MISSION_RESUMED,8,True,1,1.0
+3,Waypoint Mission Start,WAYPOINT_MISSION_ACTIVE,4,False,2,1.0
+3,Weak GPS signal.,GPS_SIGNAL_WEAK,5,False,1,1.0
+3,Weak image transmission signal.,IMGTX_SIGNAL_WEAK,42,True,1,1.0
+3,You can decelerate the descending speed and avoid obstacles using sticks,INSTR_MANUAL_DESCENT_CONTROL,20,False,1,1.0
+3,You can reset the RTH Altitude in Remote Controller Settings after cancelling RTH.,INSTR_RESET_RTH_ALTITUDE,45,False,1,1.0
+4,A passenger aircraft is approaching.,MANNED_AIRCRAFT_NEARBY,0,False,2,1.0
+4,AI Spot-Check failed.,AI_SPOTCHECK_FAILED,123,True,1,1.0
+4,ActiveTrack Flight Stopped,ACTIVETRACK_ENDED,103,False,1,1.0
+4,Adjust RTH altitude to above tallest surrounding building before flying,INSTR_RAISE_RTH_ALTITUDE,110,True,1,1.0
+4,Adjust in Main Controller Settings if necessary.,INSTR_ADJUST_LIMIT_IN_SETTINGS,119,False,1,1.0
+4,Adjust remote controller antennas,INSTR_ADJUST_ANTENNA,124,False,1,1.0
+4,Aircraft ActiveTrack max speed of nnn and Obstacle Avoidance functions normally,AIRCRAFT_ACTIVETRACK_MAX_SPEED_NNN,72,False,1,1.0
+4,Aircraft GPS signal too weak.,GPS_SIGNAL_WEAK,101,False,1,1.0
+4,Aircraft Landing.,AUTO_LANDING_IN_PROGRESS,135,False,2,0.0
+4,Aircraft antenna satellite signal searching error.,GNSS_ANTENNA_SEARCH_ERROR,100,True,1,1.0
+4,Aircraft entered Fixed-Wing Mode.,AIRCRAFT_FIXED_WING_MODE,80,True,1,1.0
+4,Aircraft in Altitude Zone.,IN_ALTITUDE_ZONE,92,False,1,1.0
+4,Aircraft in Restricted Zones.,IN_RESTRICTED_ZONE,130,False,1,1.0
+4,Aircraft is in Attitude mode and hovering may be unstable.,AIRCRAFT_ATTITUDE_MODE,104,False,1,1.0
+4,Aircraft is in Tripod Mode.,TRIPOD_MODE,117,True,1,1.0
+4,"Aircraft is landing due to low voltage, which cannot be stopped.",FORCED_LANDING,115,False,2,0.0
+4,Aircraft is too far away,AIRCRAFT_TOO_FAR,127,False,2,0.0
+4,Aircraft power insufficient.,POWER_INSUFFICIENT,102,True,1,1.0
+4,Aircraft returning to home,RTH_ACTIVE,131,False,1,1.0
+4,Aircraft settings updated to comply with national regulations,SETTINGS_UPDATED_FOR_REGULATIONS,93,True,1,1.0
+4,Aircraft too Far.,AIRCRAFT_TOO_FAR,96,False,2,0.0
+4,Aircraft unable to return to home automatically.,RTH_UNAVAILABLE,106,False,1,1.0
+4,Aircraft will be forced to land,FORCED_LANDING,126,False,2,0.0
+4,Aircraft will decelerate during landing.,LANDING_DECELERATION,78,True,1,1.0
+4,Aircraft will not enter S-mode if powered on with the remote controller set to S-mode.,INFO_S_MODE_POWER_ON,94,True,1,1.0
+4,Altitude above the takeoff point exceeds nnn.,ALTITUDE_LIMIT_EXCEEDED,3,False,2,1.0
+4,Always fly in compliance with altitude limitations,INSTR_COMPLY_ALTITUDE_LIMITS,97,True,1,1.0
+4,Arrived at Start Point.,ARRIVED_AT_START_POINT,79,True,1,1.0
+4,Auto landing initiated,AUTO_LANDING_IN_PROGRESS,125,False,2,0.0
+4,Auxiliary Bottom Light set to automatic mode,AUX_BOTTOM_LIGHT_AUTO,136,True,1,1.0
+4,Avoid the obstacle,INSTR_AVOID_OBSTACLE,113,True,1,1.0
+4,Backward ambient light too low.,AMBIENT_LIGHT_LOW,95,False,1,1.0
+4,Battery power limit will automatically reduce the aircraft's mobility to ensure flight safety,PERFORMANCE_DECREASED,118,False,1,1.0
+4,Battery temperature is below 15 degrees Celsius.,BATTERY_TEMPERATURE_LOW,1,True,3,1.0
+4,Battery temperature too low.,BATTERY_TEMPERATURE_LOW,1,True,3,1.0
+4,Battery: Battery Error.,BATTERY_ERROR,98,False,1,1.0
+4,Braking now! No use to move the stick right.,BRAKING,120,False,1,1.0
+4,Calibrate IMU,INSTR_CALIBRATE_IMU,114,True,1,1.0
+4,Cannot Takeoff in Travel Mode.,TAKEOFF_UNAVAILABLE_TRAVEL_MODE,133,True,1,1.0
+4,Cannot change current flight mode.,FLIGHT_MODE_CHANGE_REJECTED,112,False,1,1.0
+4,Cannot enable Intelligent Flight Mode,INTELLIGENT_FLIGHT_MODE_UNAVAILABLE,105,True,1,1.0
+4,Cannot send ActiveTrack command,ACTIVETRACK_COMMAND_FAILED,109,True,1,1.0
+4,Cannot shoot panorama,PANORAMA_UNAVAILABLE,132,False,1,1.0
+4,Cannot takeoff in a no-fly zone,TAKEOFF_UNAVAILABLE_IN_NFZ,2,True,1,0.0
+4,Cannot takeoff.,TAKEOFF_UNAVAILABLE,2,False,1,0.0
+4,Check and link phone number,INSTR_LINK_PHONE_NUMBER,86,True,1,1.0
+4,Check and make sure you have obtained proper authorization to fly in this airspace,INSTR_OBTAIN_AUTHORIZATION,68,False,1,1.0
+4,Check and re-install battery,INSTR_REINSTALL_BATTERY,65,False,2,0.0
+4,Check whether propellers are installed correctly.,INSTR_CHECK_PROPELLER_INSTALLATION,122,False,1,1.0
+4,Compass Stuck.,COMPASS_STUCK,81,True,1,1.0
+4,Compass abnormal.,COMPASS_ERROR,116,False,1,1.0
+4,Compass data error.,COMPASS_DATA_ERROR,52,True,1,1.0
+4,Compass direction is not the same with IMU,COMPASS_IMU_MISMATCH,73,True,1,1.0
+4,Contact DJI Support if this error persists after restarting,INSTR_CONTACT_SUPPORT,7,False,4,1.0
+4,Contact DJI Support if this persists.,INSTR_CONTACT_SUPPORT,7,False,4,1.0
+4,Current flight speed is nnn.,INFO_CURRENT_SPEED,50,True,1,1.0
+4,Data Recorder File Index is 1.,DATA_RECORDER_INDEX,22,False,4,1.0
+4,Data Recorder File Index is 15.,DATA_RECORDER_INDEX,22,False,4,1.0
+4,Data Recorder File Index is 19.,DATA_RECORDER_INDEX,22,False,4,1.0
+4,Data Recorder File Index is 7.,DATA_RECORDER_INDEX,22,False,4,1.0
+4,Disable SD card read and write protection or change card,INSTR_CHANGE_SD_CARD,69,False,1,1.0
+4,Downlink Restored (after 0m 1s).,DOWNLINK_RESTORED,15,False,2,1.0
+4,Downlink Restored (after 0m 5.8s).,DOWNLINK_RESTORED,15,False,2,1.0
+4,Downward Obstacle Sensing is not functioning.,DOWNWARD_OBSTACLE_SENSING_UNAVAILABLE,90,False,1,1.0
+4,Ensure control sticks are centered during takeoff,INSTR_CENTER_STICKS,83,False,1,1.0
+4,Ensure your enviornment is free of potential obstacles.,INSTR_CLEAR_SURROUNDINGS,82,True,1,1.0
+4,Error: Course angle control error.,COURSE_ANGLE_CONTROL_ERROR,75,True,1,1.0
+4,Exit Backward Sensing system,BACKWARD_OBSTACLE_SENSING_UNAVAILABLE,128,False,1,1.0
+4,Exit Forward Sensing system,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,121,False,3,0.0
+4,Flight altitude exceeds nnn.,ALTITUDE_LIMIT_EXCEEDED,3,False,2,1.0
+4,Flight range restricted.,FLIGHT_RANGE_RESTRICTED,77,True,1,1.0
+4,Fly with caution and ensure the aircraft remains within your line of sight.,INSTR_MAINTAIN_VLOS,107,False,1,1.0
+4,Fly with caution and land in a safe place ASAP.,INSTR_LAND_PROMPTLY,67,False,1,1.0
+4,Forward Obstacle Sensing not Responding,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,5,False,3,0.0
+4,Forward Obstacle Sensing not Working.,FORWARD_OBSTACLE_SENSING_UNAVAILABLE,5,False,3,0.0
+4,Forward vision sensor calibration error.,FORWARD_VISION_CALIBRATION_ERROR,71,True,1,1.0
+4,GEO Zone Info: The target area is in an Altitude Zone.,TARGET_IN_ALTITUDE_ZONE,61,True,1,1.0
+4,GEO: You are in a Warning Zone (Airport Class Airspace Unpaved Airports Power Plant).,IN_WARNING_ZONE,59,False,1,1.0
+4,Geo-awareness function degraded,GEO_AWARENESS_DEGRADED,108,True,1,1.0
+4,Gimbal Pitch Reached Movement Limit,GIMBAL_PITCH_LIMIT,89,False,1,1.0
+4,Gimbal calibrating,GIMBAL_CALIBRATING,111,True,1,1.0
+4,Go to Profile > Settings to update firmware,INSTR_UPDATE_FIRMWARE,74,True,1,1.0
+4,High altitude.,HIGH_ALTITUDE_FLIGHT,48,False,1,1.0
+4,Hovering unstable.,HOVERING_UNSTABLE,35,True,1,1.0
+4,"If the issue persists, replace battery",INSTR_REPLACE_BATTERY,70,False,2,0.0
+4,Land or return to home promptly.,INSTR_LAND_OR_RTH,60,False,1,1.0
+4,Landing Canceled.,LANDING_CANCELED,54,True,1,1.0
+4,Landing Gear Paused.,LANDING_GEAR_PAUSED,76,True,1,1.0
+4,Landing Gear Raised.,LANDING_GEAR_RAISED,8,True,2,1.0
+4,Landing Gear Raising.,LANDING_GEAR_RAISED,8,True,2,1.0
+4,Landing Protection Activated.,LANDING_PROTECTION_ACTIVATED,88,True,1,1.0
+4,Left and right Obstacle Sensing systems are available,LATERAL_OBSTACLE_SENSING_AVAILABLE,44,True,1,1.0
+4,Live stream video frame rate less than 9Hz.,LIVESTREAM_FRAMERATE_LOW,53,True,1,1.0
+4,Low Battery,LOW_BATTERY,6,False,3,1.0
+4,Low Power.,LOW_BATTERY,6,False,3,1.0
+4,Low battery voltage.,LOW_BATTERY,6,False,3,1.0
+4,Manned aircraft detected nearby.,MANNED_AIRCRAFT_NEARBY,0,False,2,1.0
+4,Max Flight Altitude Reached.,MAX_ALTITUDE_REACHED,134,False,2,0.0
+4,Max altitude and distance set.,MAX_ALT_AND_DISTANCE_SET,51,False,1,1.0
+4,Max altitude reached (Altitude limit: nnn),MAX_ALTITUDE_REACHED,55,False,2,0.0
+4,Maximum flight distance reached.,MAX_DISTANCE_REACHED,85,False,1,1.0
+4,Minimum RTH Altitude is 30m.,INFO_MIN_RTH_ALTITUDE,33,False,1,1.0
+4,Mobile device CPU fully loaded.,MOBILE_CPU_OVERLOADED,29,True,1,1.0
+4,Motor idle.,MOTOR_IDLE,47,False,1,1.0
+4,Motor is Blocked.,MOTOR_BLOCKED,87,False,1,1.0
+4,Move away from sources of interference before,INSTR_MOVE_AWAY_FROM_INTERFERENCE,62,False,2,0.0
+4,Move to environment with adequate light.,INSTR_MOVE_TO_ADEQUATE_LIGHT,57,True,1,1.0
+4,Obstacle Avoided.,OBSTACLE_AVOIDED,56,True,1,1.0
+4,Pano shooting completed.,PANORAMA_COMPLETED,58,False,1,1.0
+4,Please change the battery,INSTR_REPLACE_BATTERY,25,False,2,0.0
+4,Please check the batteries are inserted correctly,INSTR_REINSTALL_BATTERY,36,False,2,0.0
+4,Please contact DJI Support,INSTR_CONTACT_SUPPORT,7,False,4,1.0
+4,Please fly away or land with caution,INSTR_FLY_AWAY,43,True,2,0.0
+4,Please fly away with caution,INSTR_FLY_AWAY,63,True,2,0.0
+4,Please fly with caution,INSTR_FLY_CAUTION,4,False,3,1.0
+4,Please fly with caution.,INSTR_FLY_CAUTION,4,False,3,1.0
+4,Please make sure base station antenna is connected to the correct port,INSTR_CHECK_RTK_ANTENNA,28,True,1,1.0
+4,Please move the aircraft away from potential interference source or calibrate the compass,INSTR_MOVE_AWAY_FROM_INTERFERENCE,38,False,2,0.0
+4,Please retry,INSTR_RETRY,23,False,1,1.0
+4,Precision Landing,PRECISION_LANDING,10,True,2,1.0
+4,Precision Landing.,PRECISION_LANDING,10,True,2,1.0
+4,Propeller Fell Off,PROPELLER_DETACHED,91,False,1,1.0
+4,RTH Altitude : 65FT.,RTH_ALT_SET,99,False,1,1.0
+4,RTK signal weak.,RTK_SIGNAL_WEAK,45,True,1,1.0
+4,Remote controller assisted takeoff initiated.,RC_ASSISTED_TAKEOFF,30,True,1,1.0
+4,Remote controller disconnected from aircraft,RC_DISCONNECTED,26,True,1,1.0
+4,Restart Aircraft.,INSTR_RESTART,40,False,1,1.0
+4,Revise Flight Route,INSTR_ADJUST_ROUTE_OR_RTH,27,False,1,1.0
+4,SD card malfunction.,SD_CARD_ERROR,39,True,1,1.0
+4,SD card speed low.,SD_CARD_SLOW,84,False,1,1.0
+4,Solution: 1. Ensure there are no magnets or metal objects near the aircraft.,INSTR_REMOVE_MAGNETIC_OBJECTS,21,False,1,1.0
+4,"Solution: Restart the aircraft, if the problem persists, contact DJI Support",INSTR_CONTACT_SUPPORT,7,False,4,1.0
+4,"Sprayer turned OFF, sprayed nnn at nnn liters/min",SPRAYER_OFF,129,True,1,1.0
+4,Sprayer turned ON,SPRAYER_ON,19,True,1,1.0
+4,Strong Aircraft Interference,STRONG_AIRCRAFT_INTERFERENCE,49,False,1,1.0
+4,Strong Interference Now.,STRONG_INTERFERENCE,42,False,1,1.0
+4,Strong Interference to Remote Controller.,RC_INTERFERENCE,46,False,1,1.0
+4,Subject lost.,SUBJECT_LOST,64,True,2,0.0
+4,Switched to A (Attitude)-mode,MODE_ATTITUDE,66,False,1,1.0
+4,Switched to T (Tripod)-mode.,MODE_TRIPOD,31,True,1,1.0
+4,Take care of your gimbal when landing,INSTR_PROTECT_GIMBAL_ON_LANDING,14,True,1,1.0
+4,Tap to choose a valid zone.,INSTR_TAP_VALID_ZONE,37,True,1,1.0
+4,Target lost.,SUBJECT_LOST,32,True,2,0.0
+4,Temp Max Altitude: nnn,TEMP_MAX_ALT_SET,34,False,1,1.0
+4,The gimbal is moving.,GIMBAL_MOVING,18,True,1,1.0
+4,Unable to take off in low light environment.,TAKEOFF_UNAVAILABLE_LOW_LIGHT,12,True,1,1.0
+4,Video cache has stopped because there is not enough storage space.,VIDEO_CACHE_STOPPED_STORAGE_FULL,17,True,1,1.0
+4,Vision sensor(s) blocked.,VISION_SENSOR_BLOCKED,13,True,1,1.0
+4,Warning: Battery Temperature Below 15°C (59F).,BATTERY_TEMPERATURE_LOW,1,True,3,1.0
+4,Wind resistance affected.,POSS_WIND_RESISTANCE_AFFECTED,41,True,1,1.0
+4,You can enable Auto Cache Clear or manually delete cache to get enough space,INSTR_FREE_STORAGE,24,False,1,1.0
+4,You can reset the RTH Altitude in Remote Controller Settings after cancelling RTH if necessary,INSTR_RESET_RTH_ALTITUDE,20,False,1,1.0
+4,Your aircraft is at the boundary of an Authorization Zone.,AT_BOUNDARY_AUTHORIZATION_ZONE,16,True,1,1.0
+4,cannot start recording QuickShot,QUICKSHOT_RECORDING_FAILED,11,True,1,1.0
+4,flight time is shortened.,POSS_FLIGHT_TIME_SHORTENED,9,True,1,1.0
+4,please ensure safety during the flight,INSTR_FLY_CAUTION,4,False,3,1.0
